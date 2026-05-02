@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #2a2118;
+  --ink-mid: #5a4e3c;
+  --ink-light: #8a7a66;
+  --parchment: #f5f0e8;
+  --parchment-dark: #ede6d6;
+  --parchment-deep: #d4c9b0;
+  --accent: #8b3a1a;
+  --accent-light: #c0582a;
+  --gold: #b8932a;
+  --rule: rgba(90,78,60,0.25);
+}
+
+[x-cloak] { display: none !important; }
+
+@layer base {
+  html { background-color: var(--parchment); color: var(--ink); }
+  body { font-family: "Source Serif 4", Georgia, serif; }
+}
+
+@layer components {
+  .content-col {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .full-bleed {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  .btn-primary {
+    background-color: var(--accent);
+    color: var(--parchment);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: background-color 0.2s;
+  }
+  .btn-primary:hover { background-color: var(--accent-light); }
+  .btn-outline {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background: transparent;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  .btn-outline:hover { background-color: var(--accent); color: var(--parchment); }
+}
+
+@media (max-width: 560px) {
+  .intro-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .intro-photo {
+    order: -1;
+  }
+  .intro-photo img {
+    max-width: 120px !important;
+  }
+  .quotes-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .book-promo-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .book-cover-img {
+    order: 1;
+  }
+  .tour-item-content {
+    grid-template-columns: 1fr !important;
+  }
+  .tour-item-content > div:last-child {
+    justify-self: start;
+  }
+  .book-detail-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .book-detail-cover {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .author-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .author-photo {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+}

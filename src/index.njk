@@ -1,0 +1,348 @@
+---
+title: Walk With Eric
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walk With Eric — San Francisco Walking Tours</title>
+  <meta name="description" content="San Francisco walking tours led by Eric Friedman — maritime history, the city's first Black millionaire, Japanese Tea Garden, and more. Free tours through SF City Guides.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ical.js@2.0.1/build/ical.min.js"></script>
+</head>
+<body style="background-color: #f5f0e8; color: #2a2118;">
+  <main>
+
+    <!-- ===================== SECTION 1: MASTHEAD ===================== -->
+    <section style="border-bottom: 2px solid var(--rule); padding: 3.5rem 0 2rem;">
+      <div class="content-col" style="text-align: center;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-variant: small-caps; margin-bottom: 0.75rem;">Discover San Francisco With Eric</p>
+        <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 52px; font-weight: 400; line-height: 1.1; color: var(--ink); margin: 0 0 0.75rem;">Walk With Eric</h1>
+        <p style="font-family: 'Source Serif 4', Georgia, serif; font-style: italic; color: var(--ink-mid); font-size: 17px; margin: 0;">History, stories, and a great excuse to be outside</p>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 2: INTRO BLOCK ===================== -->
+    <section style="border-bottom: 1px solid var(--rule); padding: 2rem 0;">
+      <div class="content-col">
+        <div class="intro-grid" style="display: grid; grid-template-columns: 1fr 200px; gap: 2.5rem; align-items: start;">
+          <!-- Left: text -->
+          <div class="intro-text">
+            <p style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-style: italic; color: var(--ink); line-height: 1.6; margin: 0 0 1.1rem;">Walk with me to journey from looking to seeing with understanding — the moment when a building, a street corner, or a name on a plaque stops being scenery and suddenly has something to say.</p>
+            <p style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; color: var(--ink-mid); line-height: 1.65; margin: 0;">I believe history should be engaging — thought-provoking and genuinely rewarding to encounter. That's why I scour the archives: to find the facts, yes, but more importantly to unearth the stories that make those facts land. I've been leading tours with San Francisco City Guides for years, wrote two of the tours I lead, and have trained dozens of other guides along the way.</p>
+          </div>
+          <!-- Right: photo -->
+          <div class="intro-photo" style="text-align: center;">
+            <img src="/images/eric.webp" alt="Eric leading a tour" style="max-width: 180px; width: 100%; border: 3px solid var(--parchment-deep); filter: sepia(20%) contrast(0.95); display: block; margin: 0 auto;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0.5rem 0 0;">Eric F. · SF City Guides</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 3: CREDENTIALS STRIP ===================== -->
+    <div style="background: var(--parchment-dark); border-top: 1px solid var(--parchment-deep); border-bottom: 1px solid var(--parchment-deep);">
+      <div class="content-col">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.25rem 2rem; padding: 1.25rem 0; align-items: center;">
+
+          <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; color: var(--ink-mid); letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>
+            Author, <em style="margin-left: 0.25em;">The Ledger and the Mirror</em>
+          </span>
+
+          <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; color: var(--ink-mid); letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>
+            Featured on KALW &amp; CBS Bay Area
+          </span>
+
+          <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; color: var(--ink-mid); letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>
+            Trained dozens of City Guides volunteers
+          </span>
+
+          <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; color: var(--ink-mid); letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>
+            Founding Editor, Japanese Tea Garden Newsletter
+          </span>
+
+          <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; color: var(--ink-mid); letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>
+            Available for speaking engagements
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== SECTION 4: QUOTES GRID ===================== -->
+    <section style="border-bottom: 1px solid var(--rule); padding: 2rem 0;">
+      <div class="content-col">
+        <div class="quotes-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+
+          <!-- Card 1 -->
+          <article style="background: var(--parchment-dark); border-left: 3px solid var(--parchment-deep); padding: 1.1rem 1.25rem;">
+            <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 15px; font-style: italic; color: var(--ink); line-height: 1.6; margin: 0 0 0.75rem;">"Eric is exceptional. Knowledgeable, witty, and gracious — Japantown tells a terrific story, but Eric makes it memorable."</p>
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">— Japantown</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article style="background: var(--parchment-dark); border-left: 3px solid var(--parchment-deep); padding: 1.1rem 1.25rem;">
+            <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 15px; font-style: italic; color: var(--ink); line-height: 1.6; margin: 0 0 0.75rem;">"His knowledge and professionalism made it the highlight of their visit to San Francisco."</p>
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">— Japanese Tea Garden</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article style="background: var(--parchment-dark); border-left: 3px solid var(--parchment-deep); padding: 1.1rem 1.25rem;">
+            <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 15px; font-style: italic; color: var(--ink); line-height: 1.6; margin: 0 0 0.75rem;">"A great guide, great tour, and great scenery — a trifecta."</p>
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">— Maritime San Francisco</p>
+          </article>
+
+          <!-- Card 4 -->
+          <article style="background: var(--parchment-dark); border-left: 3px solid var(--parchment-deep); padding: 1.1rem 1.25rem;">
+            <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 15px; font-style: italic; color: var(--ink); line-height: 1.6; margin: 0 0 0.75rem;">"Our family has enjoyed walking tours all over the globe, and many in San Francisco — this really was one of the best ever. Lots of gasps from our crowd at what we learned."</p>
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">— 1840s San Francisco</p>
+          </article>
+
+          <!-- Card 5 — full width -->
+          <article style="grid-column: 1 / -1; background: var(--parchment-dark); border-left: 3px solid var(--parchment-deep); padding: 1.1rem 1.25rem;">
+            <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 15px; font-style: italic; color: var(--ink); line-height: 1.6; margin: 0 0 0.75rem;">"Eric made a point to understand our group and tailored the experience accordingly — weaving in insights from his own background that added an extra layer of authenticity. Knowing that he offers these tours for free makes his dedication even more impressive."</p>
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">— Boom and Bust, private tour</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 5: BOOK PROMO BLOCK ===================== -->
+    <div style="background: var(--ink); color: var(--parchment); margin: 2.5rem 0;">
+      <div class="content-col">
+        <div class="book-promo-grid" style="display: grid; grid-template-columns: 1fr 140px; gap: 2rem; align-items: start; padding: 2.5rem 0;">
+
+          <!-- Left: book info -->
+          <div>
+            <p style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.25em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.6rem;">New from Komorebi Press</p>
+            <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-style: italic; font-weight: 400; color: var(--parchment); margin: 0 0 0.35rem; line-height: 1.2;">The Ledger and the Mirror</h2>
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(245,240,232,0.45); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 1rem;">Eric Friedman</p>
+            <p style="font-size: 14px; color: rgba(245,240,232,0.75); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; line-height: 1.7; margin: 0 0 1.25rem;">Why had California's most consequential early businessman been nearly erased from history? The Leidesdorff tour started with that question. This book is the answer — archival detective work tracing William Alexander Leidesdorff across continents, legends, and contested origins, born from the same deep curiosity that drives every walk I lead.</p>
+
+            <!-- Blurbs -->
+            <div style="border-top: 1px solid rgba(245,240,232,0.12); padding-top: 1rem; margin-bottom: 1.25rem;">
+              <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 13px; font-style: italic; color: rgba(245,240,232,0.8); line-height: 1.6; margin: 0 0 0.35rem;">"A well-researched biography of one of young San Francisco's most enigmatic citizens."</p>
+              <p style="font-size: 11px; color: rgba(245,240,232,0.4); letter-spacing: 0.06em; font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 1rem;">—Gary Kamiya, author of <em>Cool Gray City of Love</em> and <em>Spirits of San Francisco</em></p>
+              <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 13px; font-style: italic; color: rgba(245,240,232,0.8); line-height: 1.6; margin: 0 0 0.35rem;">"Refreshingly urgent twenty-first-century prose."</p>
+              <p style="font-size: 11px; color: rgba(245,240,232,0.4); letter-spacing: 0.06em; font-family: 'Source Serif 4', Georgia, serif; margin: 0;">—John King, author of <em>Portal</em> and <em>Cityscapes</em></p>
+            </div>
+
+            <a href="/the-ledger-and-the-mirror/" style="border: 1px solid var(--gold); color: var(--gold); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; padding: 0.5rem 1rem; display: inline-block; text-decoration: none; transition: background-color 0.2s, color 0.2s;" onmouseover="this.style.backgroundColor='var(--gold)';this.style.color='var(--ink)';" onmouseout="this.style.backgroundColor='transparent';this.style.color='var(--gold)';">About the book</a>
+          </div>
+
+          <!-- Right: book cover -->
+          <img src="/images/latm-front-cover.webp" alt="The Ledger and the Mirror, book cover" style="width: 100%; aspect-ratio: 2/3; object-fit: cover;" class="book-cover-img">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== SECTION 6: TOURS ===================== -->
+    <section style="padding: 2rem 0 0;">
+      <div class="content-col">
+
+        <!-- Section head -->
+        <header style="padding-bottom: 1.5rem;">
+          <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">The Tours</p>
+          <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 30px; font-weight: 400; color: var(--ink); margin: 0 0 0.75rem; line-height: 1.2;">San Francisco's history, mysteries, and the Bay itself.</h2>
+          <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; font-style: italic; color: var(--ink-mid); line-height: 1.7; margin: 0;">A quiet garden, a windswept bay, a neighborhood with three hidden histories, one of the city's most enigmatic founders, and the cycles of discovery, innovation, and disruption that have reinvented San Francisco and the world again and again. Riveting stories that will make you glad you came.</p>
+        </header>
+
+        <!-- Tour intro note -->
+        <p style="font-size: 14px; font-style: italic; font-weight: 300; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; padding: 0.75rem 0 1rem; border-bottom: 1px solid var(--rule); line-height: 1.7; margin: 0;">All tours run through San Francisco City Guides — a nonprofit program of the San Francisco Public Library. Every walk is free; donations support the program. Private tours are also available — ideal for work groups, family visits, or custom experiences. I lead the tours below, but the full City Guides schedule has outstanding guides across the whole city. Book whatever calls to you.</p>
+
+        <!-- Tour 1: Maritime San Francisco -->
+        <article class="tour-item" style="border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);">
+          <img src="/images/maritime.webp" alt="A tall ship under full sail passing the Golden Gate Bridge" style="width: 100%; height: 200px; object-fit: cover; object-position: center; display: block; filter: sepia(15%) contrast(0.95);">
+          <div style="display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; padding: 1.25rem 0 1.75rem; align-items: start;" class="tour-item-content">
+            <div>
+              <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 0.3rem; line-height: 1.3;">Maritime San Francisco</h3>
+              <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.75rem;">Tour written by Eric</p>
+              <p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.6rem;">A tour of the City by the Bay that finally gives the Bay its due. History and culture woven together with whatever is actually unfolding in front of us — boardsport athletes, racing sailboats, Coast Guard vessels, fishing boats. I spend a fair amount of time on the water myself, and it shows.</p>
+              <p style="font-size: 12px; font-style: italic; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.6rem;">Featured by <a href="https://www.latitude38.com/lectronic/2025/09/29/#guided-walk-san-francisco-maritime-past-present" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3);">Latitude 38</a></p>
+              <a href="https://docs.google.com/document/d/1nv8yu3_P6hR9_ZF9g5GAbupsVxdPJjTW5kXbAxRJu-U/edit?usp=sharing" target="_blank" rel="noopener" style="font-size: 12px; color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3); font-family: 'Source Serif 4', Georgia, serif;">Nearby recommendations →</a>
+            </div>
+            <div>
+              <a href="https://sfcityguides.org/tour/maritime-sf/" target="_blank" rel="noopener" class="btn-primary">View schedule →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 2: 1840s San Francisco -->
+        <article class="tour-item" style="border-bottom: 1px solid var(--rule);">
+          <img src="/images/1840s.webp" alt="1840s San Francisco" style="width: 100%; height: 200px; object-fit: cover; object-position: center; display: block; filter: sepia(15%) contrast(0.95);">
+          <div style="display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; padding: 1.25rem 0 1.75rem; align-items: start;" class="tour-item-content">
+            <div>
+              <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 0.3rem; line-height: 1.3;">1840s San Francisco &amp; the Legacy of America's First Black Millionaire</h3>
+              <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.75rem;">Tour written by Eric</p>
+              <p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.6rem;">I built this tour from scratch, hunting through archives for clues about a remarkable and shockingly undervalued figure in California history. The story is intriguing; the story of the story takes it even further. The research also became my book.</p>
+              <p style="font-size: 12px; font-style: italic; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.6rem;">Featured on <a href="https://www.kalw.org/show/state-bay/2025-08-24/valkyries-vibes-bay-area-unified-americas-first-black-millionaire" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3);">KALW 91.7</a> and <a href="https://www.youtube.com/watch?v=_pXELxaVHCI" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3);">CBS Bay Area</a></p>
+              <a href="https://docs.google.com/document/d/1LfxVYSsd9saJUW4UQYjZLLTT0lX6fz7hfk51dBmFHas" target="_blank" rel="noopener" style="font-size: 12px; color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3); font-family: 'Source Serif 4', Georgia, serif;">Nearby recommendations →</a>
+            </div>
+            <div>
+              <a href="https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/" target="_blank" rel="noopener" class="btn-primary">View schedule →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 3: Japanese Tea Garden -->
+        <article class="tour-item" style="border-bottom: 1px solid var(--rule);">
+          <img src="/images/japaneseteagarden.webp" alt="The Japanese Tea Garden, Golden Gate Park" style="width: 100%; height: 200px; object-fit: cover; object-position: center; display: block; filter: sepia(15%) contrast(0.95);">
+          <div style="display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; padding: 1.25rem 0 1.75rem; align-items: start;" class="tour-item-content">
+            <div>
+              <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 0.75rem; line-height: 1.3;">Japanese Tea Garden</h3>
+              <p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0;">People who wander in without intending to take a tour often end up staying for the whole experience. The oldest continuously operating public Japanese garden outside of Japan, the Garden was created for the 1894 Midwinter Fair. It is transformed when someone shows you how to read it: botany, history, horticulture, spiritual depth, and the iconic structures that will earn their place in your memory and photo stream.</p>
+              <!-- Bracket aside -->
+              <aside style="background: var(--parchment-dark); border-left: 3px solid var(--parchment-deep); padding: 0.85rem 1rem; margin: 0.85rem 0 0.25rem; font-size: 13px; color: var(--ink-mid); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; line-height: 1.65;">This Garden and I go deeper than the tours. After studying the Main Gate's traditional bracket system, I built a scale model of one of its roof brackets — displayed at the Garden and at the Kezuroukai woodworking gathering. The project and photos are <a href="https://justwood.design/work/tokyo-bracket/" target="_blank" rel="noopener" style="color: var(--accent);">on my woodworking site</a>.</aside>
+              <a href="https://docs.google.com/document/d/1lhsKlREKSpnU_VCr_fmnfQz0kgdz-dH3e71h3T1Eow4/edit" target="_blank" rel="noopener" style="font-size: 12px; color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3); font-family: 'Source Serif 4', Georgia, serif;">Nearby recommendations →</a>
+            </div>
+            <div>
+              <a href="https://sfcityguides.org/tour/japanese-tea-garden/" target="_blank" rel="noopener" class="btn-primary">View schedule →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 4: Boom and Bust -->
+        <article class="tour-item" style="border-bottom: 1px solid var(--rule);">
+          <img src="/images/boomandbust.webp" alt="San Francisco Financial District" style="width: 100%; height: 200px; object-fit: cover; object-position: center; display: block; filter: sepia(15%) contrast(0.95);">
+          <div style="display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; padding: 1.25rem 0 1.75rem; align-items: start;" class="tour-item-content">
+            <div>
+              <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 0.75rem; line-height: 1.3;">Boom and Bust</h3>
+              <p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.6rem;">Gold Rush. Silver Rush. Dot Com. Today's AI boom. The plummets into panic, racial violence, and displacement. A sweeping yet focused look at the city's economic rhythms from the 1840s to today — history that rhymes loudly with the present. As a veteran of the tech industry, I bring particular insight into how that sector has shaped and continues to shape the region. Especially compelling as a private tour for work groups.</p>
+              <a href="https://docs.google.com/document/d/1sEy2sdILs1GU-u7tZVMsL388FAE-ZppbOpQP-BVCQdA" target="_blank" rel="noopener" style="font-size: 12px; color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3); font-family: 'Source Serif 4', Georgia, serif;">Nearby recommendations →</a>
+            </div>
+            <div>
+              <a href="https://sfcityguides.org/tour/san-francisco-boom-bust/" target="_blank" rel="noopener" class="btn-primary">View schedule →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 5: Japantown -->
+        <article class="tour-item" style="border-bottom: 1px solid var(--rule);">
+          <img src="/images/japantown.webp" alt="Japantown, San Francisco" style="width: 100%; height: 200px; object-fit: cover; object-position: center; display: block; filter: sepia(15%) contrast(0.95);">
+          <div style="display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; padding: 1.25rem 0 1.75rem; align-items: start;" class="tour-item-content">
+            <div>
+              <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 0.75rem; line-height: 1.3;">Japantown</h3>
+              <p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.6rem;">San Francisco's Japantown — one of only three remaining in the US, and the largest and oldest — is also the city's most layered neighborhood, once called "the Little United Nations." Jewish, Japanese, and Black American communities each made a home here, in a neighborhood always already in flux. Food culture, public art, comparative religions, and surprising cultural crossovers. Lots of good places to eat nearby too.</p>
+              <a href="https://docs.google.com/document/d/1L7WFtLzVNASo6L24OwwiKGq-d2MUAIKTxcJtW2lEZDU/" target="_blank" rel="noopener" style="font-size: 12px; color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3); font-family: 'Source Serif 4', Georgia, serif;">Nearby recommendations →</a>
+            </div>
+            <div>
+              <a href="https://sfcityguides.org/tour/japantown/" target="_blank" rel="noopener" class="btn-primary">View schedule →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 7: SCHEDULE BANNER ===================== -->
+    <div style="padding: 0 0 2rem;">
+      <div class="content-col">
+        <div style="background: var(--parchment-dark); border: 1px solid var(--parchment-deep); border-left: 4px solid var(--accent); padding: 1.5rem 1.75rem; margin: 2.5rem 0;">
+          <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 400; color: var(--ink); margin: 0 0 0.6rem; line-height: 1.3;">Ready to walk?</h3>
+          <p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 1rem;">My personal tour calendar shows exactly when I'm leading — but you'll need to head to the San Francisco City Guides website to book. Once there, look for Eric F. on the schedule.</p>
+
+          <!-- Alpine.js calendar component -->
+          <div
+            x-data="{
+              events: [],
+              async init() {
+                const icalUrl = 'REDACTED_ICAL_URL';
+                if (!icalUrl) return;
+                try {
+                  const res = await fetch(icalUrl);
+                  if (!res.ok) return;
+                  const text = await res.text();
+                  const jcal = ICAL.parse(text);
+                  const comp = new ICAL.Component(jcal);
+                  const vevents = comp.getAllSubcomponents('vevent');
+                  const now = new Date();
+                  const upcoming = vevents
+                    .map(ev => {
+                      const e = new ICAL.Event(ev);
+                      return {
+                        start: e.startDate.toJSDate(),
+                        summary: e.summary
+                      };
+                    })
+                    .filter(e => e.start >= now)
+                    .sort((a, b) => a.start - b.start);
+                  this.events = upcoming.map(e => {
+                    const day = e.start.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+                    const time = e.start.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+                    return day + ' — ' + e.summary + ' — ' + time;
+                  });
+                } catch(err) {
+                  // silently fail — no events shown
+                }
+              }
+            }"
+          >
+            <div x-show="events.length > 0" x-cloak style="margin-bottom: 1rem;">
+              <template x-for="event in events" :key="event">
+                <p x-text="event" style="font-size: 13px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0.2rem 0; list-style: none;"></p>
+              </template>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem;">
+            <a href="https://calendar.google.com/calendar/embed?src=aldkllofa2m63nlbo4rca9lscu31mm52%40import.calendar.google.com&ctz=America%2FLos_Angeles" target="_blank" rel="noopener" class="btn-primary">My personal schedule →</a>
+            <a href="https://sfcityguides.org" target="_blank" rel="noopener" class="btn-outline">Book on City Guides →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== SECTION 8: BEYOND THE TOUR ===================== -->
+    <section style="border-bottom: 1px solid var(--rule); padding: 2rem 0;">
+      <div class="content-col">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">Beyond the Tour</p>
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 30px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">When I'm not walking</h2>
+        <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.8; margin: 0 0 0.9rem;">I'm a Berkeley-based artist, craftsman, and writer. My woodworking practice — Japanese joinery, furniture, turned and carved objects — lives at <a href="https://justwood.design" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3);">justwood.design</a>. I enjoy drawing and painting in various media. I spend as much time as possible in, on, and under the water.</p>
+        <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.8; margin: 0;">The same impulse drives all of it: curiosity about how things come together, and why they matter.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="content-col">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding: 2rem 0;">
+        <p style="font-size: 13px; font-style: italic; font-weight: 300; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">There's always another story around the corner. Come find it.</p>
+        <nav style="display: flex; flex-wrap: wrap; gap: 1.5rem;" aria-label="Footer links">
+          <a href="https://instagram.com/ericofberkeley" target="_blank" rel="noopener" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s;" onmouseover="this.style.color='var(--accent)';" onmouseout="this.style.color='var(--ink-light)';">Instagram</a>
+          <span x-data="emailLink()" style="display: inline;">
+            <a :href="href()" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s; cursor: pointer;" onmouseover="this.style.color='var(--accent)';" onmouseout="this.style.color='var(--ink-light)';">Email</a>
+          </span>
+          <a href="https://justwood.design" target="_blank" rel="noopener" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s;" onmouseover="this.style.color='var(--accent)';" onmouseout="this.style.color='var(--ink-light)';">justwood.design</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function emailLink() {
+      return {
+        href() {
+          const u = 'eric';
+          const d = 'walkwitheric' + String.fromCharCode(46) + 'com';
+          return 'mailto:' + u + String.fromCharCode(64) + d;
+        }
+      }
+    }
+  </script>
+</body>
+</html>
