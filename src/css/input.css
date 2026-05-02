@@ -59,6 +59,127 @@
   .btn-outline:hover { background-color: var(--accent); color: var(--parchment); }
 }
 
+/* Tour card styles */
+.tour-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  min-height: 480px;
+  border-bottom: 1px solid var(--rule);
+}
+.tour-card-image {
+  overflow: hidden;
+  min-height: 480px;
+}
+.tour-card-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  object-fit: cover;
+  object-position: center;
+  filter: sepia(15%) contrast(0.95);
+  display: block;
+}
+.tour-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tour-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 1rem;
+  line-height: 1.15;
+}
+.tour-written-by {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 300;
+  margin: 0 0 0.75rem;
+}
+.tour-desc {
+  font-size: 17px;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 300;
+  color: var(--ink-mid);
+  line-height: 1.8;
+  margin: 0 0 1.25rem;
+}
+.tour-media {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-light);
+  font-family: 'Source Serif 4', Georgia, serif;
+  margin: 0 0 1rem;
+}
+.tour-media a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.tour-media a:hover { text-decoration: underline; }
+.tour-bracket-aside {
+  background: var(--parchment-dark);
+  border-left: 3px solid var(--parchment-deep);
+  padding: 0.85rem 1rem;
+  margin: 0 0 1rem;
+  font-size: 14px;
+  color: var(--ink-mid);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 300;
+  line-height: 1.65;
+}
+.tour-bracket-aside a { color: var(--accent); }
+.tour-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.btn-tour {
+  border: 1.5px solid var(--parchment-deep);
+  background: transparent;
+  color: var(--ink-mid);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-family: 'Source Serif 4', Georgia, serif;
+  padding: 0.65rem 1.4rem;
+  border-radius: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.btn-tour:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .tour-card {
+    grid-template-columns: 1fr !important;
+  }
+  .tour-card-image {
+    height: 280px;
+    min-height: 280px !important;
+    order: -1 !important;
+  }
+  .tour-card-image img {
+    min-height: unset;
+    height: 280px;
+  }
+  .tour-card-text {
+    padding: 1.5rem !important;
+  }
+  .tour-name { font-size: 28px; }
+  .tour-desc { font-size: 16px; }
+}
+
 @media (max-width: 560px) {
   .intro-grid {
     grid-template-columns: 1fr !important;
@@ -77,12 +198,6 @@
   }
   .book-cover-img {
     order: 1;
-  }
-  .tour-item-content {
-    grid-template-columns: 1fr !important;
-  }
-  .tour-item-content > div:last-child {
-    justify-self: start;
   }
   .book-detail-grid {
     grid-template-columns: 1fr !important;

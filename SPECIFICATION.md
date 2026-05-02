@@ -119,7 +119,7 @@ eleventyConfig.addPassthroughCopy("src/images");
 
 Convert all to `.webp` for production. Keep originals as fallback.
 
-Tour card images: fixed height 200px, `object-fit: cover`, `object-position: center`, filter: `sepia(15%) contrast(0.95)`. Image spans full card width above the text content — the `1fr auto` grid applies only to the content row below the image.
+Tour card images: alternating left/right layout (see Tour Card Structure section). `object-fit: cover`, `object-position: center`, filter: `sepia(15%) contrast(0.95)`. Image fills the full height of its column — no fixed crop height.
 
 ---
 
@@ -283,23 +283,49 @@ Subtitle (15px, Source Serif 4 300, italic, color --ink-mid, line-height 1.7):
 
 #### Tour Card Structure
 
-Each tour card:
-1. Full-width image (200px height, `object-fit: cover`, filter: `sepia(15%) contrast(0.95)`) — spans full card width
-2. Content row below image: grid `1fr auto`, gap: 1.5rem, padding: 1.25rem 0 1.75rem
-3. Border-bottom: 1px solid --rule. First card also has border-top.
+Each tour is a two-column layout: a tall hero image on one side, text on the other. **Alternating sides** down the page (odd: image left; even: image right). Cards are generous — this is a feature treatment, not a compact listing.
 
-**Content left column:**
-- Tour name: 22px, Playfair Display, color --ink
-- "Tour written by Eric" label (where applicable): 11px, uppercase, letter-spacing: 0.1em, color --gold, weight 300
-- Description: 14px, Source Serif 4 300, color --ink-mid, line-height 1.7
-- Media callout (where applicable): 12px, italic, color --ink-light; links in --accent
-- Bracket aside (Japanese Tea Garden only): background --parchment-dark, border-left: 3px solid --parchment-deep, padding: 0.85rem 1rem, margin: 0.85rem 0 0.25rem, 13px, color --ink-mid, weight 300
-- "Nearby recommendations" link: 12px, color --accent, border-bottom: 1px solid rgba(139,58,26,0.3), opens in new tab
+**Overall card:** Full viewport width or full content column. Min-height: 480px. Border-bottom: 1px solid --rule. Padding: 0 (image bleeds to column edge; text has its own padding).
 
-**Content right column:**
-- "View schedule" CTA: background --accent, color --parchment, 11px, uppercase, letter-spacing: 0.12em, padding: 0.5rem 1rem. Hover: --accent-light. Opens in new tab.
+**Grid:** `1fr 1fr`, gap: 0. Image and text sit flush against each other.
 
-**Mobile:** Stack to single column. CTA aligns left.
+**Image column:**
+- Height: 100% of card (fills full height of text column, minimum 480px)
+- `object-fit: cover`, `object-position: center`
+- Filter: `sepia(15%) contrast(0.95)`
+- No border-radius, no padding — image goes edge to edge within its column
+- For tours where image is on the LEFT, image is first in source order
+- For tours where image is on the RIGHT, use CSS `order: 2` on the image column
+
+**Text column:**
+- Padding: 3rem 3rem 3rem 3.5rem (left-image tours) / 3.5rem 3rem 3rem 3rem (right-image tours) — generous internal padding
+- Display: flex, flex-direction: column, justify-content: center
+
+- Tour name: **36px**, Playfair Display 400, color --ink, margin-bottom: 1rem, line-height 1.15
+- "Tour written by Eric" label (where applicable): 11px, uppercase, letter-spacing: 0.12em, color --gold, weight 300, margin-bottom: 0.75rem
+- Description: **17px**, Source Serif 4 300, color --ink-mid, line-height 1.8, margin-bottom: 1.25rem
+- Media callout (where applicable): 14px, italic, color --ink-light, margin-bottom: 1rem; links in --accent
+- Bracket aside (Japanese Tea Garden only): background --parchment-dark, border-left: 3px solid --parchment-deep, padding: 0.85rem 1rem, margin: 0 0 1rem, 14px, color --ink-mid, weight 300, line-height 1.65
+- Buttons row: display flex, gap: 0.75rem, flex-wrap: wrap, margin-top: 0.5rem
+
+**Buttons** (ghost/outlined style, matching incumbent):
+- Border: 1.5px solid --parchment-deep
+- Background: transparent
+- Color: --ink-mid
+- Font: 12px, uppercase, letter-spacing: 0.12em, Source Serif 4
+- Padding: 0.65rem 1.4rem
+- Border-radius: 2rem (pill shape)
+- Hover: border-color --accent, color --accent
+- Two buttons per tour: "View schedule" (opens SFCG in new tab) and "Nearby recommendations" (opens Google Doc in new tab)
+
+**Alternating order:**
+- Tour 1 (Maritime): image LEFT
+- Tour 2 (1840s SF): image RIGHT
+- Tour 3 (Japanese Tea Garden): image LEFT
+- Tour 4 (Boom and Bust): image RIGHT
+- Tour 5 (Japantown): image LEFT
+
+**Mobile (≤640px):** Stack to single column. Image on top, fixed height 280px, `object-fit: cover`. Text padding: 1.5rem. Tour name: 28px. Body: 16px.
 
 ---
 
