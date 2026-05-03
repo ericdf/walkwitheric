@@ -77,22 +77,23 @@ theme: {
 
 ### Typography Scale
 
-- **Masthead H1:** 52px, Playfair Display 400
-- **Section titles:** 30px, Playfair Display 400
-- **Tour names:** 22px, Playfair Display 400
-- **Book title:** 24px, Playfair Display italic
-- **Pull quotes:** 17px, Playfair Display italic (quote cards: 15px)
-- **Intro p1:** 19px, Source Serif 4, italic, color: --ink
-- **Intro p2:** 17px, Source Serif 4, color: --ink-mid
-- **Body/descriptions:** 14px, Source Serif 4, weight 300, color: --ink-mid
-- **Credentials/labels:** 12px, Source Serif 4, color: --ink-mid
-- **Eyebrow/uppercase labels:** 10-11px, letter-spacing: 0.2-0.25em, uppercase
-- **Captions:** 11px, uppercase, letter-spacing: 0.08em
+- **H1:** 72px, Playfair Display 400
+- **Section titles:** 36px, Playfair Display 400
+- **Tour names:** 36px, Playfair Display 400
+- **Book title:** 32px, Playfair Display italic
+- **Pull quotes:** 22px, Playfair Display italic (quote cards: 19px)
+- **Intro p1:** 24px, Source Serif 4 italic, color: --ink
+- **Intro p2:** 20px, Source Serif 4 300, color: --ink-mid
+- **Body/descriptions:** 18.75px, Source Serif 4 300, color: --ink-mid
+- **Credentials/labels:** 18.75px, Source Serif 4, color: --ink-mid
+- **Uppercase labels:** 13px, letter-spacing: 0.2-0.25em, uppercase
+- **Captions:** 13px, uppercase, letter-spacing: 0.08em
+- **Buttons:** 13px, uppercase, letter-spacing: 0.12em
+- **Nothing on the site should be smaller than 18.75px except uppercase labels, captions, and buttons**
 
-### Max Width & Layout
+### Layout
 
-- Max width: 780px, centered, padding: 0 1.5rem
-- Single column with full-bleed exceptions for the credentials strip and book promo block (margin: 0 -1.5rem to break out of the content column)
+No max-width constraint. Full browser width throughout. Horizontal breathing room managed by padding (4rem on desktop, 1.5rem on mobile). No centered column. The "full-bleed" concept no longer applies — everything is already full width.
 
 ---
 
@@ -119,56 +120,66 @@ eleventyConfig.addPassthroughCopy("src/images");
 
 Convert all to `.webp` for production. Keep originals as fallback.
 
-Tour card images: alternating left/right layout (see Tour Card Structure section). `object-fit: cover`, `object-position: center`, filter: `sepia(15%) contrast(0.95)`. Image fills the full height of its column — no fixed crop height.
+Tour card images: 500px fixed width, height auto — full image displayed without cropping. Filter: `sepia(15%) contrast(0.95)`. Full-bleed layout, see Tour Card Structure section.
 
 ---
 
 ## Page 1: index.html
 
-### Section 1 — Masthead
+### Sections 1 + 2 — Masthead + Intro (combined)
 
-Centered. Border-bottom: 2px solid --rule. Padding: 3.5rem 0 2rem.
+No separate masthead. No eyebrow label. No ruled line between header and intro. The page opens immediately with the H1 and flows into the two-column intro. Full browser width throughout, padding managed by generous horizontal padding.
 
-```
-[eyebrow — 10px, uppercase, letter-spacing 0.25em, color --ink-light]
-Discover San Francisco With Eric
+**H1:** `Walk With Eric`
+- Font: Playfair Display 400
+- Size: **72px**
+- Color: --ink
+- Padding: 2.5rem 4rem 0.5rem
+- Left-aligned
 
-[H1 — 52px, Playfair Display]
-Walk With Eric
+**Tagline** (immediately below H1):
+- Text: *History, stories, and a great excuse to be outside*
+- Font: Source Serif 4 300, italic
+- Size: 20px
+- Color: --ink-mid
+- Padding: 0 4rem 2rem
+- Left-aligned
 
-[tagline — 16px, italic, color --ink-mid]
-History, stories, and a great excuse to be outside
-```
-
----
-
-### Section 2 — Intro Block
-
-Two-column grid: `1fr 200px`. Gap: 2.5rem. Padding: 2.5rem 0. Border-bottom: 1px solid --rule. Align-items: start.
+**Two-column intro grid:**
+Full browser width. Padding: 0 4rem 3rem. Grid: `1fr 320px`, gap: 4rem, align-items: center.
 
 **Left — text:**
 
-Paragraph 1 (19px, italic, color --ink):
+Paragraph 1 (22px, italic, Source Serif 4, color --ink, line-height 1.75):
 > Walk with me to journey from looking to seeing with understanding — the moment when a building, a street corner, or a name on a plaque stops being scenery and suddenly has something to say.
 
-Paragraph 2 (17px, color --ink-mid):
+Paragraph 2 (20px, Source Serif 4 300, color --ink-mid, line-height 1.8):
 > I believe history should be engaging — thought-provoking and genuinely rewarding to encounter. That's why I scour the archives: to find the facts, yes, but more importantly to unearth the stories that make those facts land. I've been leading tours with San Francisco City Guides for years, wrote two of the tours I lead, and have trained dozens of other guides along the way.
 
 **Right — photo:**
 
-`/images/eric.jpg` — max-width 180px, border: 3px solid --parchment-deep, filter: sepia(20%) contrast(0.95)
+Circular crop, **300px diameter**.
+- `border-radius: 50%`
+- `object-fit: cover`
+- `object-position: center top`
+- Border: 4px solid --parchment-deep
+- Filter: sepia(20%) contrast(0.95)
+- src: `/images/eric.jpg`
+- Alt: `Eric Friedman, SF City Guides tour guide`
 
-Caption: `Eric F. · SF City Guides` — 11px, uppercase, letter-spacing: 0.08em, color --ink-light
+Caption below: `Eric F. · SF City Guides` — 13px, uppercase, letter-spacing: 0.08em, color --ink-light, text-align: center.
 
-**Mobile (≤560px):** Stack to single column, photo moves above text, max-width 120px.
+Border-bottom: 1px solid --rule below the whole section.
+
+**Mobile (≤640px):** Stack to single column. H1: 48px, padding: 1.5rem 1.5rem 0.5rem. Tagline: 20px. Photo 220px diameter, centered, appears above text. P1: 22px. P2: 20px. Padding: 0 1.5rem 2rem.
 
 ---
 
 ### Section 3 — Credentials Strip
 
-Full-bleed (margin: 0 -1.5rem). Background: --parchment-dark. Border-top and border-bottom: 1px solid --parchment-deep. Padding: 1.25rem 1.5rem. Flex-wrap. Gap: 0.4rem 1.5rem.
+Full width. Background: --parchment-dark. Border-top and border-bottom: 1px solid --parchment-deep. Padding: 1.5rem 4rem. Flex-wrap. Gap: 0.5rem 2rem.
 
-Five credentials, each preceded by a 4px × 4px circle (background --accent). Text: 12px, color --ink-mid, letter-spacing: 0.04em.
+Five credentials, each preceded by a 5px × 5px circle (background --accent). Text: 18.75px, color --ink-mid, letter-spacing: 0.04em.
 
 1. Author, *The Ledger and the Mirror*
 2. Featured on KALW & CBS Bay Area
@@ -180,14 +191,14 @@ Five credentials, each preceded by a 4px × 4px circle (background --accent). Te
 
 ### Section 4 — Quotes Grid
 
-Two-column grid `1fr 1fr`, gap: 1rem. Padding: 2rem 0. Border-bottom: 1px solid --rule.
+Two-column grid `1fr 1fr`, gap: 1.5rem. Padding: 3rem 4rem. Border-bottom: 1px solid --rule.
 
 Five cards. Cards 1–4 in the 2×2 grid. Card 5 spans full width (`grid-column: 1 / -1`).
 
-Each card: background --parchment-dark, border-left: 3px solid --parchment-deep, padding: 1.1rem 1.25rem.
+Each card: background --parchment-dark, border-left: 3px solid --parchment-deep, padding: 1.5rem 1.75rem.
 
-Quote text: 15px, Playfair Display italic, color --ink, line-height 1.6.
-Attribution: 11px, uppercase, letter-spacing: 0.06em, color --ink-light.
+Quote text: 19px, Playfair Display italic, color --ink, line-height 1.65.
+Attribution: 13px, uppercase, letter-spacing: 0.06em, color --ink-light.
 
 **Card 1:**
 > "Eric is exceptional. Knowledgeable, witty, and gracious — Japantown tells a terrific story, but Eric makes it memorable."
@@ -283,49 +294,56 @@ Subtitle (15px, Source Serif 4 300, italic, color --ink-mid, line-height 1.7):
 
 #### Tour Card Structure
 
-Each tour is a two-column layout: a tall hero image on one side, text on the other. **Alternating sides** down the page (odd: image left; even: image right). Cards are generous — this is a feature treatment, not a compact listing.
+Tour cards are full browser width. Each card is a two-column flex layout, alternating image side. Both columns vertically centered (`align-items: center`).
 
-**Overall card:** Full viewport width or full content column. Min-height: 480px. Border-bottom: 1px solid --rule. Padding: 0 (image bleeds to column edge; text has its own padding).
-
-**Grid:** `1fr 1fr`, gap: 0. Image and text sit flush against each other.
+**Overall card:** Full width. Display: flex. Border-bottom: 1px solid --rule. No padding on the card itself.
 
 **Image column:**
-- Height: 100% of card (fills full height of text column, minimum 480px)
-- `object-fit: cover`, `object-position: center`
-- Filter: `sepia(15%) contrast(0.95)`
-- No border-radius, no padding — image goes edge to edge within its column
-- For tours where image is on the LEFT, image is first in source order
-- For tours where image is on the RIGHT, use CSS `order: 2` on the image column
+- Width: **504px**, fixed, flex-shrink: 0
+- Height: **511px**, fixed — consistent across all tour cards regardless of image aspect ratio
+- Position: relative
+- Overflow: hidden
+- No filter, no sepia
+
+Image inside:
+- Position: absolute, top: 0, left: 0
+- Width: 100%, height: 100%
+- `object-fit: cover`
+- `object-position: center`
+- No border-radius, no filter
+
+**For right-side images:** image column uses `order: 2`
 
 **Text column:**
-- Padding: 3rem 3rem 3rem 3.5rem (left-image tours) / 3.5rem 3rem 3rem 3rem (right-image tours) — generous internal padding
+- Flex: 1
+- Padding: 3rem 4rem
 - Display: flex, flex-direction: column, justify-content: center
 
-- Tour name: **36px**, Playfair Display 400, color --ink, margin-bottom: 1rem, line-height 1.15
-- "Tour written by Eric" label (where applicable): 11px, uppercase, letter-spacing: 0.12em, color --gold, weight 300, margin-bottom: 0.75rem
+- "Tour written by Eric" label (where applicable): 12px, uppercase, letter-spacing: 0.12em, color --gold, weight 300, margin-bottom: 0.75rem
+- Tour name: **36px**, Playfair Display 400, color --ink, line-height 1.2, margin-bottom: 1.25rem
 - Description: **17px**, Source Serif 4 300, color --ink-mid, line-height 1.8, margin-bottom: 1.25rem
 - Media callout (where applicable): 14px, italic, color --ink-light, margin-bottom: 1rem; links in --accent
 - Bracket aside (Japanese Tea Garden only): background --parchment-dark, border-left: 3px solid --parchment-deep, padding: 0.85rem 1rem, margin: 0 0 1rem, 14px, color --ink-mid, weight 300, line-height 1.65
-- Buttons row: display flex, gap: 0.75rem, flex-wrap: wrap, margin-top: 0.5rem
+- Buttons: display flex, flex-direction: column, gap: 0.6rem, align-items: flex-start, margin-top: 0.75rem
 
-**Buttons** (ghost/outlined style, matching incumbent):
+**Buttons** (ghost/outlined pill style):
 - Border: 1.5px solid --parchment-deep
 - Background: transparent
 - Color: --ink-mid
 - Font: 12px, uppercase, letter-spacing: 0.12em, Source Serif 4
-- Padding: 0.65rem 1.4rem
-- Border-radius: 2rem (pill shape)
+- Padding: 0.65rem 1.6rem
+- Border-radius: 2rem
 - Hover: border-color --accent, color --accent
-- Two buttons per tour: "View schedule" (opens SFCG in new tab) and "Nearby recommendations" (opens Google Doc in new tab)
+- Two buttons per tour, stacked: "View Schedule" and "Nearby Recommendations"
 
-**Alternating order:**
-- Tour 1 (Maritime): image LEFT
-- Tour 2 (1840s SF): image RIGHT
-- Tour 3 (Japanese Tea Garden): image LEFT
-- Tour 4 (Boom and Bust): image RIGHT
-- Tour 5 (Japantown): image LEFT
+**Alternating order and object-position per card:**
+- Tour 1 (Maritime): image LEFT, `object-position: left center`
+- Tour 2 (1840s SF): image RIGHT, `object-position: left center` — portrait is upper-left, must not crop left edge
+- Tour 3 (Japanese Tea Garden): image LEFT, `object-position: center center`
+- Tour 4 (Boom and Bust): image RIGHT, `object-position: center center`
+- Tour 5 (Japantown): image LEFT, `object-position: center center`
 
-**Mobile (≤640px):** Stack to single column. Image on top, fixed height 280px, `object-fit: cover`. Text padding: 1.5rem. Tour name: 28px. Body: 16px.
+**Mobile (≤640px):** Stack to single column. Image full width, height 300px, `object-fit: cover`. Text padding: 1.5rem. Tour name: 28px. Body: 16px.
 
 ---
 

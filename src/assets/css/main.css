@@ -1,6 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #2a2118;
+  --color-ink-mid: #5a4e3c;
+  --color-ink-light: #8a7a66;
+  --color-parchment: #f5f0e8;
+  --color-parchment-dark: #ede6d6;
+  --color-parchment-deep: #d4c9b0;
+  --color-accent: #8b3a1a;
+  --color-accent-light: #c0582a;
+  --color-gold: #b8932a;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+}
 
 :root {
   --ink: #2a2118;
@@ -23,17 +36,6 @@
 }
 
 @layer components {
-  .content-col {
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  .full-bleed {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
   .btn-primary {
     background-color: var(--accent);
     color: var(--parchment);
@@ -42,6 +44,7 @@
     letter-spacing: 0.12em;
     padding: 0.5rem 1rem;
     display: inline-block;
+    text-decoration: none;
     transition: background-color 0.2s;
   }
   .btn-primary:hover { background-color: var(--accent-light); }
@@ -54,47 +57,48 @@
     padding: 0.5rem 1rem;
     display: inline-block;
     background: transparent;
+    text-decoration: none;
     transition: background-color 0.2s, color 0.2s;
   }
   .btn-outline:hover { background-color: var(--accent); color: var(--parchment); }
 }
 
-/* Tour card styles */
+/* ===================== TOUR CARDS ===================== */
 .tour-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  min-height: 480px;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid var(--rule);
 }
+.tour-card-reverse {
+  flex-direction: row-reverse;
+}
 .tour-card-image {
-  overflow: hidden;
-  min-height: 480px;
+  flex-shrink: 0;
+  width: 500px;
 }
 .tour-card-image img {
-  width: 100%;
-  height: 100%;
-  min-height: 480px;
-  object-fit: cover;
-  object-position: center;
-  filter: sepia(15%) contrast(0.95);
+  width: 500px;
+  height: auto;
+  max-width: none;
   display: block;
 }
 .tour-card-text {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 3rem 4rem;
 }
 .tour-name {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 36px;
   font-weight: 400;
   color: var(--ink);
-  margin: 0 0 1rem;
-  line-height: 1.15;
+  margin: 0 0 1.25rem;
+  line-height: 1.2;
 }
 .tour-written-by {
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--gold);
@@ -103,7 +107,7 @@
   margin: 0 0 0.75rem;
 }
 .tour-desc {
-  font-size: 17px;
+  font-size: 18.75px;
   font-family: 'Source Serif 4', Georgia, serif;
   font-weight: 300;
   color: var(--ink-mid);
@@ -111,23 +115,20 @@
   margin: 0 0 1.25rem;
 }
 .tour-media {
-  font-size: 14px;
+  font-size: 18.75px;
   font-style: italic;
   color: var(--ink-light);
   font-family: 'Source Serif 4', Georgia, serif;
   margin: 0 0 1rem;
 }
-.tour-media a {
-  color: var(--accent);
-  text-decoration: none;
-}
+.tour-media a { color: var(--accent); text-decoration: none; }
 .tour-media a:hover { text-decoration: underline; }
 .tour-bracket-aside {
   background: var(--parchment-dark);
   border-left: 3px solid var(--parchment-deep);
   padding: 0.85rem 1rem;
   margin: 0 0 1rem;
-  font-size: 14px;
+  font-size: 18.75px;
   color: var(--ink-mid);
   font-family: 'Source Serif 4', Georgia, serif;
   font-weight: 300;
@@ -136,9 +137,10 @@
 .tour-bracket-aside a { color: var(--accent); }
 .tour-buttons {
   display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-top: 0.5rem;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin-top: 0.75rem;
 }
 .btn-tour {
   border: 1.5px solid var(--parchment-deep);
@@ -148,7 +150,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-family: 'Source Serif 4', Georgia, serif;
-  padding: 0.65rem 1.4rem;
+  padding: 0.65rem 1.6rem;
   border-radius: 2rem;
   display: inline-block;
   text-decoration: none;
@@ -160,57 +162,51 @@
   color: var(--accent);
 }
 
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 640px) {
-  .tour-card {
-    grid-template-columns: 1fr !important;
-  }
-  .tour-card-image {
-    height: 280px;
-    min-height: 280px !important;
-    order: -1 !important;
-  }
-  .tour-card-image img {
-    min-height: unset;
-    height: 280px;
-  }
-  .tour-card-text {
-    padding: 1.5rem !important;
-  }
-  .tour-name { font-size: 28px; }
-  .tour-desc { font-size: 16px; }
-}
+  /* Masthead */
+  .masthead-h1-wrap { padding: 1.5rem 1.5rem 0.5rem !important; }
+  .masthead-h1 { font-size: 48px !important; }
+  .masthead-tagline-wrap { padding: 0 1.5rem 2rem !important; }
+  .masthead-tagline { font-size: 18.75px !important; }
+  .intro-p1 { font-size: 19px !important; }
+  .intro-p2 { font-size: 18.75px !important; }
 
-@media (max-width: 560px) {
+  /* Intro grid */
   .intro-grid {
     grid-template-columns: 1fr !important;
+    padding: 0 1.5rem 2rem !important;
   }
-  .intro-photo {
-    order: -1;
-  }
+  .intro-photo { order: -1; }
   .intro-photo img {
-    max-width: 120px !important;
+    width: 220px !important;
+    height: 220px !important;
   }
-  .quotes-grid {
-    grid-template-columns: 1fr !important;
+
+  /* Section horizontal padding */
+  .mob-pad {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
-  .book-promo-grid {
-    grid-template-columns: 1fr !important;
+
+  /* Quotes and book promo */
+  .quotes-grid { grid-template-columns: 1fr !important; }
+  .book-promo-grid { grid-template-columns: 1fr !important; }
+  .book-cover-img { order: 1; }
+
+  /* Tour cards */
+  .tour-card, .tour-card-reverse {
+    flex-direction: column !important;
   }
-  .book-cover-img {
-    order: 1;
-  }
-  .book-detail-grid {
-    grid-template-columns: 1fr !important;
-  }
-  .book-detail-cover {
-    max-width: 240px;
-    margin: 0 auto;
-  }
-  .author-grid {
-    grid-template-columns: 1fr !important;
-  }
-  .author-photo {
-    max-width: 120px;
-    margin: 0 auto;
-  }
+  .tour-card-image { width: 100% !important; }
+  .tour-card-image img { width: 100% !important; height: auto; max-width: none; }
+  .tour-card-text { padding: 1.5rem !important; }
+  .tour-name { font-size: 28px; }
+  .tour-desc { font-size: 18.75px; }
+
+  /* Book page */
+  .book-detail-grid { grid-template-columns: 1fr !important; }
+  .book-detail-cover { max-width: 240px; margin: 0 auto; }
+  .author-grid { grid-template-columns: 1fr !important; }
+  .author-photo { max-width: 120px; margin: 0 auto; }
 }
