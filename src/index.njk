@@ -133,7 +133,7 @@ title: Walk With Eric
     </div>
 
     <!-- ===================== SECTION 6: TOURS ===================== -->
-    <section id="tours-section" style="padding-top: 2rem;">
+    <section id="tours-section" style="padding-top: 2rem; scroll-margin-top: 52px;">
 
       <!-- Section head and intro note — padded -->
       <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem; padding-bottom: 0;">
@@ -202,7 +202,7 @@ title: Walk With Eric
         <div class="tour-card-text">
           <h3 class="tour-name"><a href="https://sfcityguides.org/tour/japanese-tea-garden/" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">Japanese Tea Garden</a></h3>
           <p class="tour-desc">People who wander in without intending to take a tour often end up staying for the whole experience. The oldest continuously operating public Japanese garden outside of Japan, the Garden was created for the 1894 Midwinter Fair. It is transformed when someone shows you how to read it: botany, history, horticulture, spiritual depth, and the iconic structures that will earn their place in your memory and photo stream.</p>
-          <aside class="tour-bracket-aside">This Garden and I go deeper than the tours. After studying the Main Gate's traditional bracket system, I built a scale model of one of its roof brackets — displayed at the Garden and at the Kezuroukai woodworking gathering. The project and photos are <a href="https://justwood.design/work/tokyo-bracket/" target="_blank" rel="noopener">on my woodworking site</a>.</aside>
+          <aside class="tour-bracket-aside">This Garden and I go deeper than the tours. After studying the Main Gate's traditional bracket system—the interlocking wooden supports that carry and articulate the roof, a hallmark of East Asian temple architecture—I built a scale model of one of its roof brackets — displayed at the Garden and at the Kezuroukai woodworking gathering. The project and photos are <a href="https://justwood.design/work/tokyo-bracket/" target="_blank" rel="noopener">on my woodworking site</a>.</aside>
           {% if schedule.japaneseteagarden | length %}
           <div style="margin: 0.5rem 0 0.75rem;">
             <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Upcoming</p>
@@ -306,7 +306,14 @@ title: Walk With Eric
   </footer>
 
   <!-- ===================== STICKY BAR ===================== -->
-  <div style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: var(--ink); border-bottom: 1px solid rgba(245,240,232,0.12); padding: 0.6rem 2rem; display: flex; align-items: center; justify-content: center; gap: 5rem;">
+  <div style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: var(--ink); border-bottom: 1px solid rgba(245,240,232,0.12); padding: 0.6rem 2rem; display: flex; align-items: center; justify-content: space-between;">
+    <a
+      href="#tours-section"
+      onclick="event.preventDefault(); document.getElementById('tours-section').scrollIntoView({ behavior: 'smooth' });"
+      class="sticky-link"
+      style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--parchment); text-decoration: none; white-space: nowrap; transition: font-size 0.15s ease;"
+      onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'"
+    >Tours <span style="font-size: 14px; vertical-align: middle;">↓</span></a>
     <a
       href="#ready-to-walk"
       onclick="event.preventDefault(); document.getElementById('ready-to-walk').scrollIntoView({ behavior: 'smooth' });"
