@@ -63,6 +63,13 @@
   .btn-outline:hover { background-color: var(--accent); color: var(--parchment); }
 }
 
+/* ===================== STICKY BAR ===================== */
+.sticky-link {
+  transition: font-size 0.15s ease;
+  display: inline-block;
+}
+.sticky-link:hover { font-size: 14px !important; }
+
 /* ===================== TOUR CARDS ===================== */
 .tour-card {
   display: flex;
@@ -137,7 +144,8 @@
 .tour-bracket-aside a { color: var(--accent); }
 .tour-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.6rem;
   align-items: flex-start;
   margin-top: 0.75rem;
@@ -192,7 +200,7 @@
   /* Quotes and book promo */
   .quotes-grid { grid-template-columns: 1fr !important; }
   .book-promo-grid { grid-template-columns: 1fr !important; }
-  .book-cover-img { order: 1; }
+  .book-cover-img { order: 1; width: 100% !important; max-width: 500px; }
 
   /* Tour cards */
   .tour-card, .tour-card-reverse {

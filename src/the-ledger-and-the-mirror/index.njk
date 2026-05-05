@@ -14,102 +14,100 @@ title: The Ledger and the Mirror
   <link rel="stylesheet" href="/assets/css/main.css">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body style="background-color: #f5f0e8; color: #2a2118;">
+<body style="background-color: var(--ink); color: var(--parchment); padding-top: 42px;">
 
-  <!-- Site header with back link -->
-  <header style="padding: 1rem 0; border-bottom: 1px solid var(--rule);">
-    <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
-      <a href="/" style="font-size: 13px; color: var(--ink-light); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300;">← Walk With Eric</a>
-    </div>
-  </header>
+  <!-- ===================== STICKY BAR ===================== -->
+  <div style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: var(--parchment); border-bottom: 1px solid rgba(42,33,24,0.15); padding: 0.6rem 3rem; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;">
+    <a
+      href="/#ready-to-walk"
+      style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink); text-decoration: none; white-space: nowrap; justify-self: start; transition: font-size 0.15s ease;"
+      onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'"
+    ><span style="font-size: 14px; vertical-align: middle;">←</span> Ready to Walk With Eric?</a>
+    <a
+      href="#how-to-order"
+      style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink); text-decoration: none; white-space: nowrap; transition: font-size 0.15s ease;"
+      onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'"
+    >Order Your Copy <span style="font-size: 14px; vertical-align: middle;">↓</span></a>
+    <a
+      href="#praise"
+      style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink); text-decoration: none; white-space: nowrap; justify-self: end; transition: font-size 0.15s ease;"
+      onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'"
+    >Praise for The Ledger and the Mirror <span style="font-size: 14px; vertical-align: middle;">↓</span></a>
+  </div>
 
   <main>
 
-    <!-- ===================== SECTION 1: MASTHEAD ===================== -->
-    <section style="border-bottom: 2px solid var(--rule); padding: 3.5rem 0 2rem;">
-      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem; text-align: center;">
-        <p style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.25em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.75rem;">New from Komorebi Press</p>
-        <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 44px; font-weight: 400; font-style: italic; line-height: 1.15; color: var(--ink); margin: 0 0 0.75rem;">The Ledger and the Mirror</h1>
-        <p style="font-family: 'Source Serif 4', Georgia, serif; font-size: 14px; font-weight: 300; color: var(--ink-mid); margin: 0;">Eric Friedman</p>
-      </div>
-    </section>
+    <!-- ===================== COVER + DESCRIPTION + BLURBS ===================== -->
+    <section style="padding: 3rem 0 3rem;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem; overflow: hidden;">
 
-    <!-- ===================== SECTION 2: COVER + DESCRIPTION ===================== -->
-    <section style="border-bottom: 1px solid var(--rule); padding-top: 3rem; padding-bottom: 3rem;">
-      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
-        <div class="book-detail-grid" style="display: grid; grid-template-columns: 200px 1fr; gap: 3rem; align-items: start;">
-
-          <img src="/images/latm-front-cover.webp" alt="The Ledger and the Mirror, book cover" style="width: 100%; box-shadow: 0 4px 24px rgba(42,33,24,0.18); display: block;" class="book-detail-cover">
-
-          <div>
-            <p style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 1rem;">About the book</p>
-            <p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); line-height: 1.85; margin: 0 0 1.1rem;">William Alexander Leidesdorff arrived in Yerba Buena in 1841 with a ship, a story, and a secret. Within a few years he had become one of the most prominent figures in the small Mexican port that would soon transform into San Francisco — a merchant, a diplomat, a civic leader, and by some measures the wealthiest man in California. He died in May 1848, four months after the discovery of gold — and, as it happened, on property neighboring the discovery site. He left behind a hotly contested estate and a biography so carefully constructed that it would take nearly two centuries to unravel.</p>
-            <p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); line-height: 1.85; margin: 0 0 1.1rem;">Leidesdorff was Black. Born in the Danish Caribbean to a Danish father and an Afro-Caribbean mother, he had reinvented himself in the United States as a man of ambiguous origins — a reinvention that society demanded and that history then completed, quietly erasing the man behind the ledger.</p>
-            <p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); line-height: 1.85; margin: 0 0 1.1rem;"><em>The Ledger and the Mirror</em> is the story of that erasure and its undoing. Drawing on archival records in California and Denmark, on the paper trails left by the men who knew Leidesdorff and the men who profited from his death, Eric Friedman reconstructs a life lived at the intersection of race, commerce, and the founding of American California. The result is a portrait of an extraordinary man and of the city he helped build — a city that would go on to forget him almost completely.</p>
-            <p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); line-height: 1.85; margin: 0;">The book grew directly out of Friedman's research for his San Francisco City Guides walking tour on the 1840s city and Leidesdorff's legacy — a tour he designed from scratch after the archival evidence refused to leave him alone.</p>
+        <div style="float: right; width: 500px; margin-left: 3rem; margin-bottom: 2rem;">
+          <img src="/images/latm-front-cover.webp" alt="The Ledger and the Mirror, book cover" style="width: 100%; box-shadow: 0 4px 32px rgba(0,0,0,0.5); display: block; margin-bottom: 1.5rem;" class="book-detail-cover">
+          <div style="text-align: center;">
+            <img src="/images/komorebi_logo.webp" alt="Komorebi Press" style="width: 50%; height: auto; display: inline-block; filter: invert(1) sepia(0.25); mix-blend-mode: screen;">
           </div>
-
         </div>
+
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--parchment); margin: 0 0 1.25rem; line-height: 1.3;">About <em>The Ledger and the Mirror</em></h2>
+        <p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.75); line-height: 1.85; margin: 0 0 1.1rem;">A Black man arrived in California in 1841 at the helm of a ship carrying ambition and a secret. He was William Alexander Leidesdorff. Within a few years, he became an American diplomat and civic leader who helped establish San Francisco on a patch of windswept sand dunes at the world’s edge. He built a fortune—among the largest in California. When he died in 1848, he left behind a fiercely contested estate. The battle to claim the man himself has been going on ever since.</p>
+        <blockquote style="float: left; width: 190px; border-left: 3px solid var(--gold); margin: 0.2rem 1.75rem 0.5rem -1.5rem; padding: 0.2rem 0 0.2rem 1.1rem;">
+          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-style: italic; color: var(--parchment); line-height: 1.5; margin: 0;">A life lived at the intersection of race, commerce, and the making of San Francisco.</p>
+        </blockquote>
+        <p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.75); line-height: 1.85; margin: 0 0 1.1rem;">Born in the Danish Caribbean to a Danish father and an Afro-Caribbean mother, Leidesdorff built a ledger of achievements so vast it obscured his origins. In the nearly two centuries since his death, that ledger has become a mirror—a surface onto which competing legends are projected, leaving the real man buried beneath the weight of our own public memory.</p>
+        <p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.75); line-height: 1.85; margin: 0 0 1.75rem;">Drawing on archives spanning California, Denmark, and the Gulf Coast, I reconstruct a life shaped by race, commerce, and the making of San Francisco—within a California still being defined.. But <em>The Ledger and the Mirror</em> is also the story of what came after—the competing legends copied, blended, and fixed in public memory, reflecting less a weighing of the record than the ideological weather of the moments that produced them. Pull them apart, and what remains is a man remarkable enough to have inspired such longing—and too remarkable to be left to it.</p>
+
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <a href="#how-to-order" class="btn-primary" style="font-size: 12px; padding: 0.6rem 1.4rem; text-decoration: none; display: inline-block;">Order Your Copy ↓</a>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid rgba(245,240,232,0.15); margin: 0 0 2rem;">
+
+        <h2 id="praise" style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--parchment); margin: 0 0 2rem; line-height: 1.3; scroll-margin-top: 3.5rem;">Praise for <em>The Ledger and the Mirror</em></h2>
+
+        <article style="padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(245,240,232,0.1);">
+          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-style: italic; color: rgba(245,240,232,0.85); line-height: 1.65; margin: 0 0 0.5rem;">"The Ledger and the Mirror is a well-researched biography of William Leidesdorff, one of Yerba Buena and young San Francisco's leading, and most enigmatic, citizens. It clears up a number of myths about this mixed-race pioneer."</p>
+          <p style="font-size: 18px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.4); margin: 0;">—Gary Kamiya, author of <em>Cool Gray City of Love: 49 Views of San Francisco</em> and <em>Spirits of San Francisco: Voyages Through the Unknown City</em></p>
+        </article>
+
+        <article style="padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(245,240,232,0.1);">
+          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-style: italic; color: rgba(245,240,232,0.85); line-height: 1.65; margin: 0 0 0.5rem;">"Embodying in his own European, African, Jewish, and Caribbean ancestry the cosmopolitan populace of Mexican Yerba Buena before it leapt onto the world's attention as San Francisco, William Leidesdorff emerges as a vivid character in Eric Friedman's The Ledger and the Mirror. Based on extensive research into his subject's records and those who knew him, Friedman recreates an almost mythical California just prior to the discovery of gold whose riches narrowly eluded one extraordinary man at an epochal hinge of world history."</p>
+          <p style="font-size: 18px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.4); margin: 0;">—Gray Brechin, author of <em>Imperial San Francisco: Urban Power, Earthly Ruin</em></p>
+        </article>
+
+        <article style="padding-bottom: 1.5rem;">
+          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-style: italic; color: rgba(245,240,232,0.85); line-height: 1.65; margin: 0 0 0.5rem;">"The history of a city is never straightforward, especially in a place as tumultuous as San Francisco, and that's what makes Eric Friedman's biography of William Leidesdorff so fascinating. In telling the story of a civic leader forced by society to hide his Black identity, Friedman captures the ever-shifting tensions of 1840s San Francisco and tells the tale with refreshingly urgent twenty-first-century prose."</p>
+          <p style="font-size: 18px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.4); margin: 0;">—John King, author of <em>Portal</em> and <em>Cityscapes</em></p>
+        </article>
+
       </div>
     </section>
 
-    <!-- ===================== SECTION 3: BLURBS ===================== -->
-    <div style="background: var(--parchment-dark); border-top: 1px solid var(--parchment-deep); border-bottom: 1px solid var(--parchment-deep);">
-      <div class="mob-pad" style="padding: 2.5rem 4rem;">
-
-        <article style="padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--parchment-deep);">
-          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-style: italic; color: var(--ink); line-height: 1.65; margin: 0 0 0.5rem;">"The Ledger and the Mirror is a well-researched biography of William Leidesdorff, one of Yerba Buena and young San Francisco's leading, and most enigmatic, citizens. It clears up a number of myths about this mixed-race pioneer."</p>
-          <p style="font-size: 12px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-light); margin: 0;">—Gary Kamiya, author of <em>Cool Gray City of Love: 49 Views of San Francisco</em> and <em>Spirits of San Francisco: Voyages Through the Unknown City</em></p>
-        </article>
-
-        <article style="padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--parchment-deep);">
-          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-style: italic; color: var(--ink); line-height: 1.65; margin: 0 0 0.5rem;">"Embodying in his own European, African, Jewish, and Caribbean ancestry the cosmopolitan populace of Mexican Yerba Buena before it leapt onto the world's attention as San Francisco, William Leidesdorff emerges as a vivid character in Eric Friedman's The Ledger and the Mirror. Based on extensive research into his subject's records and those who knew him, Friedman recreates an almost mythical California just prior to the discovery of gold whose riches narrowly eluded one extraordinary man at an epochal hinge of world history."</p>
-          <p style="font-size: 12px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-light); margin: 0;">—Gray Brechin, author of <em>Imperial San Francisco: Urban Power, Earthly Ruin</em></p>
-        </article>
-
-        <article>
-          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-style: italic; color: var(--ink); line-height: 1.65; margin: 0 0 0.5rem;">"The history of a city is never straightforward, especially in a place as tumultuous as San Francisco, and that's what makes Eric Friedman's biography of William Leidesdorff so fascinating. In telling the story of a civic leader forced by society to hide his Black identity, Friedman captures the ever-shifting tensions of 1840s San Francisco and tells the tale with refreshingly urgent twenty-first-century prose."</p>
-          <p style="font-size: 12px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-light); margin: 0;">—John King, author of <em>Portal</em> and <em>Cityscapes</em></p>
-        </article>
-
-      </div>
-    </div>
-
-    <!-- ===================== SECTION 4: AVAILABILITY + NOTIFY ME ===================== -->
-    <section style="border-bottom: 1px solid var(--rule); padding-top: 2.5rem; padding-bottom: 2.5rem;">
-      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
-        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">Availability</p>
-        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 30px; font-weight: 400; color: var(--ink); margin: 0 0 0.75rem; line-height: 1.2;">Coming Soon</h2>
-        <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 1.25rem;"><em>The Ledger and the Mirror</em> will be available from major booksellers. Purchase links will appear here when the book is released.</p>
-
+    <!-- ===================== HOW TO ORDER ===================== -->
+    <section style="border-top: 1px solid rgba(245,240,232,0.12); border-bottom: 1px solid rgba(245,240,232,0.12); padding-top: 2.5rem; padding-bottom: 2.5rem;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem; text-align: center;">
+        <h2 id="how-to-order" style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--parchment); margin: 0 0 1.25rem; line-height: 1.3; scroll-margin-top: 3.5rem;">How to Order</h2>
+        <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 26px; font-weight: 400; color: var(--parchment); margin: 0 0 0.5rem; line-height: 1.2;">Coming Soon</p>
+        <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: rgba(245,240,232,0.6); line-height: 1.7; margin: 0 0 1.25rem;"><em>The Ledger and the Mirror</em> will be available from major booksellers.<br>Purchase links will appear here when the book is released.</p>
         <div x-data="notifyBtn()">
           <button @click="notify()" class="btn-primary" style="font-size: 12px; padding: 0.6rem 1.4rem; border: none; cursor: pointer;">Notify me when available</button>
         </div>
       </div>
     </section>
 
-    <!-- ===================== SECTION 5: AUTHOR ===================== -->
-    <section style="border-bottom: 1px solid var(--rule); padding-top: 2.5rem; padding-bottom: 2.5rem;">
+    <!-- ===================== AUTHOR ===================== -->
+    <section style="border-bottom: 1px solid rgba(245,240,232,0.12); padding-top: 2.5rem; padding-bottom: 2.5rem;">
       <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
         <div class="author-grid" style="display: grid; grid-template-columns: 160px 1fr; gap: 2.5rem; align-items: start;">
 
-          <img src="/images/eric.webp" alt="Eric Friedman" style="width: 100%; border: 3px solid var(--parchment-deep); filter: sepia(20%) contrast(0.95); display: block;" class="author-photo">
+          <img src="/images/eric.webp" alt="Eric Friedman" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; object-position: center top; border: 4px solid var(--parchment-deep); filter: sepia(20%) contrast(0.95); display: block;" class="author-photo">
 
           <div>
-            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.75rem;">About the Author</p>
-            <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.8; margin: 0 0 0.9rem;">Eric Friedman is a Berkeley-based writer, artist, and independent researcher. For <em>The Ledger and the Mirror</em>, he worked extensively with archival records in California and Denmark, as well as later public commemorations and visual representations of the past.</p>
-            <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.8; margin: 0;">He is also a practicing painter and woodworker, and leads public walking tours in San Francisco on the Japanese Tea Garden, Japantown, maritime San Francisco, 1840s pre–Gold Rush San Francisco, and the city's recurring cycles of boom and bust. <em>The Ledger and the Mirror</em> is his first book.</p>
+            <p style="font-size: 17px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--parchment); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.75rem;">About the Author</p>
+            <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: rgba(245,240,232,0.9); line-height: 1.8; margin: 0 0 0.9rem;">Eric Friedman is a Berkeley-based writer, artist, and independent researcher. For <em>The Ledger and the Mirror</em>, he worked extensively with archival records in California and Denmark, as well as later public commemorations and visual representations of the past.</p>
+            <p style="font-size: 15px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: rgba(245,240,232,0.9); line-height: 1.8; margin: 0;">He is also a practicing painter and woodworker, and <a href="/" style="color: var(--gold); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">leads public walking tours</a> in San Francisco on the <a href="/#tour-japanese-tea-garden" style="color: var(--gold); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Japanese Tea Garden</a>, <a href="/#tour-japantown" style="color: var(--gold); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Japantown</a>, <a href="/#tour-maritime" style="color: var(--gold); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">maritime San Francisco</a>, <a href="/#tour-1840s" style="color: var(--gold); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">1840s pre–Gold Rush San Francisco</a>, and the city's <a href="/#tour-boom-and-bust" style="color: var(--gold); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">recurring cycles of boom and bust</a>. <em>The Ledger and the Mirror</em> is his first book.</p>
           </div>
 
         </div>
-      </div>
-    </section>
-
-    <!-- ===================== SECTION 6: PUBLISHER ===================== -->
-    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0; text-align: center;">
-      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
-        <img src="/images/komorebi_logo.webp" alt="Komorebi Press" style="max-width: 120px; display: block; margin: 0 auto 0.75rem; filter: sepia(10%) contrast(0.9);">
-        <p style="font-size: 12px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-light); font-style: italic; margin: 0;">Published by Komorebi Press, Berkeley, California</p>
       </div>
     </section>
 
@@ -118,12 +116,12 @@ title: The Ledger and the Mirror
   <!-- ===================== FOOTER ===================== -->
   <footer>
     <div class="mob-pad" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding: 2rem 4rem;">
-      <p style="font-size: 13px; font-style: italic; font-weight: 300; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">There's always another story around the corner. Come find it.</p>
+      <p style="font-size: 13px; font-style: italic; font-weight: 300; color: rgba(245,240,232,0.4); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">There's always another story around the corner. Come find it.</p>
       <nav style="display: flex; flex-wrap: wrap; gap: 1.5rem;" aria-label="Footer links">
-        <a href="/" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s;" onmouseover="this.style.color='var(--accent)';" onmouseout="this.style.color='var(--ink-light)';">Walk With Eric</a>
-        <a href="https://instagram.com/ericofberkeley" target="_blank" rel="noopener" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s;" onmouseover="this.style.color='var(--accent)';" onmouseout="this.style.color='var(--ink-light)';">Instagram</a>
+        <a href="/" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(245,240,232,0.4); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-light)';" onmouseout="this.style.color='rgba(245,240,232,0.4)';">Walk With Eric</a>
+        <a href="https://instagram.com/ericofberkeley" target="_blank" rel="noopener" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(245,240,232,0.4); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-light)';" onmouseout="this.style.color='rgba(245,240,232,0.4)';">Instagram</a>
         <span x-data="emailLink()" style="display: inline;">
-          <a :href="href()" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s; cursor: pointer;" onmouseover="this.style.color='var(--accent)';" onmouseout="this.style.color='var(--ink-light)';">Email</a>
+          <a :href="href()" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(245,240,232,0.4); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: color 0.2s; cursor: pointer;" onmouseover="this.style.color='var(--accent-light)';" onmouseout="this.style.color='rgba(245,240,232,0.4)';">Email</a>
         </span>
       </nav>
     </div>
