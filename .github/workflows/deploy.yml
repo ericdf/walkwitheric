@@ -37,6 +37,7 @@ jobs:
       - run: npm ci
 
       - name: Fetch tour schedule
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: node scripts/fetch-schedule.js
         env:
           ICAL_URL: ${{ secrets.ICAL_URL }}
@@ -45,6 +46,7 @@ jobs:
         run: npm run build
 
       - name: Commit updated schedule
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
