@@ -63,6 +63,22 @@
   .btn-outline:hover { background-color: var(--accent); color: var(--parchment); }
 }
 
+/* ===================== GOLD BUTTONS ===================== */
+.btn-gold {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-gold:hover { background-color: var(--gold); color: var(--ink); }
+
 /* ===================== STICKY BAR ===================== */
 .sticky-link {
   transition: font-size 0.15s ease;
