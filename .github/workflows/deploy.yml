@@ -38,6 +38,8 @@ jobs:
 
       - name: Fetch tour schedule
         run: node scripts/fetch-schedule.js
+        env:
+          ICAL_URL: ${{ secrets.ICAL_URL }}
 
       - name: Build site
         run: npm run build

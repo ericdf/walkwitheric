@@ -2,8 +2,8 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const ICAL_URL =
-  'REDACTED_ICAL_URL';
+const ICAL_URL = process.env.ICAL_URL;
+if (!ICAL_URL) { console.error('ICAL_URL env var not set'); process.exit(1); }
 
 const TOUR_MAP = {
   'Japanese Tea Garden': 'japaneseteagarden',

@@ -7,7 +7,7 @@
     "build": "ELEVENTY_BASE=/walkwitheric npx @11ty/eleventy",
     "clean": "rm -rf _site",
     "crop": "python3 scripts/process_images.py",
-    "schedule": "node scripts/fetch-schedule.js"
+    "schedule": "node --env-file=.env scripts/fetch-schedule.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
