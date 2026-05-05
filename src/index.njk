@@ -269,7 +269,7 @@ title: Walk With Eric
         {% if schedule.all | length %}
         <div style="margin-bottom: 1rem;">
           {% for event in schedule.all %}
-          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0.2rem 0;">{{ event }}</p>
+          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0.2rem 0;">{{ event.display }} — <a href="{{ event.url }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ event.label }}</a></p>
           {% endfor %}
         </div>
         {% endif %}

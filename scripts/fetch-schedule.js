@@ -21,6 +21,14 @@ const TOUR_LABELS = {
   boomandbust: 'Boom and Bust',
 };
 
+const TOUR_URLS = {
+  maritime: 'https://sfcityguides.org/tour/maritime-sf/',
+  '1840s': 'https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/',
+  japaneseteagarden: 'https://sfcityguides.org/tour/japanese-tea-garden/',
+  japantown: 'https://sfcityguides.org/tour/japantown/',
+  boomandbust: 'https://sfcityguides.org/tour/san-francisco-boom-bust/',
+};
+
 function fetchUrl(url) {
   return new Promise((resolve, reject) => {
     https.get(url, (res) => {
@@ -95,7 +103,7 @@ async function main() {
     if (!date || date < now || date > cutoff) continue;
 
     byTour[slug].push({ iso: date.toISOString(), display: formatDisplay(date) });
-    allEvents.push({ iso: date.toISOString(), display: formatDisplay(date), slug, label: TOUR_LABELS[slug] });
+    allEvents.push({ iso: date.toISOString(), display: formatDisplay(date), slug, label: TOUR_LABELS[slug], url: TOUR_URLS[slug] });
   }
 
   // Sort and flatten
@@ -105,7 +113,7 @@ async function main() {
   }
 
   allEvents.sort((a, b) => a.iso.localeCompare(b.iso));
-  const all = allEvents.map((e) => `${e.display} — ${e.label}`);
+  const all = allEvents.map((e) => ({ display: e.display, label: e.label, url: e.url }));
 
   const schedule = { ...byTour, all, generated: new Date().toISOString() };
 

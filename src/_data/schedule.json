@@ -14,11 +14,31 @@
   ],
   "boomandbust": [],
   "all": [
-    "Sat, May 16 · 1:00 PM — Japanese Tea Garden",
-    "Sat, May 16 · 3:30 PM — Maritime SF",
-    "Wed, May 27 · 9:30 AM — Japanese Tea Garden",
-    "Thu, May 28 · 11:00 AM — 1840s San Francisco",
-    "Thu, Jun 4 · 2:00 PM — Japantown"
+    {
+      "display": "Sat, May 16 · 1:00 PM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/"
+    },
+    {
+      "display": "Sat, May 16 · 3:30 PM",
+      "label": "Maritime SF",
+      "url": "https://sfcityguides.org/tour/maritime-sf/"
+    },
+    {
+      "display": "Wed, May 27 · 9:30 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/"
+    },
+    {
+      "display": "Thu, May 28 · 11:00 AM",
+      "label": "1840s San Francisco",
+      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/"
+    },
+    {
+      "display": "Thu, Jun 4 · 2:00 PM",
+      "label": "Japantown",
+      "url": "https://sfcityguides.org/tour/japantown/"
+    }
   ],
-  "generated": "2026-05-05T19:25:14.807Z"
+  "generated": "2026-05-05T20:47:30.711Z"
 }
