@@ -41,6 +41,9 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          # Remove or change to '' when the site moves to walkwitheric.com (root)
+          ELEVENTY_BASE: /walkwitheric
 
       - name: Commit updated schedule
         run: |
