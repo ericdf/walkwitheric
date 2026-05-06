@@ -30,13 +30,13 @@ with open(CROP_FILE, "r") as f:
         stem = os.path.splitext(filename)[0]
         crop_args = ["-crop", f"{w}x{h}+{x}+{y}", "+repage", "-resize", "500x"]
 
-        for ext, quality in [(".jpg", 90), (".webp", 85), (".avif", 80)]:
+        for ext, quality in [(".jpg", 90), (".webp", 85)]:
             out_path = os.path.join(DEST_DIR, stem + ext)
             magick(img_path, out_path, quality, crop_args)
             print(f"Cropped  {filename} → {stem + ext}")
 
 
-# ── Phase 2: Static images from originals (JPEG source → WebP + AVIF) ─────
+# ── Phase 2: Static images from originals ─────────────────────────────────
 STATIC_IMAGES = [
     ("eric.jpg", "400x"),
     ("latm-front-cover.jpg", "300x"),
@@ -48,14 +48,12 @@ for filename, resize in STATIC_IMAGES:
         print(f"Missing source: {img_path}")
         continue
     stem = os.path.splitext(filename)[0]
-    resize_args = ["-resize", resize]
-    for ext, quality in [(".webp", 85)]:
-        out_path = os.path.join(DEST_DIR, stem + ext)
-        magick(img_path, out_path, quality, resize_args)
-        print(f"Converted {filename} → {stem + ext}")
+    out_path = os.path.join(DEST_DIR, stem + ".webp")
+    magick(img_path, out_path, 85, ["-resize", resize])
+    print(f"Converted {filename} → {stem}.webp")
 
 
-# ── Phase 3: Tour location/map images → WebP + AVIF ───────────────────────
+# ── Phase 3: Tour location/map images → WebP ──────────────────────────────
 TOURS_DIR = os.path.join(DEST_DIR, "tours")
 for fname in sorted(os.listdir(TOURS_DIR)):
     ext = os.path.splitext(fname)[1].lower()
@@ -63,7 +61,6 @@ for fname in sorted(os.listdir(TOURS_DIR)):
         continue
     src = os.path.join(TOURS_DIR, fname)
     stem = os.path.splitext(fname)[0]
-    for out_ext, quality in [(".webp", 85), (".avif", 80)]:
-        out = os.path.join(TOURS_DIR, stem + out_ext)
-        magick(src, out, quality)
-        print(f"Converted tours/{fname} → {stem + out_ext}")
+    out = os.path.join(TOURS_DIR, stem + ".webp")
+    magick(src, out, 85)
+    print(f"Converted tours/{fname} → {stem}.webp")

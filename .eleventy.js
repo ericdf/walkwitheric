@@ -4,9 +4,6 @@ const tailwindcss = require('@tailwindcss/postcss');
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
 
-  eleventyConfig.addFilter('avif', path => path.replace(/\.(jpg|jpeg|png|webp)$/i, '.avif'));
-  eleventyConfig.addFilter('webp', path => path.replace(/\.(jpg|jpeg|png)$/i, '.webp'));
-
   // Rewrite root-relative paths when deploying to a subpath (e.g. GitHub Pages).
   // Set ELEVENTY_BASE=/walkwitheric in CI; unset (or leave empty) for custom domain.
   const base = (process.env.ELEVENTY_BASE || '').replace(/\/$/, '');
