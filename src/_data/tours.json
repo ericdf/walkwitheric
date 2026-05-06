@@ -1,0 +1,293 @@
+{
+  "maritime": {
+    "title": "Maritime SF",
+    "slug": "maritime",
+    "cityGuidesUrl": "https://sfcityguides.org/tour/maritime-sf/",
+    "meetAt": {
+      "description": "This tour meets at the Crissy Field East Beach at the picnic tables by the Changing Rooms in the parking lot, not the picnic tables east of the parking lot. I arrive 15 minutes early — please join me!",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.805606,-122.451591",
+      "locationImage": "/images/tours/maritime-location.jpg",
+      "staticMapImage": "/images/tours/maritime-map.png"
+    },
+    "endAt": "Picnic tables closer to the marina",
+    "details": {
+      "duration": "1 hour 45 minutes",
+      "climbing": "None",
+      "climate": "WINDY — sweater, jacket, and hat are all good to have",
+      "ageRange": "All ages welcome"
+    },
+    "restrooms": {
+      "before": "Next to the tables where we meet",
+      "during": "Near the marina — just ask me"
+    },
+    "foodShopping": {
+      "note": "Best option: picnic at the beach!",
+      "items": [
+        {
+          "type": "food",
+          "name": "Dynamo Donuts and Coffee",
+          "address": "110 Yacht Road",
+          "description": "Coffee kiosk a short walk from the start and very close to the end.",
+          "url": "https://maps.app.goo.gl/f6nuT7fneKnXvPZbA"
+        },
+        {
+          "type": "food",
+          "name": "Il Parco",
+          "address": "214 Lincoln Blvd",
+          "description": "Short walk up the hill in the Presidio Tunnel Tops park. Informal, tasty. There are often a number of food trucks nearby too. If you are taking transit you'll be right by the free Presidio shuttle, which has many fewer stops than MUNI alternatives.",
+          "url": "https://maps.app.goo.gl/JzMSrqAURu5yuV4P8"
+        }
+      ]
+    }
+  },
+  "japantown": {
+    "title": "Japantown",
+    "slug": "japantown",
+    "cityGuidesUrl": "https://sfcityguides.org/tour/japantown/",
+    "meetAt": {
+      "description": "Meet at Paper Tree, 1743 Buchanan Street. I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
+      "transit": "38 or 38-R Geary, exit at Laguna",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.785124350806015,-122.4290911178159",
+      "locationImage": "/images/tours/japantown-location.jpg",
+      "staticMapImage": "/images/tours/japantown-map.png"
+    },
+    "endAt": "Hue Hair Salon, 1712 Fillmore — 2 blocks from the start",
+    "details": {
+      "duration": "2 hours",
+      "climbing": "Some",
+      "climate": "Windy — sweater or jacket recommended",
+      "ageRange": "Contact me to discuss children and topics on this tour"
+    },
+    "restrooms": {
+      "beforeItems": [
+        { "text": "Japan Center Mall (red pin) — expect a line", "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.78533526937109,-122.43036919041532" },
+        { "text": "Less busy — especially upstairs (blue pin)", "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.785124350806015,-122.4290911178159" }
+      ],
+      "during": "None on this tour — plan accordingly"
+    },
+    "parking": {
+      "name": "Japan Center Garage",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1610+Geary+Blvd,San+Francisco,CA+94115"
+    },
+    "foodShopping": {
+      "items": [
+        {
+          "type": "food",
+          "name": "Udon Mugizo",
+          "address": "1581 Webster St",
+          "description": "Homemade udon and donburi bowls.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Udon+Mugizo+1581+Webster+San+Francisco"
+        },
+        {
+          "type": "food",
+          "name": "Hinodeya Ramen Bar",
+          "address": "1737 Buchanan St",
+          "description": "Lighter broths including vegan options.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Hinodeya+Ramen+Bar+1737+Buchanan+San+Francisco"
+        },
+        {
+          "type": "food",
+          "name": "Sasa",
+          "address": "22 Peace Plaza",
+          "description": "Omakase sushi and chef's choice bowls.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Sasa+22+Peace+Plaza+San+Francisco"
+        }
+      ]
+    }
+  },
+  "boomandbust": {
+    "title": "Boom and Bust",
+    "slug": "boomandbust",
+    "cityGuidesUrl": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
+    "meetAt": {
+      "description": "Meet at Empire Park, 648 Commercial Street (now known as Emperor Norton Place). I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
+      "transit": "Montgomery Street BART or Muni",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=648+Commercial+St,San+Francisco,CA",
+      "locationImage": "/images/tours/boomandbust-location.png",
+      "staticMapImage": "/images/tours/boomandbust-map.png"
+    },
+    "endAt": "New Montgomery and Howard",
+    "details": {
+      "duration": "1 hour 45 minutes",
+      "climbing": "None",
+      "climate": "Sweater or jacket recommended",
+      "ageRange": "All ages welcome"
+    },
+    "restrooms": {
+      "beforeItems": [
+        { "text": "Starbucks, 565 Clay — purchase required", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Starbucks+565+Clay+St+San+Francisco" },
+        { "text": "Public restrooms at the top of Portsmouth Square", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Portsmouth+Square+San+Francisco" },
+        { "text": "SF Historical Society, 608 Commercial — free entrance, restrooms downstairs (when open)", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Francisco+Historical+Society+608+Commercial+St+San+Francisco" }
+      ],
+      "during": "None on this tour — plan accordingly"
+    },
+    "parking": {
+      "name": "Portsmouth Square Garage",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=733+Kearny+St,San+Francisco,CA"
+    },
+    "foodShopping": {
+      "before": { "sharedList": "financialDistrict" },
+      "after": {
+        "label": "Near the End",
+        "items": [
+          { "type": "food", "name": "Henry's Hunan", "address": "110 Natoma St", "description": "Weekdays only.", "url": "https://www.google.com/maps/search/?api=1&query=Henry's+Hunan+110+Natoma+San+Francisco" },
+          { "type": "food", "name": "Sana'a Cafe", "address": "199 New Montgomery St", "description": "Authentic Yemeni coffee and treats.", "url": "https://www.google.com/maps/search/?api=1&query=Sanaa+Cafe+199+New+Montgomery+San+Francisco" },
+          { "type": "food", "name": "Barebottle Beer Garden", "address": "Salesforce Park", "description": "Wonderful outdoor setting.", "url": "https://www.google.com/maps/search/?api=1&query=Barebottle+Beer+Garden+Salesforce+Park+San+Francisco" },
+          { "type": "food", "name": "House of Shields", "address": "39 New Montgomery St", "description": "A pleasant bar with connections to the tour.", "url": "https://www.google.com/maps/search/?api=1&query=House+of+Shields+39+New+Montgomery+San+Francisco" },
+          { "type": "food", "name": "Pied Piper", "address": "2 New Montgomery St", "description": "Inside the glamorous Palace Hotel — an exquisite interior.", "url": "https://www.google.com/maps/search/?api=1&query=Pied+Piper+Bar+Palace+Hotel+San+Francisco" }
+        ]
+      }
+    }
+  },
+  "japaneseteagarden": {
+    "title": "Japanese Tea Garden",
+    "slug": "japaneseteagarden",
+    "cityGuidesUrl": "https://sfcityguides.org/tour/japanese-tea-garden/",
+    "admission": {
+      "note": "The Garden charges admission for most visitors. San Francisco residents and certain other groups receive free admission at any time; others receive free admission before 10:00 AM on Monday, Wednesday, and Friday. Either way, timed entry tickets are now required for everyone — free or paid. This is separate from our tour, which is free with an optional donation requested.",
+      "ticketsUrl": "https://gggp.org/tickets/",
+      "ticketsNote": "Purchase a timed ticket (free or paid, depending on your status) for the hour before the tour starts — e.g., a noon ticket for a 1:00 PM tour — so you can enter on time.",
+      "comboNote": "Combination tickets covering the Japanese Tea Garden, the Botanical Garden, and the Conservatory of Flowers are available at a discount — a great option if you plan to visit more than one."
+    },
+    "meetAt": {
+      "description": "Meet inside the gate, immediately past the kiosk, by the azaleas. I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
+      "transit": "Muni N to 9th Avenue, or 5/5R to 8th Avenue — check transit apps for more options",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.77014,-122.46945",
+      "locationImage": "/images/tours/japaneseteagarden-location.jpg",
+      "staticMapImage": "/images/tours/japaneseteagarden-map.png"
+    },
+    "endAt": "Varies — part of the fun!",
+    "details": {
+      "duration": "Approximately 1 hour",
+      "climbing": "Some up/down, stairs, and uneven paths — sturdy shoes advised",
+      "climate": "Can be cool but not windy inside the garden. Layers recommended!",
+      "ageRange": "Children of any age who like to learn, can listen to stories, and maybe even help out are welcome!"
+    },
+    "restrooms": {
+      "before": "Turn right after the kiosk and proceed to the building by the bamboo"
+    },
+    "forKids": {
+      "description": "Nature Quest is a fun visual scavenger hunt that we hope will enhance your visit to the Garden. Please remember to look, not touch.",
+      "url": "https://drive.google.com/open?id=1h4KbLLrREGIem45CeE1zoR7-msB-nddN"
+    },
+    "foodShopping": {
+      "note": "9th Avenue, a short walk from the Garden, is a local foodie destination worth exploring after the tour.",
+      "before": {
+        "items": [
+          {
+            "type": "food",
+            "name": "The Tea House",
+            "address": "Inside the Garden",
+            "description": "Besides a delightful range of tea, they have an extensive menu of snacks and more substantial choices. Guides eat here regularly."
+          },
+          {
+            "type": "shopping",
+            "name": "Garden Gift Shop",
+            "address": "Inside the Garden",
+            "description": "A wonderful resource — and quietly displays the forms used to make the world's very first fortune cookies. To see that process in action,",
+            "descriptionLink": { "label": "watch Eric F.'s video from Kyōto", "url": "#fortune-cookies" }
+          }
+        ]
+      },
+      "after": {
+        "label": "Don't miss",
+        "items": [
+          {
+            "type": "attraction",
+            "name": "de Young Museum",
+            "address": "Adjacent to the Garden",
+            "description": "The observation tower offers 360° views of the city at no cost. The museum also hosts special events worth checking — Flower Piano among them.",
+            "url": "https://www.famsf.org/visit/de-young"
+          }
+        ]
+      }
+    },
+    "beyondTheTour": {
+      "source": "San Francisco City Guides newsletter",
+      "entries": [
+        {
+          "topic": "It's Tea Time",
+          "description": "Linda H. on the botany of tea, then beverage preparation and recommendations for the Tea House menu — in two parts.",
+          "links": [
+            { "label": "Part one: botany of tea", "url": "https://drive.google.com/open?id=1pnDtEdDNIihtotHFQHlgMgvRvHonD6Og" },
+            { "label": "Part two: preparation & the Tea House", "url": "https://drive.google.com/open?id=1G7KL1WG4g1NetTWgy2VCL3AW4BlzYXbx" }
+          ]
+        },
+        {
+          "topic": "Japanese Maples",
+          "description": "Eric F. on the botany and horticulture of Japanese Maples, with references for those who want to go deeper.",
+          "links": [
+            { "label": "Read the article", "url": "https://drive.google.com/open?id=1bTc824Sct-nj5W8irzHpD49-rxp-iL8w" }
+          ]
+        },
+        {
+          "topic": "Brackets in the Bell Tower Gate",
+          "description": "Eric F. built a working scale model of the roof-support brackets from the Bell Tower Gate — a marvel of traditional joinery engineering. The project was featured in the newsletter of Kezuroukai, a North American hand-tool woodworking organization.",
+          "links": [
+            { "label": "About the project", "url": "https://www.justwood.design" },
+            { "label": "Woodworking newsletter feature", "url": "https://kezuroukai.us/brackets-in-the-bell-tower-gate-at-san-franciscos-japanese-tea-garden/" },
+            { "label": "Archived copy", "url": "https://drive.google.com/open?id=1UNHPkDAXgtRuvOwSkFHwe385wBQdRLWu" }
+          ]
+        },
+        {
+          "topic": "George Turner Marsh",
+          "description": "Philip S. traces the remarkable story of the young George Turner Marsh — from Yokohama to America, and ultimately to the Japanese Village that became this Garden — in a three-part historical essay.",
+          "links": [
+            { "label": "Part one", "url": "https://drive.google.com/open?id=102ImMNp5F0ay7TEcZJu7mMD1KB73iZfj" },
+            { "label": "Part two", "url": "https://drive.google.com/open?id=16IOXIcLI114Qh3wZ5Jac3dSbPJD4-Ao2" },
+            { "label": "Part three", "url": "https://drive.google.com/open?id=1YO9JTeAyDtO9-QHnDlLIXXnUYYLaXPGL" }
+          ]
+        },
+        {
+          "topic": "Fortune Cookies",
+          "description": "Eric F. filmed traditional fortune cracker production in Kyōto — the original molds are on display right here in the Gift Shop. The video traces the connections between Kyōto, San Francisco's Japanese American community, and a treat the world now thinks of as Chinese.",
+          "links": [
+            { "label": "Watch the video", "url": "https://www.instagram.com/reel/C_3eP3jyFzS/" }
+          ]
+        }
+      ]
+    }
+  },
+  "1840s": {
+    "title": "1840s San Francisco",
+    "slug": "1840s",
+    "cityGuidesUrl": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
+    "meetAt": {
+      "description": "Meet near 565 Commercial Street, just east of Montgomery, where the location of the original 1850 shoreline is painted in bright colors on the street. Look for me: 6'1\", in a red City Guides jacket. I arrive 15 minutes early — please join me!",
+      "transit": "Montgomery Street BART or Muni",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=565+Commercial+St,San+Francisco,CA",
+      "locationImage": "/images/tours/1840s-location.png",
+      "staticMapImage": "/images/tours/1840s-map.png"
+    },
+    "endAt": "Leidesdorff Street — very close to where we started",
+    "details": {
+      "duration": "About 90 minutes",
+      "climbing": "One gentle slope. Everything on this tour is accessible.",
+      "climate": "Sweater or jacket recommended",
+      "ageRange": "All are welcome"
+    },
+    "restrooms": {
+      "beforeItems": [
+        { "text": "Starbucks, 565 Clay — purchase required", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Starbucks+565+Clay+St+San+Francisco" },
+        { "text": "Public restrooms at the top of Portsmouth Square", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Portsmouth+Square+San+Francisco" },
+        { "text": "SF Historical Society, 608 Commercial — free entrance, restrooms downstairs (when open)", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Francisco+Historical+Society+608+Commercial+St+San+Francisco" }
+      ],
+      "during": "One stop is very close to the Portsmouth Square restrooms — but we do need to keep moving",
+      "duringMapsUrl": "https://www.google.com/maps/search/?api=1&query=Portsmouth+Square+San+Francisco"
+    },
+    "parking": {
+      "name": "Portsmouth Square Garage",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=733+Kearny+St,San+Francisco,CA"
+    },
+    "reading": [
+      {
+        "title": "Buried Ships of San Francisco — interactive map",
+        "url": "https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~336143~90109781"
+      }
+    ],
+    "foodShopping": {
+      "before": { "sharedList": "financialDistrict" },
+      "after": { "sharedList": "financialDistrictAttractions" }
+    }
+  }
+}

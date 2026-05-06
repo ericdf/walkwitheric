@@ -1,0 +1,27 @@
+{
+  "financialDistrict": {
+    "label": "Near the Tour",
+    "items": [
+      { "type": "food", "name": "Café Sebastian", "address": "545 Sansome St", "description": "Breakfast, lunch, cocktails, dessert.", "url": "https://www.google.com/maps/search/?api=1&query=Cafe+Sebastian+545+Sansome+San+Francisco" },
+      { "type": "food", "name": "City View Dim Sum", "address": "33 Walter U Lum Place", "description": "Dine-in or takeout; right near Portsmouth Square.", "url": "https://www.google.com/maps/search/?api=1&query=City+View+Dim+Sum+San+Francisco" },
+      { "type": "food", "name": "Good Luck Cafe", "address": "621 Kearny St", "description": "Bagels, sandwiches; close to the tour start.", "url": "https://www.google.com/maps/search/?api=1&query=Good+Luck+Cafe+621+Kearny+San+Francisco" },
+      { "type": "food", "name": "Hinodeya Ramen Bar", "address": "680 Clay St", "description": "I like the vegan ramen quite a lot.", "url": "https://www.google.com/maps/search/?api=1&query=Hinodeya+Ramen+Bar+680+Clay+San+Francisco" },
+      { "type": "food", "name": "Hon's Won-Tun House", "address": "648 Kearny St", "description": "A pork-heavy menu, enthusiastically recommended.", "url": "https://www.google.com/maps/search/?api=1&query=Hon's+Won-Tun+House+648+Kearny+San+Francisco" },
+      { "type": "food", "name": "House of Nanking", "address": "919 Kearny St", "description": "A venerable Chinatown favorite.", "url": "https://www.google.com/maps/search/?api=1&query=House+of+Nanking+919+Kearny+San+Francisco" },
+      { "type": "food", "name": "Il Canto Cafe", "address": "475 Sacramento St", "description": "Burritos, sandwiches; takeout option.", "url": "https://www.google.com/maps/search/?api=1&query=Il+Canto+Cafe+475+Sacramento+San+Francisco" },
+      { "type": "food", "name": "Irish Times", "address": "500 Sacramento St", "description": "Traditional Irish fare; open daily.", "url": "https://www.google.com/maps/search/?api=1&query=Irish+Times+500+Sacramento+San+Francisco" },
+      { "type": "food", "name": "Maison Nico", "address": "710 Montgomery St", "description": "French pastries.", "url": "https://www.google.com/maps/search/?api=1&query=Maison+Nico+710+Montgomery+San+Francisco" },
+      { "type": "food", "name": "Quickly", "address": "901 Kearny St", "description": "Bubble tea; no seating.", "url": "https://www.google.com/maps/search/?api=1&query=Quickly+901+Kearny+San+Francisco" },
+      { "type": "food", "name": "R&G Lounge", "address": "631 Kearny St", "description": "Celebrated Cantonese.", "url": "https://www.google.com/maps/search/?api=1&query=R+G+Lounge+631+Kearny+San+Francisco" },
+      { "type": "food", "name": "Sam Wo", "address": "713 Clay St", "description": "Authentic Chinatown fare since 1908.", "url": "https://www.google.com/maps/search/?api=1&query=Sam+Wo+713+Clay+San+Francisco" },
+      { "type": "food", "name": "Sisterita", "address": "669 Emperor Norton Place", "description": "Popular brunch spot with eggs benedict variations.", "url": "https://www.google.com/maps/search/?api=1&query=Sisterita+San+Francisco" },
+      { "type": "food", "name": "Sohunan", "address": "674 Sacramento St", "description": "Henry's Hunan's Financial District location; limited seating.", "url": "https://www.google.com/maps/search/?api=1&query=Sohunan+674+Sacramento+San+Francisco" }
+    ]
+  },
+  "financialDistrictAttractions": {
+    "label": "Also Nearby",
+    "items": [
+      { "type": "attraction", "name": "San Francisco Historical Society", "address": "608 Commercial Street", "description": "A small museum of city history with free admission. Worth a visit before or after the tour — and restrooms are downstairs.", "url": "https://www.google.com/maps/search/?api=1&query=San+Francisco+Historical+Society+608+Commercial+Street" }
+    ]
+  }
+}

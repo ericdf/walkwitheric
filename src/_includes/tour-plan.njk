@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Visit: {{ tour.title }} — Walk With Eric</title>
+  <meta name="description" content="Plan your visit to the {{ tour.title }} walking tour led by Eric Friedman. Meeting point, restrooms, food, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body style="background-color: #f5f0e8; color: #2a2118; padding-top: 44px;">
+
+  <!-- ===================== STICKY BAR ===================== -->
+  <div class="sticky-nav" style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: var(--ink); border-bottom: 1px solid rgba(245,240,232,0.12); padding: 0.6rem 2rem; display: flex; align-items: center; justify-content: space-between;">
+    <a
+      href="/#tours-section"
+      style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--parchment); text-decoration: none; white-space: nowrap; transition: font-size 0.15s ease;"
+      onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'"
+    ><span style="font-size: 14px; vertical-align: middle;">←</span> Tours</a>
+    <a
+      href="/the-ledger-and-the-mirror/"
+      class="sticky-link desktop-only"
+      style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--parchment); text-decoration: none; white-space: nowrap; transition: font-size 0.15s ease;"
+      onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'"
+    >Discover San Francisco's Forgotten Founder <span style="font-size: 14px; vertical-align: middle;">→</span></a>
+    <a
+      href="/the-ledger-and-the-mirror/"
+      class="sticky-link mobile-only"
+      style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--parchment); text-decoration: none; white-space: nowrap; transition: font-size 0.15s ease;"
+      onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'"
+    >My Book <span style="font-size: 14px; vertical-align: middle;">→</span></a>
+  </div>
+
+  <main>
+
+    <!-- ===================== PAGE HEADER ===================== -->
+    <section style="border-bottom: 1px solid var(--rule);">
+      <div class="mob-pad" style="padding: 2.5rem 4rem 2rem;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">Plan Your Visit</p>
+        <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 52px; font-weight: 400; line-height: 1.1; color: var(--ink); margin: 0 0 1.5rem;">{{ tour.title }}</h1>
+
+        <!-- Guide photo + caption -->
+        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 0.5rem;">
+          <img src="/images/eric.webp" alt="Eric Friedman, your guide"
+            style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; object-position: center top; border: 4px solid var(--parchment-deep); filter: sepia(20%) contrast(0.95); flex-shrink: 0;">
+          <div>
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.2rem;">Your Guide</p>
+            <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 0.5rem;">Eric F.</p>
+            <a href="/" style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; font-family: 'Source Serif 4', Georgia, serif; color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">About me →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== ADMISSION (optional) ===================== -->
+    {% if tour.admission %}
+    <section style="border-bottom: 1px solid var(--rule); padding: 2rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <div style="background: var(--parchment-dark); border-left: 4px solid var(--accent); padding: 1.25rem 1.5rem;">
+          <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">Admission &amp; Tickets</p>
+          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.75rem;">{{ tour.admission.note }}</p>
+          {% if tour.admission.ticketsNote %}
+          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 400; color: var(--ink); line-height: 1.75; margin: 0 0 0.75rem;">{{ tour.admission.ticketsNote }}</p>
+          {% endif %}
+          {% if tour.admission.comboNote %}
+          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.75rem;">{{ tour.admission.comboNote }}</p>
+          {% endif %}
+          {% if tour.admission.ticketsUrl %}
+          <a href="{{ tour.admission.ticketsUrl }}" target="_blank" rel="noopener" class="btn-tour" style="display: inline-block;">Purchase timed entry tickets →</a>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- ===================== LOOK FOR ME AT ===================== -->
+    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">Where We Meet</p>
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">Look for me at</h2>
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 1rem;">{{ tour.meetAt.description }}</p>
+        {% if tour.meetAt.transit %}
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 1rem;"><strong style="font-weight: 400; color: var(--ink);">Transit:</strong> {{ tour.meetAt.transit }}</p>
+        {% endif %}
+        {% if tour.parking %}
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 1rem;"><strong style="font-weight: 400; color: var(--ink);">Parking:</strong> {% if tour.parking.mapsUrl %}<a href="{{ tour.parking.mapsUrl }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ tour.parking.name }}</a>{% else %}{{ tour.parking.name or tour.parking }}{% endif %}</p>
+        {% endif %}
+        <a href="{{ tour.meetAt.mapsUrl }}" target="_blank" rel="noopener" class="btn-tour" style="display: inline-block; margin-bottom: 1.5rem;">Get directions →</a>
+
+        {% if tour.endAt %}
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; font-style: italic; color: var(--ink-light); line-height: 1.75; margin: 0 0 1.5rem;">The tour ends at: {{ tour.endAt }}</p>
+        {% endif %}
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <img src="{{ tour.meetAt.staticMapImage }}" alt="Map showing meeting location"
+            style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);">
+          <img src="{{ tour.meetAt.locationImage }}" alt="Meeting location"
+            style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TOUR DETAILS ===================== -->
+    {% if tour.details %}
+    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">About This Tour</p>
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">What to expect</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+          {% if tour.details.duration %}
+          <div style="background: var(--parchment-dark); border: 1px solid var(--parchment-deep); padding: 1rem 1.25rem;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Duration</p>
+            <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); margin: 0; line-height: 1.5;">{{ tour.details.duration }}</p>
+          </div>
+          {% endif %}
+          {% if tour.details.climbing %}
+          <div style="background: var(--parchment-dark); border: 1px solid var(--parchment-deep); padding: 1rem 1.25rem;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Hills &amp; Climbing</p>
+            <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); margin: 0; line-height: 1.5;">{{ tour.details.climbing }}</p>
+          </div>
+          {% endif %}
+          {% if tour.details.climate %}
+          <div style="background: var(--parchment-dark); border: 1px solid var(--parchment-deep); padding: 1rem 1.25rem;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Climate</p>
+            <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); margin: 0; line-height: 1.5;">{{ tour.details.climate }}</p>
+          </div>
+          {% endif %}
+          {% if tour.details.ageRange %}
+          <div style="background: var(--parchment-dark); border: 1px solid var(--parchment-deep); padding: 1rem 1.25rem;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Who's Welcome</p>
+            <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); margin: 0; line-height: 1.5;">{{ tour.details.ageRange }}</p>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- ===================== RESTROOMS ===================== -->
+    {% if tour.restrooms %}
+    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">Restrooms</h2>
+        {% if tour.restrooms.beforeItems %}
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.25rem;"><strong style="font-weight: 400; color: var(--ink);">Before the tour:</strong></p>
+        <ul style="margin: 0.1rem 0 0.5rem 1.25rem; padding: 0;">
+          {% for item in tour.restrooms.beforeItems %}
+          <li style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin-bottom: 0.1rem;">{{ item.text }}{% if item.mapsUrl %} <a href="{{ item.mapsUrl }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Map →</a>{% endif %}</li>
+          {% endfor %}
+        </ul>
+        {% elif tour.restrooms.before %}
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.25rem;"><strong style="font-weight: 400; color: var(--ink);">Before the tour:</strong> {{ tour.restrooms.before }}{% if tour.restrooms.beforeMapsUrl %} <a href="{{ tour.restrooms.beforeMapsUrl }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Map →</a>{% endif %}</p>
+        {% endif %}
+        {% if tour.restrooms.during %}
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0;"><strong style="font-weight: 400; color: var(--ink);">During the tour:</strong> {{ tour.restrooms.during }}{% if tour.restrooms.duringMapsUrl %} <a href="{{ tour.restrooms.duringMapsUrl }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Map →</a>{% endif %}</p>
+        {% endif %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- ===================== FOR KIDS ===================== -->
+    {% if tour.forKids %}
+    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">For Kids</h2>
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.75rem;">{{ tour.forKids.description }}</p>
+        {% if tour.forKids.url %}
+        <a href="{{ tour.forKids.url }}" target="_blank" rel="noopener" class="btn-tour" style="display: inline-block;">Download Nature Quest →</a>
+        {% endif %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- ===================== OPTIONAL READING ===================== -->
+    {% if tour.reading and tour.reading | length %}
+    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">Optional Reading</h2>
+        {% for book in tour.reading %}
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.5rem;">
+          {% if book.url %}<a href="{{ book.url }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ book.title }}</a>{% else %}{{ book.title }}{% endif %}
+          {% if book.author %} — {{ book.author }}{% endif %}
+        </p>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- ===================== BEYOND THE TOUR ===================== -->
+    {% if tour.beyondTheTour %}
+    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 0.4rem; line-height: 1.2;">Beyond the Tour</h2>
+        {% if tour.beyondTheTour.source %}
+        <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 1.25rem;">From the {{ tour.beyondTheTour.source }}</p>
+        {% endif %}
+        {% for entry in tour.beyondTheTour.entries %}
+        <div id="{{ entry.topic | lower | replace(' ', '-') }}" style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--rule);">
+          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 400; color: var(--ink); margin: 0 0 0.3rem;">{{ entry.topic }}</p>
+          {% if entry.description %}
+          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.4rem;">{{ entry.description }}</p>
+          {% endif %}
+          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); margin: 0; line-height: 1.75;">
+            {% for link in entry.links %}<a href="{{ link.url }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ link.label }}</a>{% if not loop.last %} &middot; {% endif %}{% endfor %}
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- ===================== FOOD & SHOPPING ===================== -->
+    {% if tour.foodShopping %}
+    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">Food &amp; Shopping</h2>
+        {% if tour.foodShopping.note %}
+        <p style="font-size: 18.75px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; color: var(--ink); line-height: 1.75; margin: 0 0 1.25rem;">{{ tour.foodShopping.note }}</p>
+        {% endif %}
+
+        {% macro renderItems(group) %}
+          {% for item in group.items %}
+          <div style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--rule);">
+            <div style="display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.2rem;">
+              <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 400; color: var(--ink); margin: 0;">
+                {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}
+              </p>
+              {% if item.type == "shopping" %}
+              <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; border: 1px solid var(--gold); padding: 1px 6px; flex-shrink: 0;">Shopping</span>
+              {% elif item.type == "attraction" %}
+              <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; border: 1px solid var(--parchment-deep); padding: 1px 6px; flex-shrink: 0;">Attraction</span>
+              {% endif %}
+            </div>
+            {% if item.address %}<p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.4rem;">{{ item.address }}</p>{% endif %}
+            <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0;">{{ item.description }}{% if item.descriptionLink %} <a href="{{ item.descriptionLink.url }}"{% if 'http' in item.descriptionLink.url %} target="_blank" rel="noopener"{% endif %} style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ item.descriptionLink.label }}</a>.{% endif %}</p>
+          </div>
+          {% endfor %}
+          {% if group.mapImage %}
+          <img src="{{ group.mapImage }}" alt="Map" style="width: 100%; max-width: 600px; height: auto; display: block; border: 1px solid var(--parchment-deep); margin-top: 0.5rem; margin-bottom: 0.5rem;">
+          {% elif group.mapEmbedUrl %}
+          <iframe src="{{ group.mapEmbedUrl }}" width="100%" height="300" style="border: 1px solid var(--parchment-deep); display: block; max-width: 600px; margin-top: 0.5rem; margin-bottom: 0.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nearby map"></iframe>
+          {% endif %}
+        {% endmacro %}
+
+        {# Resolve a group: if it has a sharedList key, look up from foodLists data #}
+        {% macro resolveAndRender(group, margin) %}
+          {% if group.sharedList %}
+            {% set resolved = foodLists[group.sharedList] %}
+          {% else %}
+            {% set resolved = group %}
+          {% endif %}
+          {% set label = group.label or resolved.label %}
+          {% if label %}
+          <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: {{ margin or '0' }} 0 1rem;">{{ label }}</p>
+          {% endif %}
+          {{ renderItems(resolved) }}
+        {% endmacro %}
+
+        {% if tour.foodShopping.before or tour.foodShopping.after %}
+          {% if tour.foodShopping.before %}
+          {{ resolveAndRender(tour.foodShopping.before, "0") }}
+          {% endif %}
+          {% if tour.foodShopping.after %}
+          {{ resolveAndRender(tour.foodShopping.after, "2rem") }}
+          {% endif %}
+        {% elif tour.foodShopping.items %}
+          {{ renderItems(tour.foodShopping) }}
+        {% endif %}
+
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- ===================== BOOK THE TOUR CTA ===================== -->
+    <section style="padding: 3rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem; text-align: center;">
+        <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-style: italic; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.3;">Ready to walk?</p>
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 1.5rem;">Book through San Francisco City Guides — look for Eric F. on the tour schedule.</p>
+        <a href="{{ tour.cityGuidesUrl }}" target="_blank" rel="noopener" class="btn-gold" style="font-size: 13px;">Book the {{ tour.title }} Tour →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="background: var(--ink);">
+    <div class="mob-pad" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding: 2rem 4rem;">
+      <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: rgba(245,240,232,0.45); font-family: 'Source Serif 4', Georgia, serif; margin: 0;">There's always another story around the corner. Come find it.</p>
+      <nav style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;" aria-label="Footer links">
+        <a href="https://instagram.com/ericofberkeley" target="_blank" rel="noopener" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--parchment); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: font-size 0.15s ease;" onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'">Instagram</a>
+        <span x-data="emailLink()" style="display: contents;">
+          <a :href="href()" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--parchment); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: font-size 0.15s ease; cursor: pointer;" onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'">Email</a>
+        </span>
+        <a href="/" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--parchment); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: font-size 0.15s ease;" onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'">Walk With Eric</a>
+        <a href="https://justwood.design" target="_blank" rel="noopener" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--parchment); text-decoration: none; font-family: 'Source Serif 4', Georgia, serif; transition: font-size 0.15s ease;" onmouseenter="this.style.fontSize='14px'" onmouseleave="this.style.fontSize='12px'">Just Wood</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function emailLink() {
+      return {
+        href() {
+          const u = 'eric';
+          const d = 'walkwitheric' + String.fromCharCode(46) + 'com';
+          return 'mailto:' + u + String.fromCharCode(64) + d;
+        }
+      }
+    }
+  </script>
+</body>
+</html>
