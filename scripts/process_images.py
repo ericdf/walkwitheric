@@ -36,7 +36,26 @@ with open(CROP_FILE, "r") as f:
             print(f"Cropped  {filename} → {stem + ext}")
 
 
-# ── Phase 2: Tour location/map images → WebP + AVIF ───────────────────────
+# ── Phase 2: Static images from originals (JPEG source → WebP + AVIF) ─────
+STATIC_IMAGES = [
+    ("eric.jpg", "400x"),
+    ("latm-front-cover.jpg", "300x"),
+    ("komorebi_logo.jpg", "240x"),
+]
+for filename, resize in STATIC_IMAGES:
+    img_path = os.path.join(SOURCE_DIR, filename)
+    if not os.path.exists(img_path):
+        print(f"Missing source: {img_path}")
+        continue
+    stem = os.path.splitext(filename)[0]
+    resize_args = ["-resize", resize]
+    for ext, quality in [(".webp", 85)]:
+        out_path = os.path.join(DEST_DIR, stem + ext)
+        magick(img_path, out_path, quality, resize_args)
+        print(f"Converted {filename} → {stem + ext}")
+
+
+# ── Phase 3: Tour location/map images → WebP + AVIF ───────────────────────
 TOURS_DIR = os.path.join(DEST_DIR, "tours")
 for fname in sorted(os.listdir(TOURS_DIR)):
     ext = os.path.splitext(fname)[1].lower()
