@@ -1,30 +1,50 @@
 import os
-from PIL import Image
+import subprocess
 
 SOURCE_DIR = "images.org"
-DEST_DIR = "src/assets/images"
+DEST_DIR = "src/images"
 CROP_FILE = os.path.join(SOURCE_DIR, "crops")
 
 os.makedirs(DEST_DIR, exist_ok=True)
 
+
+def magick(src, out, quality, extra_args=None):
+    cmd = ["magick", src] + (extra_args or []) + ["-quality", str(quality), out]
+    subprocess.run(cmd, check=True)
+
+
+# ── Phase 1: Cropped tour card images ─────────────────────────────────────
 with open(CROP_FILE, "r") as f:
     for line in f:
-        if ":" not in line: continue
-        
+        if ":" not in line:
+            continue
         filename, coords = line.split(":")
         w, h, x, y = map(int, coords.strip().split())
-        
-        img_path = os.path.join(SOURCE_DIR, filename.strip())
-        if os.path.exists(img_path):
-            with Image.open(img_path) as img:
-                # Convert to RGB (removes Alpha/CMYK issues)
-                img = img.convert("RGB")
-                # Crop: (left, top, right, bottom)
-                cropped = img.crop((x, y, x + w, y + h))
-                # Scale to 500px width, maintaining aspect ratio
-                aspect_ratio = h / w
-                new_h = int(500 * aspect_ratio)
-                final = cropped.resize((500, new_h), Image.Resampling.LANCZOS)
-                
-                final.save(os.path.join(DEST_DIR, filename.strip()), "JPEG", quality=90)
-                print(f"Processed {filename} -> 500x{new_h}")
+        filename = filename.strip()
+
+        img_path = os.path.join(SOURCE_DIR, filename)
+        if not os.path.exists(img_path):
+            print(f"Missing source: {img_path}")
+            continue
+
+        stem = os.path.splitext(filename)[0]
+        crop_args = ["-crop", f"{w}x{h}+{x}+{y}", "+repage", "-resize", "500x"]
+
+        for ext, quality in [(".jpg", 90), (".webp", 85), (".avif", 80)]:
+            out_path = os.path.join(DEST_DIR, stem + ext)
+            magick(img_path, out_path, quality, crop_args)
+            print(f"Cropped  {filename} → {stem + ext}")
+
+
+# ── Phase 2: Tour location/map images → WebP + AVIF ───────────────────────
+TOURS_DIR = os.path.join(DEST_DIR, "tours")
+for fname in sorted(os.listdir(TOURS_DIR)):
+    ext = os.path.splitext(fname)[1].lower()
+    if ext not in (".jpg", ".jpeg", ".png"):
+        continue
+    src = os.path.join(TOURS_DIR, fname)
+    stem = os.path.splitext(fname)[0]
+    for out_ext, quality in [(".webp", 85), (".avif", 80)]:
+        out = os.path.join(TOURS_DIR, stem + out_ext)
+        magick(src, out, quality)
+        print(f"Converted tours/{fname} → {stem + out_ext}")

@@ -96,10 +96,18 @@
         {% endif %}
 
         <div class="grid grid-cols-1 sm:grid-cols-2" style="gap: 1rem;">
-          <img src="{{ tour.meetAt.staticMapImage }}" alt="Map showing meeting location"
-            style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);">
-          <img src="{{ tour.meetAt.locationImage }}" alt="Meeting location"
-            style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);">
+          <picture>
+            <source srcset="{{ tour.meetAt.staticMapImage | avif }}" type="image/avif">
+            <source srcset="{{ tour.meetAt.staticMapImage | webp }}" type="image/webp">
+            <img src="{{ tour.meetAt.staticMapImage }}" alt="Map showing meeting location"
+              style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);">
+          </picture>
+          <picture>
+            <source srcset="{{ tour.meetAt.locationImage | avif }}" type="image/avif">
+            <source srcset="{{ tour.meetAt.locationImage | webp }}" type="image/webp">
+            <img src="{{ tour.meetAt.locationImage }}" alt="Meeting location"
+              style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);">
+          </picture>
         </div>
       </div>
     </section>
@@ -269,7 +277,11 @@
           </div>
           {% endfor %}
           {% if group.mapImage %}
-          <img src="{{ group.mapImage }}" alt="Map" style="width: 100%; max-width: 600px; height: auto; display: block; border: 1px solid var(--parchment-deep); margin-top: 0.5rem; margin-bottom: 0.5rem;">
+          <picture>
+            <source srcset="{{ group.mapImage | avif }}" type="image/avif">
+            <source srcset="{{ group.mapImage | webp }}" type="image/webp">
+            <img src="{{ group.mapImage }}" alt="Map" style="width: 100%; max-width: 600px; height: auto; display: block; border: 1px solid var(--parchment-deep); margin-top: 0.5rem; margin-bottom: 0.5rem;">
+          </picture>
           {% elif group.mapEmbedUrl %}
           <iframe src="{{ group.mapEmbedUrl }}" width="100%" height="300" style="border: 1px solid var(--parchment-deep); display: block; max-width: 600px; margin-top: 0.5rem; margin-bottom: 0.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nearby map"></iframe>
           {% endif %}
