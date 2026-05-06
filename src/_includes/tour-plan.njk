@@ -43,10 +43,10 @@
         <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 52px; font-weight: 400; line-height: 1.1; color: var(--ink); margin: 0 0 1.5rem;">{{ tour.title }}</h1>
 
         <!-- Guide photo + caption -->
-        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 0.5rem;">
+        <div class="flex flex-col sm:flex-row items-center sm:items-center" style="gap: 1.5rem; margin-bottom: 0.5rem;">
           <img src="/images/eric.webp" alt="Eric Friedman, your guide"
             style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; object-position: center top; border: 4px solid var(--parchment-deep); filter: sepia(20%) contrast(0.95); flex-shrink: 0;">
-          <div>
+          <div class="text-center sm:text-left" style="margin-top: 1rem;">
             <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.2rem;">Your Guide</p>
             <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 0.5rem;">Eric F.</p>
             <a href="/" style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; font-family: 'Source Serif 4', Georgia, serif; color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">About me →</a>
@@ -95,7 +95,7 @@
         <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; font-style: italic; color: var(--ink-light); line-height: 1.75; margin: 0 0 1.5rem;">The tour ends at: {{ tour.endAt }}</p>
         {% endif %}
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="grid grid-cols-1 sm:grid-cols-2" style="gap: 1rem;">
           <img src="{{ tour.meetAt.staticMapImage }}" alt="Map showing meeting location"
             style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);">
           <img src="{{ tour.meetAt.locationImage }}" alt="Meeting location"
@@ -139,6 +139,35 @@
       </div>
     </section>
     {% endif %}
+
+    <!-- ===================== WHAT I NEED FROM YOU ===================== -->
+    <section style="border-bottom: 1px solid var(--rule); padding: 2.5rem 0;">
+      <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">A Few Requests</p>
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">What I need from you</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+          <div style="background: var(--parchment-dark); border: 1px solid var(--parchment-deep); padding: 1rem 1.25rem;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Cancellation</p>
+            <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); margin: 0; line-height: 1.5;">If you are unable to join, please cancel using the link in your confirmation email so that others may attend. I cannot do this on your behalf.</p>
+          </div>
+          <div style="background: var(--parchment-dark); border: 1px solid var(--parchment-deep); padding: 1rem 1.25rem;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.5rem;">City Guides Policies</p>
+            <ul style="margin: 0; padding-left: 1.1rem;">
+              <li style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.5; margin-bottom: 0.4rem;">No pets. Service animals are welcome; disruptive or uncontrolled animals may be asked to leave.</li>
+              <li style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.5; margin-bottom: 0.4rem;">Maximum group size is 6. Larger groups require a private booking.</li>
+              <li style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.5;">Complete policies are on the <a href="https://sfcityguides.org/about-us/faqs/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">City Guides website</a>.</li>
+            </ul>
+          </div>
+          <div style="background: var(--parchment-dark); border: 1px solid var(--parchment-deep); padding: 1rem 1.25rem;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Donations &amp; Tipping</p>
+            <ul style="margin: 0; padding-left: 1.1rem;">
+              <li style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.5; margin-bottom: 0.4rem;">Our suggested donation is $20/person.</li>
+              <li style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.5;">I do not accept tips: please donate generously to support City Guides!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ===================== RESTROOMS ===================== -->
     {% if tour.restrooms %}
