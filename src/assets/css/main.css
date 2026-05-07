@@ -31,7 +31,7 @@
 [x-cloak] { display: none !important; }
 
 @layer base {
-  html { background-color: var(--parchment); color: var(--ink); }
+  html { background-color: var(--parchment); color: var(--ink); scroll-padding-top: 60px; }
   body { font-family: "Source Serif 4", Georgia, serif; }
 }
 
