@@ -214,7 +214,7 @@
       "entries": [
         {
           "topic": "It's Tea Time",
-          "description": "Linda H. on the botany of tea, then beverage preparation and recommendations for the Tea House menu — in two parts.",
+          "description": "Linda H. on the botany of tea, then beverage preparation and recommendations for the Tea House menu — in two parts. Read this before you come to get an idea of what you'd like to try!",
           "links": [
             { "label": "Part one: botany of tea", "url": "https://drive.google.com/open?id=1pnDtEdDNIihtotHFQHlgMgvRvHonD6Og" },
             { "label": "Part two: preparation & the Tea House", "url": "https://drive.google.com/open?id=1G7KL1WG4g1NetTWgy2VCL3AW4BlzYXbx" }
@@ -237,12 +237,25 @@
           ]
         },
         {
-          "topic": "George Turner Marsh",
-          "description": "Philip S. traces the remarkable story of the young George Turner Marsh — from Yokohama to America, and ultimately to the Japanese Village that became this Garden — in a three-part historical essay.",
-          "links": [
-            { "label": "Part one", "url": "https://drive.google.com/open?id=102ImMNp5F0ay7TEcZJu7mMD1KB73iZfj" },
-            { "label": "Part two", "url": "https://drive.google.com/open?id=16IOXIcLI114Qh3wZ5Jac3dSbPJD4-Ao2" },
-            { "label": "Part three", "url": "https://drive.google.com/open?id=1YO9JTeAyDtO9-QHnDlLIXXnUYYLaXPGL" }
+          "sectionTitle": "One Garden, Many Hands",
+          "sectionDescription": "The world's oldest continuously operating public Japanese garden outside of Japan reflects the designs and aesthetics of many contributors. Here are some that have been treated in our newsletter.",
+          "entries": [
+            {
+              "topic": "George Turner Marsh",
+              "description": "Philip S. traces the remarkable story of the young George Turner Marsh — from Yokohama to America, and ultimately to the Japanese Village that became this Garden — in a three-part historical essay.",
+              "links": [
+                { "label": "Part one", "url": "https://drive.google.com/open?id=102ImMNp5F0ay7TEcZJu7mMD1KB73iZfj" },
+                { "label": "Part two", "url": "https://drive.google.com/open?id=16IOXIcLI114Qh3wZ5Jac3dSbPJD4-Ao2" },
+                { "label": "Part three", "url": "https://drive.google.com/open?id=1YO9JTeAyDtO9-QHnDlLIXXnUYYLaXPGL" }
+              ]
+            },
+            {
+              "topic": "Nagao Sakurai",
+              "description": "Eric F. chronicles the story of how Imperial Palace landscape architect Nagao Sakurai helped shape the Japanese Tea Garden into a living work of postwar reconciliation — bringing centuries of Japanese garden tradition into conversation with San Francisco through designs that were subtle, deeply authentic, and meant to be experienced rather than merely viewed. His 1953 dry landscape garden behind the pagoda remains one of the Garden's clearest expressions of peace, translation, and cultural continuity.",
+              "links": [
+                { "label": "Read the article", "url": "https://drive.google.com/file/d/1iyyCr7-L-Rbyfw4wdZZDzVKYbpaSr403/view?usp=share_link" }
+              ]
+            }
           ]
         },
         {

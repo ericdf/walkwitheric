@@ -228,6 +228,25 @@
         <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 1.25rem;">From the {{ tour.beyondTheTour.source }}</p>
         {% endif %}
         {% for entry in tour.beyondTheTour.entries %}
+        {% if entry.sectionTitle %}
+        <div style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--rule);">
+          <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 0.4rem;">{{ entry.sectionTitle }}</p>
+          {% if entry.sectionDescription %}
+          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 1rem;">{{ entry.sectionDescription }}</p>
+          {% endif %}
+          {% for subentry in entry.entries %}
+          <div id="{{ subentry.topic | lower | replace(' ', '-') }}" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule);">
+            <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 400; color: var(--ink); margin: 0 0 0.3rem;">{{ subentry.topic }}</p>
+            {% if subentry.description %}
+            <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.4rem;">{{ subentry.description }}</p>
+            {% endif %}
+            <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); margin: 0; line-height: 1.75;">
+              {% for link in subentry.links %}<a href="{{ link.url }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ link.label }}</a>{% if not loop.last %} &middot; {% endif %}{% endfor %}
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
         <div id="{{ entry.topic | lower | replace(' ', '-') }}" style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--rule);">
           <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 400; color: var(--ink); margin: 0 0 0.3rem;">{{ entry.topic }}</p>
           {% if entry.description %}
@@ -237,6 +256,7 @@
             {% for link in entry.links %}<a href="{{ link.url }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ link.label }}</a>{% if not loop.last %} &middot; {% endif %}{% endfor %}
           </p>
         </div>
+        {% endif %}
         {% endfor %}
       </div>
     </section>
