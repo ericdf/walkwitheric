@@ -4,7 +4,8 @@
     "slug": "maritime",
     "cityGuidesUrl": "https://sfcityguides.org/tour/maritime-sf/",
     "meetAt": {
-      "description": "This tour meets at the Crissy Field East Beach at the picnic tables by the Changing Rooms in the parking lot, not the picnic tables east of the parking lot. I arrive 15 minutes early — please join me!",
+      "description": "This tour meets at the Crissy Field East Beach at the picnic tables by the changing rooms in the parking lot, not the picnic tables east of the parking lot. I arrive 15 minutes early — please join me!",
+      "transit": "MUNI 30 to Broderick St &amp; Jefferson St. Or take the free <a href=\"https://presidio.gov/visit/getting-to-and-around-the-park/presidio-go-shuttle\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">Presidio GO shuttle</a> — exit at the Presidio Community YMCA and walk down the hill, or continue to the Presidio Visitor Center for a bite to eat and a great view before walking to meet us.",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.805606,-122.451591",
       "locationImage": "/images/tours/maritime-location.jpg",
       "staticMapImage": "/images/tours/maritime-map.png"
@@ -34,7 +35,7 @@
           "type": "food",
           "name": "Il Parco",
           "address": "214 Lincoln Blvd",
-          "description": "Short walk up the hill in the Presidio Tunnel Tops park. Informal, tasty. There are often a number of food trucks nearby too. If you are taking transit you'll be right by the free Presidio shuttle, which has many fewer stops than MUNI alternatives.",
+          "description": "Short walk up the hill in the Presidio Tunnel Tops park. Informal, tasty. There are often a number of food trucks nearby too. If you are taking transit you'll be right by the free <a href=\"https://presidio.gov/visit/getting-to-and-around-the-park/presidio-go-shuttle\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">Presidio GO shuttle</a>, which has many fewer stops than MUNI alternatives.",
           "url": "https://maps.app.goo.gl/JzMSrqAURu5yuV4P8"
         }
       ]
@@ -46,7 +47,7 @@
     "cityGuidesUrl": "https://sfcityguides.org/tour/japantown/",
     "meetAt": {
       "description": "Meet at Paper Tree, 1743 Buchanan Street. I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
-      "transit": "38 or 38-R Geary, exit at Laguna",
+      "transit": "38 or 38-R Geary, exit at Laguna — check transit apps for more options",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.785124350806015,-122.4290911178159",
       "locationImage": "/images/tours/japantown-location.jpg",
       "staticMapImage": "/images/tours/japantown-map.png"
@@ -101,7 +102,7 @@
     "cityGuidesUrl": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
     "meetAt": {
       "description": "Meet at Empire Park, 648 Commercial Street (now known as Emperor Norton Place). I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
-      "transit": "Montgomery Street BART or Muni",
+      "transit": "Montgomery Street BART or MUNI — check transit apps for more options",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=648+Commercial+St,San+Francisco,CA",
       "locationImage": "/images/tours/boomandbust-location.png",
       "staticMapImage": "/images/tours/boomandbust-map.png"
@@ -151,7 +152,7 @@
     },
     "meetAt": {
       "description": "Meet inside the gate, immediately past the kiosk, by the azaleas. I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
-      "transit": "Muni N to 9th Avenue, or 5/5R to 8th Avenue — check transit apps for more options",
+      "transit": "MUNI N to 9th Avenue, or 5/5R to 8th Avenue — check transit apps for more options",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.77014,-122.46945",
       "locationImage": "/images/tours/japaneseteagarden-location.jpg",
       "staticMapImage": "/images/tours/japaneseteagarden-map.png"
@@ -254,7 +255,7 @@
     "cityGuidesUrl": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
     "meetAt": {
       "description": "Meet near 565 Commercial Street, just east of Montgomery, where the location of the original 1850 shoreline is painted in bright colors on the street. Look for me: 6'1\", in a red City Guides jacket. I arrive 15 minutes early — please join me!",
-      "transit": "Montgomery Street BART or Muni",
+      "transit": "Montgomery Street BART or MUNI — check transit apps for more options",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=565+Commercial+St,San+Francisco,CA",
       "locationImage": "/images/tours/1840s-location.png",
       "staticMapImage": "/images/tours/1840s-map.png"
