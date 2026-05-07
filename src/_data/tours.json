@@ -2,6 +2,8 @@
   "maritime": {
     "title": "Maritime SF",
     "slug": "maritime",
+    "seoDescription": "A free San Francisco walking tour of the Crissy Field waterfront, led by Eric Friedman of San Francisco City Guides. Maritime history, the living bay, and the stories behind Golden Gate.",
+    "eventLocation": { "name": "Crissy Field East Beach", "streetAddress": "Crissy Field East Beach" },
     "cityGuidesUrl": "https://sfcityguides.org/tour/maritime-sf/",
     "meetAt": {
       "description": "This tour meets at the Crissy Field East Beach at the picnic tables by the changing rooms in the parking lot, not the picnic tables east of the parking lot. I arrive 15 minutes early — please join me!",
@@ -47,6 +49,8 @@
   "japantown": {
     "title": "Japantown",
     "slug": "japantown",
+    "seoDescription": "A free walking tour of San Francisco's Japantown — one of only three remaining in the US — led by Eric Friedman of San Francisco City Guides. Three hidden histories, food culture, and surprising crossovers.",
+    "eventLocation": { "name": "Paper Tree", "streetAddress": "1743 Buchanan St" },
     "cityGuidesUrl": "https://sfcityguides.org/tour/japantown/",
     "meetAt": {
       "description": "Meet at Paper Tree, 1743 Buchanan Street. I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
@@ -102,6 +106,8 @@
   "boomandbust": {
     "title": "Boom and Bust",
     "slug": "boomandbust",
+    "seoDescription": "A free San Francisco walking tour through the city's economic cycles — Gold Rush to today's AI boom — led by Eric Friedman of San Francisco City Guides. Especially compelling for tech industry groups.",
+    "eventLocation": { "name": "Emperor Norton Place (Empire Park)", "streetAddress": "648 Commercial St" },
     "cityGuidesUrl": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
     "meetAt": {
       "description": "Meet at Empire Park, 648 Commercial Street (now known as Emperor Norton Place). I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
@@ -146,6 +152,8 @@
   "japaneseteagarden": {
     "title": "Japanese Tea Garden",
     "slug": "japaneseteagarden",
+    "seoDescription": "A free walking tour of the Japanese Tea Garden in Golden Gate Park, led by Eric Friedman of San Francisco City Guides. Over 130 years of artistry, horticulture, and history in the oldest public Japanese garden outside Japan.",
+    "eventLocation": { "name": "Japanese Tea Garden, Golden Gate Park", "streetAddress": "75 Hagiwara Tea Garden Dr" },
     "cityGuidesUrl": "https://sfcityguides.org/tour/japanese-tea-garden/",
     "admission": {
       "note": "The Garden charges admission for most visitors. San Francisco residents and certain other groups receive free admission at any time; others receive free admission before 10:00 AM on Monday, Wednesday, and Friday. Either way, timed entry tickets are now required for everyone — free or paid. This is separate from our tour, which is free with an optional donation requested.",
@@ -272,6 +280,8 @@
   "1840s": {
     "title": "1840s San Francisco",
     "slug": "1840s",
+    "seoDescription": "A free San Francisco walking tour tracing America's first Black millionaire and the city's forgotten origins, led by Eric Friedman of San Francisco City Guides and author of The Ledger and the Mirror.",
+    "eventLocation": { "name": "565 Commercial Street", "streetAddress": "565 Commercial St" },
     "cityGuidesUrl": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
     "meetAt": {
       "description": "Meet near 565 Commercial Street, just east of Montgomery, where the location of the original 1850 shoreline is painted in bright colors on the street. Look for me: 6'1\", in a red City Guides jacket. I arrive 15 minutes early — please join me!",

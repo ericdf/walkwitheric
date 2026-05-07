@@ -17,27 +17,37 @@
     {
       "display": "Sat, May 16 · 1:00 PM",
       "label": "Japanese Tea Garden",
-      "url": "https://sfcityguides.org/tour/japanese-tea-garden/"
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-05-16T20:00:00.000Z"
     },
     {
       "display": "Sat, May 16 · 3:30 PM",
       "label": "Maritime SF",
-      "url": "https://sfcityguides.org/tour/maritime-sf/"
+      "url": "https://sfcityguides.org/tour/maritime-sf/",
+      "slug": "maritime",
+      "startISO": "2026-05-16T22:30:00.000Z"
     },
     {
       "display": "Wed, May 27 · 9:30 AM",
       "label": "Japanese Tea Garden",
-      "url": "https://sfcityguides.org/tour/japanese-tea-garden/"
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-05-27T16:30:00.000Z"
     },
     {
       "display": "Thu, May 28 · 11:00 AM",
       "label": "1840s San Francisco",
-      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/"
+      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
+      "slug": "1840s",
+      "startISO": "2026-05-28T18:00:00.000Z"
     },
     {
       "display": "Thu, Jun 4 · 2:00 PM",
       "label": "Japantown",
-      "url": "https://sfcityguides.org/tour/japantown/"
+      "url": "https://sfcityguides.org/tour/japantown/",
+      "slug": "japantown",
+      "startISO": "2026-06-04T21:00:00.000Z"
     }
   ],
   "generated": "2026-05-06T15:27:50.794Z"

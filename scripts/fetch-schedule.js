@@ -113,7 +113,7 @@ async function main() {
   }
 
   allEvents.sort((a, b) => a.iso.localeCompare(b.iso));
-  const all = allEvents.map((e) => ({ display: e.display, label: e.label, url: e.url }));
+  const all = allEvents.map((e) => ({ display: e.display, label: e.label, url: e.url, slug: e.slug, startISO: e.iso }));
 
   const schedule = { ...byTour, all, generated: new Date().toISOString() };
 
