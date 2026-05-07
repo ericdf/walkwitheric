@@ -38,7 +38,7 @@ with open(CROP_FILE, "r") as f:
 
 # ── Phase 2: Static images from originals ─────────────────────────────────
 STATIC_IMAGES = [
-    ("eric.jpg", "400x"),
+    ("eric.png", "400x"),
     ("latm-front-cover.jpg", "300x"),
     ("komorebi_logo.jpg", "240x"),
 ]
