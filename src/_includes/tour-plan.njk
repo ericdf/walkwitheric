@@ -250,7 +250,7 @@
         <div id="{{ entry.topic | lower | replace(' ', '-') }}" style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--rule);">
           <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 400; color: var(--ink); margin: 0 0 0.3rem;">{{ entry.topic }}</p>
           {% if entry.description %}
-          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.4rem;">{{ entry.description }}</p>
+          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.4rem;">{{ entry.description | safe }}</p>
           {% endif %}
           <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); margin: 0; line-height: 1.75;">
             {% for link in entry.links %}<a href="{{ link.url }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ link.label }}</a>{% if not loop.last %} &middot; {% endif %}{% endfor %}

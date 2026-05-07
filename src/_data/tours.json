@@ -222,6 +222,13 @@
           ]
         },
         {
+          "topic": "Fortune Cookies",
+          "description": "Eric F. filmed traditional fortune cracker production in Kyōto — the original molds are on display right here in the Gift Shop. The video traces the connections between Kyōto, San Francisco's Japanese American community, and a treat the world now thinks of as Chinese. The <a href=\"https://en.wikipedia.org/wiki/Court_of_Historical_Review\">Court of Historical Review</a> Wikipedia entry describes the 1983 case in which it determined that the fortune cookie as we know it was invented right here in the Tea Garden.",
+          "links": [
+            { "label": "Watch the video", "url": "https://www.instagram.com/reel/C_3eP3jyFzS/" }
+          ]
+        },
+        {
           "topic": "Japanese Maples",
           "description": "Eric F. on the botany and horticulture of Japanese Maples, with references for those who want to go deeper.",
           "links": [
@@ -257,13 +264,6 @@
                 { "label": "Read the article", "url": "https://drive.google.com/file/d/1iyyCr7-L-Rbyfw4wdZZDzVKYbpaSr403/view?usp=share_link" }
               ]
             }
-          ]
-        },
-        {
-          "topic": "Fortune Cookies",
-          "description": "Eric F. filmed traditional fortune cracker production in Kyōto — the original molds are on display right here in the Gift Shop. The video traces the connections between Kyōto, San Francisco's Japanese American community, and a treat the world now thinks of as Chinese.",
-          "links": [
-            { "label": "Watch the video", "url": "https://www.instagram.com/reel/C_3eP3jyFzS/" }
           ]
         }
       ]
