@@ -178,14 +178,15 @@
       "url": "https://drive.google.com/open?id=1h4KbLLrREGIem45CeE1zoR7-msB-nddN"
     },
     "foodShopping": {
-      "note": "9th Avenue, a short walk from the Garden, is a local foodie destination worth exploring after the tour.",
+      "note": "9th Avenue, a short walk from the Garden, is a local foodie destination worth exploring, but the Tea House is your best option!",
       "before": {
         "items": [
           {
             "type": "food",
             "name": "The Tea House",
             "address": "Inside the Garden",
-            "description": "Besides a delightful range of tea, they have an extensive menu of snacks and more substantial choices. Guides eat here regularly."
+            "description": "Besides a delightful range of tea, they have an extensive menu of snacks and more substantial choices. Guides eat here regularly.",
+            "descriptionLink": { "url": "#it's-tea-time", "label": "Read Linda H.'s “It’s Tea Time” article to learn about the different teas on the menu" }
           },
           {
             "type": "shopping",
@@ -251,7 +252,7 @@
             },
             {
               "topic": "Nagao Sakurai",
-              "description": "Eric F. chronicles the story of how Imperial Palace landscape architect Nagao Sakurai helped shape the Japanese Tea Garden into a living work of postwar reconciliation — bringing centuries of Japanese garden tradition into conversation with San Francisco through designs that were subtle, deeply authentic, and meant to be experienced rather than merely viewed. His 1953 dry landscape garden behind the pagoda remains one of the Garden's clearest expressions of peace, translation, and cultural continuity.",
+              "description": "Eric F. chronicles the story of how Imperial Palace landscape architect Nagao Sakurai helped shape the Japanese Tea Garden into a living work of postwar reconciliation — bringing centuries of Japanese garden tradition into conversation with San Francisco through designs that were subtle, rooted in but not limited by tradition, and meant to be experienced rather than merely viewed. His 1953 dry landscape garden behind the pagoda remains one of the Garden's clearest expressions of peace, translation, and cultural continuity.",
               "links": [
                 { "label": "Read the article", "url": "https://drive.google.com/file/d/1iyyCr7-L-Rbyfw4wdZZDzVKYbpaSr403/view?usp=share_link" }
               ]
