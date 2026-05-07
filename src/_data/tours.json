@@ -11,6 +11,9 @@
       "staticMapImage": "/images/tours/maritime-map.png"
     },
     "endAt": "Picnic tables closer to the marina",
+    "parking": {
+      "note": "Large free lot at the meeting point. If full, try the <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.80738472307763,-122.44496348394796\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">lot between the St. Francis and Golden Gate Yacht Clubs</a>. There is also a <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.80430211406299,-122.45193371460287\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">paid lot</a> nearby. One <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.804013233502715,-122.45506785989846\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">Bay Wheels bike docking station</a> is close by."
+    },
     "details": {
       "duration": "1 hour 45 minutes",
       "climbing": "None",
