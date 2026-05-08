@@ -1,13 +1,18 @@
 {
   "maritime": [
-    "Sat, May 16 · 3:30 PM"
+    "Sat, May 16 · 3:30 PM",
+    "Sat, Jun 27 · 3:00 PM"
   ],
   "1840s": [
     "Thu, May 28 · 11:00 AM"
   ],
   "japaneseteagarden": [
     "Sat, May 16 · 1:00 PM",
-    "Wed, May 27 · 9:30 AM"
+    "Wed, May 27 · 9:30 AM",
+    "Fri, Jun 19 · 9:30 AM",
+    "Fri, Jun 19 · 1:00 PM",
+    "Fri, Jun 26 · 9:30 AM",
+    "Fri, Jun 26 · 1:00 PM"
   ],
   "japantown": [
     "Thu, Jun 4 · 2:00 PM"
@@ -48,7 +53,42 @@
       "url": "https://sfcityguides.org/tour/japantown/",
       "slug": "japantown",
       "startISO": "2026-06-04T21:00:00.000Z"
+    },
+    {
+      "display": "Fri, Jun 19 · 9:30 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-06-19T16:30:00.000Z"
+    },
+    {
+      "display": "Fri, Jun 19 · 1:00 PM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-06-19T20:00:00.000Z"
+    },
+    {
+      "display": "Fri, Jun 26 · 9:30 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-06-26T16:30:00.000Z"
+    },
+    {
+      "display": "Fri, Jun 26 · 1:00 PM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-06-26T20:00:00.000Z"
+    },
+    {
+      "display": "Sat, Jun 27 · 3:00 PM",
+      "label": "Maritime SF",
+      "url": "https://sfcityguides.org/tour/maritime-sf/",
+      "slug": "maritime",
+      "startISO": "2026-06-27T22:00:00.000Z"
     }
   ],
-  "generated": "2026-05-07T15:28:57.202Z"
+  "generated": "2026-05-08T14:53:14.277Z"
 }
