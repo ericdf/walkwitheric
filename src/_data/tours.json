@@ -16,6 +16,7 @@
     "parking": {
       "note": "Large free lot at the meeting point. If full, try the <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.80738472307763,-122.44496348394796\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">lot between the St. Francis and Golden Gate Yacht Clubs</a>. There is also a <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.80430211406299,-122.45193371460287\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">paid lot</a> nearby. One <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.804013233502715,-122.45506785989846\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">Bay Wheels bike docking station</a> is close by."
     },
+    "durationMinutes": 105,
     "details": {
       "duration": "1 hour 45 minutes",
       "climbing": "None",
@@ -60,6 +61,7 @@
       "staticMapImage": "/images/tours/japantown-map.png"
     },
     "endAt": "Hue Hair Salon, 1712 Fillmore — 2 blocks from the start",
+    "durationMinutes": 120,
     "details": {
       "duration": "2 hours",
       "climbing": "Some",
@@ -117,6 +119,7 @@
       "staticMapImage": "/images/tours/boomandbust-map.png"
     },
     "endAt": "New Montgomery and Howard",
+    "durationMinutes": 105,
     "details": {
       "duration": "1 hour 45 minutes",
       "climbing": "None",
@@ -172,6 +175,7 @@
     "parking": {
       "note": "Allow plenty of time to find street parking on <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.769271802899816,-122.47043322166238\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">Martin Luther King Jr Drive</a>. Alternatively, the paid garage under the Music Concourse has two entrances: <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.76923344232487,-122.46805707803381\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">one on the south side</a> and <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.77345604043818,-122.46802684619449\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">one on the north side</a> (typically less congested)."
     },
+    "durationMinutes": 60,
     "details": {
       "duration": "Approximately 1 hour",
       "climbing": "Some up/down, stairs, and uneven paths — sturdy shoes advised",
@@ -298,6 +302,7 @@
       "staticMapImage": "/images/tours/1840s-map.png"
     },
     "endAt": "Leidesdorff Street — very close to where we started",
+    "durationMinutes": 90,
     "details": {
       "duration": "About 90 minutes",
       "climbing": "One gentle slope. Everything on this tour is accessible.",

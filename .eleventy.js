@@ -4,6 +4,12 @@ const tailwindcss = require('@tailwindcss/postcss');
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
 
+  eleventyConfig.addFilter("addMinutes", (isoDate, minutes) => {
+    const d = new Date(isoDate);
+    d.setMinutes(d.getMinutes() + minutes);
+    return d.toISOString();
+  });
+
   // Rewrite root-relative paths when deploying to a subpath (e.g. GitHub Pages).
   // Set ELEVENTY_BASE=/walkwitheric in CI; unset (or leave empty) for custom domain.
   const base = (process.env.ELEVENTY_BASE || '').replace(/\/$/, '');

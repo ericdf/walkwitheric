@@ -68,6 +68,14 @@ title: Walk With Eric
       "url": "https://walkwitheric.com"
     },
     "url": "{{ event.url }}",
+    "image": "https://walkwitheric.com/images/{{ event.slug }}.webp",
+    "endDate": "{{ event.startISO | addMinutes(tours[event.slug].durationMinutes) }}",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD",
+      "url": "{{ event.url }}"
+    },
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "isAccessibleForFree": true,
