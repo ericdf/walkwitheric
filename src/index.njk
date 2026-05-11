@@ -19,7 +19,9 @@ title: Walk With Eric
   <meta name="twitter:image" content="https://walkwitheric.com/images/eric.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap"></noscript>
+  <link rel="preload" as="image" href="/images/eric.webp" fetchpriority="high">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="canonical" href="https://walkwitheric.com/">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -104,7 +106,7 @@ title: Walk With Eric
           <p class="intro-p2" style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; font-weight: 300; color: var(--ink-mid); line-height: 1.8; margin: 0;">I believe history should be engaging — thought-provoking and genuinely rewarding to encounter. That's why I scour the archives: to find the facts, yes, but more importantly to unearth the stories that make those facts land. I've been leading tours with San Francisco City Guides for years, created two of the tours I lead, and have trained dozens of other guides along the way.</p>
         </div>
         <div class="intro-photo" style="text-align: center;">
-          <img src="/images/eric.webp" alt="Eric Friedman, San Francisco City Guides tour guide" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; object-position: center top; border: 4px solid var(--parchment-deep); filter: sepia(20%) contrast(0.95); mix-blend-mode: multiply; display: block; margin: 0 auto;">
+          <img src="/images/eric.webp" alt="Eric Friedman, San Francisco City Guides tour guide" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; object-position: center top; border: 4px solid var(--parchment-deep); filter: sepia(20%) contrast(0.95); mix-blend-mode: multiply; display: block; margin: 0 auto;" fetchpriority="high" loading="eager" width="400" height="400">
           <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; margin: 0.75rem 0 0;">Eric F. · San Francisco City Guides</p>
         </div>
       </div>
@@ -199,7 +201,7 @@ title: Walk With Eric
           </div>
         </div>
 
-        <img src="/images/latm-front-cover.webp" alt="The Ledger and the Mirror, book cover" style="width: 500px; height: auto; display: block;" class="book-cover-img">
+        <img src="/images/latm-front-cover.webp" alt="The Ledger and the Mirror, book cover" style="width: 500px; height: auto; display: block;" class="book-cover-img" loading="lazy" width="300" height="450">
 
       </div>
     </div>
@@ -223,7 +225,7 @@ title: Walk With Eric
       <!-- Tour 1: Maritime San Francisco — image LEFT -->
       <article id="tour-maritime" class="tour-card">
         <div class="tour-card-image">
-          <img src="/images/maritime.webp" alt="A tall ship under full sail passing the Golden Gate Bridge">
+          <img src="/images/maritime.webp" alt="A tall ship under full sail passing the Golden Gate Bridge" loading="lazy" width="500" height="315">
         </div>
         <div class="tour-card-text">
           <p class="tour-written-by">Tour written by Eric</p>
@@ -247,7 +249,7 @@ title: Walk With Eric
       <!-- Tour 2: 1840s San Francisco — image RIGHT -->
       <article id="tour-1840s" class="tour-card tour-card-reverse">
         <div class="tour-card-image">
-          <img src="/images/1840s.webp" alt="1840s San Francisco">
+          <img src="/images/1840s.webp" alt="1840s San Francisco" loading="lazy" width="500" height="592">
         </div>
         <div class="tour-card-text">
           <p class="tour-written-by">Tour written by Eric</p>
@@ -271,7 +273,7 @@ title: Walk With Eric
       <!-- Tour 3: Japanese Tea Garden — image LEFT -->
       <article id="tour-japanese-tea-garden" class="tour-card">
         <div class="tour-card-image">
-          <img src="/images/japaneseteagarden.webp" alt="The Japanese Tea Garden, Golden Gate Park">
+          <img src="/images/japaneseteagarden.webp" alt="The Japanese Tea Garden, Golden Gate Park" loading="lazy" width="500" height="552">
         </div>
         <div class="tour-card-text">
           <h3 class="tour-name"><a href="https://sfcityguides.org/tour/japanese-tea-garden/" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">Japanese Tea Garden</a></h3>
@@ -294,7 +296,7 @@ title: Walk With Eric
       <!-- Tour 4: Boom and Bust — image RIGHT -->
       <article id="tour-boom-and-bust" class="tour-card tour-card-reverse">
         <div class="tour-card-image">
-          <img src="/images/boomandbust.webp" alt="San Francisco Financial District">
+          <img src="/images/boomandbust.webp" alt="San Francisco Financial District" loading="lazy" width="500" height="522">
         </div>
         <div class="tour-card-text">
           <h3 class="tour-name"><a href="https://sfcityguides.org/tour/san-francisco-boom-bust/" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">Boom and Bust</a></h3>
@@ -316,7 +318,7 @@ title: Walk With Eric
       <!-- Tour 5: Japantown — image LEFT -->
       <article id="tour-japantown" class="tour-card">
         <div class="tour-card-image">
-          <img src="/images/japantown.webp" alt="Japantown, San Francisco">
+          <img src="/images/japantown.webp" alt="Japantown, San Francisco" loading="lazy" width="500" height="636">
         </div>
         <div class="tour-card-text">
           <h3 class="tour-name"><a href="https://sfcityguides.org/tour/japantown/" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">Japantown</a></h3>
