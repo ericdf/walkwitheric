@@ -8,7 +8,6 @@
     "Thu, Jun 18 · 3:00 PM"
   ],
   "japaneseteagarden": [
-    "Sat, May 16 · 1:00 PM",
     "Wed, May 27 · 9:30 AM",
     "Thu, Jun 18 · 1:00 PM",
     "Fri, Jun 19 · 9:30 AM",
@@ -21,13 +20,6 @@
   ],
   "boomandbust": [],
   "all": [
-    {
-      "display": "Sat, May 16 · 1:00 PM",
-      "label": "Japanese Tea Garden",
-      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
-      "slug": "japaneseteagarden",
-      "startISO": "2026-05-16T20:00:00.000Z"
-    },
     {
       "display": "Sat, May 16 · 3:30 PM",
       "label": "Maritime SF",
@@ -106,5 +98,5 @@
       "startISO": "2026-06-27T22:00:00.000Z"
     }
   ],
-  "generated": "2026-05-12T15:40:35.631Z"
+  "generated": "2026-05-13T15:45:02.155Z"
 }
