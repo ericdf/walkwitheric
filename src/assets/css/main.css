@@ -106,16 +106,16 @@
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--gold);
+  color: var(--ink-mid);
   font-family: 'Source Serif 4', Georgia, serif;
-  font-weight: 300;
+  font-weight: 600;
   margin: 0 0 0.75rem;
 }
 .tour-desc {
   font-size: 18.75px;
   font-family: 'Source Serif 4', Georgia, serif;
   font-weight: 300;
-  color: var(--ink-mid);
+  color: var(--ink);
   line-height: 1.8;
   margin: 0 0 1.25rem;
 }

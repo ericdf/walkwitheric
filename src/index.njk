@@ -213,9 +213,7 @@ title: Walk With Eric
       <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem; padding-bottom: 0;">
 
         <header style="padding-bottom: 1.5rem;">
-          <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">The Tours</p>
-          <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 30px; font-weight: 400; color: var(--ink); margin: 0 0 0.75rem; line-height: 1.2;">San Francisco's history, mysteries, and the Bay itself.</h2>
-          <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; font-style: italic; color: var(--ink-mid); line-height: 1.7; margin: 0;">A quiet garden, a windswept bay, a neighborhood with three hidden histories, one of the city's most enigmatic founders, and the cycles of discovery, innovation, and disruption that have reinvented San Francisco and the world again and again. Riveting stories that will make you glad you came.</p>
+          <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 42px; font-weight: 400; color: var(--ink); margin: 0; line-height: 1.2;">The Tours</h2>
         </header>
 
         <p style="font-size: 18.75px; font-style: italic; font-weight: 300; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; padding: 0.75rem 0 1rem; border-bottom: 1px solid var(--rule); line-height: 1.7; margin: 0;">All tours run through <a href="https://sfcityguides.org/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">San Francisco City Guides</a> — a nonprofit program of the San Francisco Public Library. Every walk is free; donations support the program. Private tours are also available — ideal for work groups, family visits, or custom experiences. I lead the tours below, but the full City Guides schedule has outstanding guides across the whole city. Book whatever calls to you.</p>
@@ -235,7 +233,7 @@ title: Walk With Eric
           {% if schedule.maritime | length %}
           <div style="margin: 0.5rem 0 0.75rem;">
             <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Upcoming</p>
-            {% for d in schedule.maritime %}<p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
+            {% for d in schedule.maritime %}<p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
           </div>
           {% endif %}
           <div class="tour-buttons">
@@ -258,7 +256,7 @@ title: Walk With Eric
           {% if schedule['1840s'] | length %}
           <div style="margin: 0.5rem 0 0.75rem;">
             <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Upcoming</p>
-            {% for d in schedule['1840s'] %}<p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
+            {% for d in schedule['1840s'] %}<p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
           </div>
           {% endif %}
           <div class="tour-buttons">
@@ -280,7 +278,7 @@ title: Walk With Eric
           {% if schedule.japaneseteagarden | length %}
           <div style="margin: 0.5rem 0 0.75rem;">
             <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Upcoming</p>
-            {% for d in schedule.japaneseteagarden %}<p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
+            {% for d in schedule.japaneseteagarden %}<p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
           </div>
           {% endif %}
           <div class="tour-buttons">
@@ -301,7 +299,7 @@ title: Walk With Eric
           {% if schedule.boomandbust | length %}
           <div style="margin: 0.5rem 0 0.75rem;">
             <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Upcoming</p>
-            {% for d in schedule.boomandbust %}<p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
+            {% for d in schedule.boomandbust %}<p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
           </div>
           {% endif %}
           <div class="tour-buttons">
@@ -322,7 +320,7 @@ title: Walk With Eric
           {% if schedule.japantown | length %}
           <div style="margin: 0.5rem 0 0.75rem;">
             <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Upcoming</p>
-            {% for d in schedule.japantown %}<p style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
+            {% for d in schedule.japantown %}<p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
           </div>
           {% endif %}
           <div class="tour-buttons">
@@ -355,7 +353,7 @@ title: Walk With Eric
     <!-- ===================== SECTION 8: BEYOND THE TOUR ===================== -->
     <section style="border-bottom: 1px solid var(--rule); padding-top: 2rem; padding-bottom: 2rem;">
       <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem;">
-        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-light); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; margin: 0 0 0.5rem;">Beyond the Tour</p>
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-mid); font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; margin: 0 0 0.5rem;">Beyond the Tour</p>
         <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 30px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">When I'm not walking</h2>
         <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.8; margin: 0 0 0.9rem;">I'm a Berkeley-based artist, craftsman, and writer. I design and build furniture, lighting, and sculptural objects, with a focus on precision joinery and material integrity. My work lives at <a href="https://justwood.design" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,58,26,0.3);">justwood.design</a>. I enjoy drawing and painting in various media. I spend as much time as possible in, on, and under the water.</p>
         <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.8; margin: 0;">The same impulse drives all of it: curiosity about how things come together, and why they matter.</p>
