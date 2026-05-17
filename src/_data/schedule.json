@@ -1,6 +1,5 @@
 {
   "maritime": [
-    "Sat, May 16 · 3:30 PM",
     "Sat, Jun 27 · 3:00 PM"
   ],
   "1840s": [
@@ -21,13 +20,6 @@
   ],
   "boomandbust": [],
   "all": [
-    {
-      "display": "Sat, May 16 · 3:30 PM",
-      "label": "Maritime SF",
-      "url": "https://sfcityguides.org/tour/maritime-sf/",
-      "slug": "maritime",
-      "startISO": "2026-05-16T22:30:00.000Z"
-    },
     {
       "display": "Wed, May 27 · 9:30 AM",
       "label": "Japanese Tea Garden",
@@ -106,5 +98,5 @@
       "startISO": "2026-06-27T22:00:00.000Z"
     }
   ],
-  "generated": "2026-05-16T14:22:44.107Z"
+  "generated": "2026-05-17T14:26:13.673Z"
 }
