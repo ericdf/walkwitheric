@@ -4,6 +4,7 @@
     "items": [
       { "type": "food", "name": "City View Dim Sum", "address": "33 Walter U Lum Place", "description": "Dine-in or takeout; right near Portsmouth Square.", "url": "https://www.google.com/maps/search/?api=1&query=City+View+Dim+Sum+San+Francisco" },
       { "type": "food", "name": "Good Luck Cafe", "address": "621 Kearny St", "description": "Bagels, sandwiches; close to the tour start.", "url": "https://www.google.com/maps/search/?api=1&query=Good+Luck+Cafe+621+Kearny+San+Francisco" },
+      { "type": "food", "name": "Heartwood", "address": "531 Commercial St", "description": "Tasty American fare; Martini Lunch Special includes a martini for a penny with your salad or sandwich.", "url": "https://www.google.com/maps/search/?api=1&query=Heartwood+531+Commercial+St+San+Francisco" },
       { "type": "food", "name": "Hinodeya Ramen Bar", "address": "680 Clay St", "description": "I like the vegan ramen quite a lot.", "url": "https://www.google.com/maps/search/?api=1&query=Hinodeya+Ramen+Bar+680+Clay+San+Francisco" },
       { "type": "food", "name": "Hon's Won-Tun House", "address": "648 Kearny St", "description": "A pork-heavy menu, enthusiastically recommended.", "url": "https://www.google.com/maps/search/?api=1&query=Hon's+Won-Tun+House+648+Kearny+San+Francisco" },
       { "type": "food", "name": "House of Nanking", "address": "919 Kearny St", "description": "A venerable Chinatown favorite.", "url": "https://www.google.com/maps/search/?api=1&query=House+of+Nanking+919+Kearny+San+Francisco" },
