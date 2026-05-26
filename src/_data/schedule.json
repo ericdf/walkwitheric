@@ -18,7 +18,10 @@
   "japantown": [
     "Thu, Jun 4 · 2:00 PM"
   ],
-  "boomandbust": [],
+  "boomandbust": [
+    "Thu, Jun 11 · 11:00 AM",
+    "Thu, Jul 16 · 11:00 AM"
+  ],
   "all": [
     {
       "display": "Wed, May 27 · 9:30 AM",
@@ -47,6 +50,13 @@
       "url": "https://sfcityguides.org/tour/japantown/",
       "slug": "japantown",
       "startISO": "2026-06-04T21:00:00.000Z"
+    },
+    {
+      "display": "Thu, Jun 11 · 11:00 AM",
+      "label": "Boom and Bust",
+      "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
+      "slug": "boomandbust",
+      "startISO": "2026-06-11T18:00:00.000Z"
     },
     {
       "display": "Thu, Jun 18 · 1:00 PM",
@@ -96,7 +106,14 @@
       "url": "https://sfcityguides.org/tour/maritime-sf/",
       "slug": "maritime",
       "startISO": "2026-06-27T22:00:00.000Z"
+    },
+    {
+      "display": "Thu, Jul 16 · 11:00 AM",
+      "label": "Boom and Bust",
+      "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
+      "slug": "boomandbust",
+      "startISO": "2026-07-16T18:00:00.000Z"
     }
   ],
-  "generated": "2026-05-26T15:48:08.827Z"
+  "generated": "2026-05-26T15:54:41.527Z"
 }
