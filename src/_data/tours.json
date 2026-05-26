@@ -216,8 +216,23 @@
             "type": "attraction",
             "name": "de Young Museum",
             "address": "Adjacent to the Garden",
-            "description": "The observation tower offers 360° views of the city at no cost. The museum also hosts special events worth checking — Flower Piano among them.",
-            "url": "https://www.famsf.org/visit/de-young"
+            "description": "The observation tower offers 360° views of the city at no cost. The museum is home to an important permanent collection and has regularly special exhibitions worthy of your consideration. Check their schedule for free admission days.",
+            "url": "https://www.famsf.org/visit/de-young",
+            "descriptionLink": { "label": "Visit the de Young →", "url": "https://www.famsf.org/" }
+          },
+          {
+            "type": "attraction",
+            "name": "San Francisco Botanical Garden",
+            "address": "Within Golden Gate Park",
+            "description": "Fifty-five acres of living collections from around the world, just steps from the Tea Garden. The Garden hosts Flower Piano each summer — a beloved event that places grand pianos throughout the grounds for public performance. Watch for Magnificent Magnolias and other seasonal programs. A combination ticket covering the Botanical Garden, the Conservatory of Flowers, and the Japanese Tea Garden is available at a discount — but cannot be upgraded after purchase, so buy the combo before entering any of the three.",
+            "url": "https://gggp.org/san-francisco-botanical-garden/"
+          },
+          {
+            "type": "attraction",
+            "name": "Conservatory of Flowers",
+            "address": "Within Golden Gate Park",
+            "description": "A Victorian glass palace housing one of the most impressive collections of rare and tropical plants in the American West. A combination ticket covering the Conservatory, the Botanical Garden, and the Japanese Tea Garden is available at a discount — but cannot be upgraded after purchase, so buy the combo before entering any of the three.",
+            "url": "https://gggp.org/conservatory-of-flowers/"
           }
         ]
       }
