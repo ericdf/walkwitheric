@@ -257,6 +257,13 @@
           ]
         },
         {
+          "topic": "Japanese Garden Design",
+          "description": "A short video from the North American Japanese Garden Association in which Dr. Kendall Brown unpacks key elements of the art form.",
+          "links": [
+            { "label": "Watch the video", "url": "https://www.youtube.com/watch?v=V8ERwt3nuNs" }
+          ]
+        },
+        {
           "sectionTitle": "One Garden, Many Hands",
           "sectionDescription": "The world's oldest continuously operating public Japanese garden outside of Japan reflects the designs and aesthetics of many contributors. Here are some that have been treated in our newsletter.",
           "entries": [
