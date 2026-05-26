@@ -10,7 +10,7 @@ const TOUR_MAP = {
   'Maritime SF': 'maritime',
   '1840s San Francisco and the Astonishing Legacy of America\'s "First Black Millionaire."': '1840s',
   'Japantown': 'japantown',
-  'Boom and Bust': 'boomandbust',
+  'Boom & Bust': 'boomandbust',
 };
 
 const TOUR_LABELS = {
