@@ -6,7 +6,6 @@
     "Thu, Jun 18 · 3:00 PM"
   ],
   "japaneseteagarden": [
-    "Sat, May 30 · 1:00 PM",
     "Thu, Jun 18 · 1:00 PM",
     "Fri, Jun 19 · 9:30 AM",
     "Fri, Jun 19 · 1:00 PM",
@@ -21,13 +20,6 @@
     "Thu, Jul 16 · 11:00 AM"
   ],
   "all": [
-    {
-      "display": "Sat, May 30 · 1:00 PM",
-      "label": "Japanese Tea Garden",
-      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
-      "slug": "japaneseteagarden",
-      "startISO": "2026-05-30T20:00:00.000Z"
-    },
     {
       "display": "Thu, Jun 4 · 2:00 PM",
       "label": "Japantown",
@@ -99,5 +91,5 @@
       "startISO": "2026-07-16T18:00:00.000Z"
     }
   ],
-  "generated": "2026-05-30T14:41:38.649Z"
+  "generated": "2026-05-31T14:47:06.665Z"
 }
