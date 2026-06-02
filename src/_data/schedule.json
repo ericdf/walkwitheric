@@ -6,6 +6,7 @@
     "Thu, Jun 18 · 3:00 PM"
   ],
   "japaneseteagarden": [
+    "Sun, Jun 7 · 11:00 AM",
     "Thu, Jun 18 · 1:00 PM",
     "Fri, Jun 19 · 9:30 AM",
     "Fri, Jun 19 · 1:00 PM",
@@ -26,6 +27,13 @@
       "url": "https://sfcityguides.org/tour/japantown/",
       "slug": "japantown",
       "startISO": "2026-06-04T21:00:00.000Z"
+    },
+    {
+      "display": "Sun, Jun 7 · 11:00 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-06-07T18:00:00.000Z"
     },
     {
       "display": "Thu, Jun 11 · 11:00 AM",
@@ -91,5 +99,5 @@
       "startISO": "2026-07-16T18:00:00.000Z"
     }
   ],
-  "generated": "2026-06-01T18:39:45.459Z"
+  "generated": "2026-06-02T17:24:54.267Z"
 }
