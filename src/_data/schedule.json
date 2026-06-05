@@ -13,21 +13,12 @@
     "Fri, Jun 26 · 9:30 AM",
     "Fri, Jun 26 · 1:00 PM"
   ],
-  "japantown": [
-    "Thu, Jun 4 · 2:00 PM"
-  ],
+  "japantown": [],
   "boomandbust": [
     "Thu, Jun 11 · 11:00 AM",
     "Thu, Jul 16 · 11:00 AM"
   ],
   "all": [
-    {
-      "display": "Thu, Jun 4 · 2:00 PM",
-      "label": "Japantown",
-      "url": "https://sfcityguides.org/tour/japantown/",
-      "slug": "japantown",
-      "startISO": "2026-06-04T21:00:00.000Z"
-    },
     {
       "display": "Sun, Jun 7 · 11:00 AM",
       "label": "Japanese Tea Garden",
@@ -99,5 +90,5 @@
       "startISO": "2026-07-16T18:00:00.000Z"
     }
   ],
-  "generated": "2026-06-04T16:21:08.510Z"
+  "generated": "2026-06-05T15:55:47.597Z"
 }
