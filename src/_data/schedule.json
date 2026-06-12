@@ -14,17 +14,9 @@
   ],
   "japantown": [],
   "boomandbust": [
-    "Thu, Jun 11 · 11:00 AM",
     "Thu, Jul 16 · 11:00 AM"
   ],
   "all": [
-    {
-      "display": "Thu, Jun 11 · 11:00 AM",
-      "label": "Boom and Bust",
-      "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
-      "slug": "boomandbust",
-      "startISO": "2026-06-11T18:00:00.000Z"
-    },
     {
       "display": "Thu, Jun 18 · 1:00 PM",
       "label": "Japanese Tea Garden",
@@ -82,5 +74,5 @@
       "startISO": "2026-07-16T18:00:00.000Z"
     }
   ],
-  "generated": "2026-06-11T16:55:33.559Z"
+  "generated": "2026-06-12T16:20:00.849Z"
 }
