@@ -2,11 +2,8 @@
   "maritime": [
     "Sat, Jun 27 · 3:00 PM"
   ],
-  "1840s": [
-    "Thu, Jun 18 · 3:00 PM"
-  ],
+  "1840s": [],
   "japaneseteagarden": [
-    "Thu, Jun 18 · 1:00 PM",
     "Fri, Jun 19 · 9:30 AM",
     "Fri, Jun 19 · 1:00 PM",
     "Fri, Jun 26 · 9:30 AM",
@@ -17,20 +14,6 @@
     "Thu, Jul 16 · 11:00 AM"
   ],
   "all": [
-    {
-      "display": "Thu, Jun 18 · 1:00 PM",
-      "label": "Japanese Tea Garden",
-      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
-      "slug": "japaneseteagarden",
-      "startISO": "2026-06-18T20:00:00.000Z"
-    },
-    {
-      "display": "Thu, Jun 18 · 3:00 PM",
-      "label": "1840s San Francisco",
-      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
-      "slug": "1840s",
-      "startISO": "2026-06-18T22:00:00.000Z"
-    },
     {
       "display": "Fri, Jun 19 · 9:30 AM",
       "label": "Japanese Tea Garden",
@@ -74,5 +57,5 @@
       "startISO": "2026-07-16T18:00:00.000Z"
     }
   ],
-  "generated": "2026-06-18T16:35:04.496Z"
+  "generated": "2026-06-19T16:02:10.878Z"
 }
