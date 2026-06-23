@@ -1,13 +1,21 @@
 {
   "maritime": [
-    "Sat, Jun 27 · 3:00 PM"
+    "Sat, Jun 27 · 3:00 PM",
+    "Sat, Jul 25 · 3:30 PM"
   ],
-  "1840s": [],
+  "1840s": [
+    "Thu, Jul 16 · 2:00 PM"
+  ],
   "japaneseteagarden": [
     "Fri, Jun 26 · 9:30 AM",
-    "Fri, Jun 26 · 1:00 PM"
+    "Fri, Jun 26 · 1:00 PM",
+    "Wed, Jul 15 · 9:30 AM",
+    "Wed, Jul 29 · 9:30 AM",
+    "Fri, Jul 31 · 9:30 AM"
   ],
-  "japantown": [],
+  "japantown": [
+    "Fri, Jul 31 · 2:00 PM"
+  ],
   "boomandbust": [
     "Thu, Jul 16 · 11:00 AM"
   ],
@@ -34,12 +42,54 @@
       "startISO": "2026-06-27T22:00:00.000Z"
     },
     {
+      "display": "Wed, Jul 15 · 9:30 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-07-15T16:30:00.000Z"
+    },
+    {
       "display": "Thu, Jul 16 · 11:00 AM",
       "label": "Boom and Bust",
       "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
       "slug": "boomandbust",
       "startISO": "2026-07-16T18:00:00.000Z"
+    },
+    {
+      "display": "Thu, Jul 16 · 2:00 PM",
+      "label": "1840s San Francisco",
+      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
+      "slug": "1840s",
+      "startISO": "2026-07-16T21:00:00.000Z"
+    },
+    {
+      "display": "Sat, Jul 25 · 3:30 PM",
+      "label": "Maritime SF",
+      "url": "https://sfcityguides.org/tour/maritime-sf/",
+      "slug": "maritime",
+      "startISO": "2026-07-25T22:30:00.000Z"
+    },
+    {
+      "display": "Wed, Jul 29 · 9:30 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-07-29T16:30:00.000Z"
+    },
+    {
+      "display": "Fri, Jul 31 · 9:30 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-07-31T16:30:00.000Z"
+    },
+    {
+      "display": "Fri, Jul 31 · 2:00 PM",
+      "label": "Japantown",
+      "url": "https://sfcityguides.org/tour/japantown/",
+      "slug": "japantown",
+      "startISO": "2026-07-31T21:00:00.000Z"
     }
   ],
-  "generated": "2026-06-22T17:43:55.434Z"
+  "generated": "2026-06-23T15:49:34.562Z"
 }
