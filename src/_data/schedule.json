@@ -1,6 +1,5 @@
 {
   "maritime": [
-    "Sat, Jun 27 · 3:00 PM",
     "Sat, Jul 25 · 3:30 PM"
   ],
   "1840s": [
@@ -21,13 +20,6 @@
     "Thu, Jul 16 · 11:00 AM"
   ],
   "all": [
-    {
-      "display": "Sat, Jun 27 · 3:00 PM",
-      "label": "Maritime SF",
-      "url": "https://sfcityguides.org/tour/maritime-sf/",
-      "slug": "maritime",
-      "startISO": "2026-06-27T22:00:00.000Z"
-    },
     {
       "display": "Thu, Jul 9 · 11:00 AM",
       "label": "1840s San Francisco",
@@ -99,5 +91,5 @@
       "startISO": "2026-08-06T18:00:00.000Z"
     }
   ],
-  "generated": "2026-06-27T14:43:11.737Z"
+  "generated": "2026-06-28T14:49:12.482Z"
 }
