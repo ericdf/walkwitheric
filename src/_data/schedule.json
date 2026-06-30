@@ -17,7 +17,8 @@
     "Fri, Jul 31 · 2:00 PM"
   ],
   "boomandbust": [
-    "Thu, Jul 16 · 11:00 AM"
+    "Thu, Jul 16 · 11:00 AM",
+    "Thu, Aug 6 · 2:00 PM"
   ],
   "all": [
     {
@@ -89,7 +90,14 @@
       "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
       "slug": "1840s",
       "startISO": "2026-08-06T18:00:00.000Z"
+    },
+    {
+      "display": "Thu, Aug 6 · 2:00 PM",
+      "label": "Boom and Bust",
+      "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
+      "slug": "boomandbust",
+      "startISO": "2026-08-06T21:00:00.000Z"
     }
   ],
-  "generated": "2026-06-29T16:38:31.103Z"
+  "generated": "2026-06-30T15:29:34.997Z"
 }
