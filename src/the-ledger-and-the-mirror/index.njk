@@ -124,10 +124,49 @@ title: The Ledger and the Mirror
     <section style="border-top: 1px solid rgba(245,240,232,0.12); border-bottom: 1px solid rgba(245,240,232,0.12); padding-top: 2.5rem; padding-bottom: 2.5rem;">
       <div class="mob-pad" style="padding-left: 4rem; padding-right: 4rem; text-align: center;">
         <h2 id="how-to-order" style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--parchment); margin: 0 0 1.25rem; line-height: 1.3; scroll-margin-top: 3.5rem;">How to Order</h2>
-        <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 26px; font-weight: 400; color: var(--parchment); margin: 0 0 0.5rem; line-height: 1.2;">Available July 1, 2026</p>
-        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: rgba(245,240,232,0.6); line-height: 1.7; margin: 0 0 1.25rem;"><em>The Ledger and the Mirror</em> is available at bookstores and on Amazon<br>in print, e-book, and audiobook formats.</p>
-        <div x-data="notifyBtn()" x-show="show">
-          <button @click="notify()" class="btn-gold">Notify me when available</button>
+        <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: rgba(245,240,232,0.6); line-height: 1.7; margin: 0 0 2rem;"><em>The Ledger and the Mirror</em> is available in paperback and e-book, with the audiobook coming soon.</p>
+
+        <div style="max-width: 480px; margin: 0 auto; text-align: left;">
+
+          <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 400; color: var(--parchment); margin: 0 0 0.75rem; line-height: 1.3;">Paperback</h3>
+          <ul style="list-style: none; margin: 0 0 2rem; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+              <span style="font-size: 17px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.85);">Amazon</span>
+              <a href="https://amzn.to/4oXfSn9" target="_blank" rel="sponsored noopener" class="retailer-badge retailer-badge-amazon">Buy on Amazon</a>
+            </li>
+            <li style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+              <span style="font-size: 17px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.85);">City Lights Bookstore</span>
+              <span style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.4); text-transform: uppercase; letter-spacing: 0.1em;">Coming soon</span>
+            </li>
+            <li style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+              <span style="font-size: 17px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.85);">Independent bookstores</span>
+              <span style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.4); text-transform: uppercase; letter-spacing: 0.1em;">Order via Ingram</span>
+            </li>
+          </ul>
+          <p style="font-size: 13px; font-family: 'Source Serif 4', Georgia, serif; font-style: italic; color: rgba(245,240,232,0.35); margin: -1.25rem 0 2rem;">As an Amazon Associate, I earn from qualifying purchases.</p>
+
+          <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 400; color: var(--parchment); margin: 0 0 0.75rem; line-height: 1.3;">E-book</h3>
+          <p style="font-size: 17px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.6); margin: 0 0 0.75rem;">Available from:</p>
+          <ul style="list-style: none; margin: 0 0 2rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+            <li><a href="https://amzn.to/4oXfSn9" target="_blank" rel="sponsored noopener" class="retailer-badge retailer-badge-amazon">Kindle</a></li>
+            <li><a href="https://books.apple.com/us/book/the-ledger-and-the-mirror/id6783171305" target="_blank" rel="noopener" class="retailer-badge retailer-badge-apple">Apple Books</a></li>
+            <li><a href="https://www.kobo.com/us/en/ebook/the-ledger-and-the-mirror" target="_blank" rel="noopener" class="retailer-badge retailer-badge-kobo">Kobo</a></li>
+            <li><span style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.4); text-transform: uppercase; letter-spacing: 0.1em; align-self: center;">+ other major e-book retailers</span></li>
+          </ul>
+
+          <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 400; color: var(--parchment); margin: 0 0 0.75rem; line-height: 1.3;">Audiobook</h3>
+          <ul style="list-style: none; margin: 0 0 2rem; padding: 0;">
+            <li style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+              <span style="font-size: 17px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.85);">Audible</span>
+              <span style="font-size: 14px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.4); text-transform: uppercase; letter-spacing: 0.1em;">Coming soon</span>
+            </li>
+          </ul>
+
+          <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 400; color: var(--parchment); margin: 0 0 0.75rem; line-height: 1.3;">Libraries</h3>
+          <p style="font-size: 17px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: rgba(245,240,232,0.75); line-height: 1.7; margin: 0 0 1.5rem;">Ask your local library to order <em>The Ledger and the Mirror</em>. Libraries can obtain the paperback through Ingram, the e-book through OverDrive and other digital library platforms, and the audiobook through Audible once it's available.</p>
+
+          <p style="font-size: 13px; font-family: 'Source Serif 4', Georgia, serif; color: rgba(245,240,232,0.35); text-align: center; margin: 0;">ISBN: 979-8-234-01643-0</p>
+
         </div>
       </div>
     </section>
