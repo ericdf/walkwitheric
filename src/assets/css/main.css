@@ -80,6 +80,10 @@
   background-color: #ffffff;
   color: #7A3AED;
 }
+.retailer-badge-audible {
+  background-color: #F8991C;
+  color: #0F1111;
+}
 
 /* ===================== STICKY BAR ===================== */
 .sticky-link {
