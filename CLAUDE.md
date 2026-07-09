@@ -8,3 +8,6 @@
 2. **Styling:** Add Tailwind classes directly to HTML. Only edit `src/assets/css/main.css` for @theme variables.
 3. **Images:** Manage `images.org/crops` using `file: W H X Y`. Run `npm run crop` to output 500px-wide JPEGs to `src/assets/images/`.
 4. **Verification:** Always check `_site/index.html` after a build to confirm asset paths.
+
+## Git
+- A CI job periodically pushes automated "chore: refresh tour schedule" commits to `main`. Before pushing, run `git pull --rebase` (a plain `git push` will often be rejected as non-fast-forward).
