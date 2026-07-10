@@ -84,6 +84,10 @@
   background-color: #F8991C;
   color: #0F1111;
 }
+.retailer-badge-bookpassage {
+  background-color: #6B2E2E;
+  color: #ffffff;
+}
 
 /* ===================== STICKY BAR ===================== */
 .sticky-link {
