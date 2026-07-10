@@ -3,7 +3,6 @@
     "Sat, Jul 25 · 3:30 PM"
   ],
   "1840s": [
-    "Thu, Jul 9 · 11:00 AM",
     "Thu, Jul 16 · 2:00 PM",
     "Thu, Aug 6 · 11:00 AM"
   ],
@@ -21,13 +20,6 @@
     "Thu, Aug 6 · 2:00 PM"
   ],
   "all": [
-    {
-      "display": "Thu, Jul 9 · 11:00 AM",
-      "label": "1840s San Francisco",
-      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
-      "slug": "1840s",
-      "startISO": "2026-07-09T18:00:00.000Z"
-    },
     {
       "display": "Wed, Jul 15 · 9:30 AM",
       "label": "Japanese Tea Garden",
@@ -99,5 +91,5 @@
       "startISO": "2026-08-06T21:00:00.000Z"
     }
   ],
-  "generated": "2026-07-09T15:56:49.498Z"
+  "generated": "2026-07-10T15:32:18.329Z"
 }
