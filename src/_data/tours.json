@@ -129,7 +129,7 @@
     "restrooms": {
       "beforeItems": [
         { "text": "Starbucks, 565 Clay — purchase required", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Starbucks+565+Clay+St+San+Francisco" },
-        { "text": "Public restrooms at the top of Portsmouth Square", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Portsmouth+Square+San+Francisco" },
+        { "text": "<s>Public restrooms at the top of Portsmouth Square</s> — currently closed for renovation", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Portsmouth+Square+San+Francisco" },
         { "text": "SF Historical Society, 608 Commercial — free entrance, restrooms downstairs (when open)", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Francisco+Historical+Society+608+Commercial+St+San+Francisco" }
       ],
       "during": "None on this tour — plan accordingly"
@@ -334,10 +334,10 @@
     "restrooms": {
       "beforeItems": [
         { "text": "Starbucks, 565 Clay — purchase required", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Starbucks+565+Clay+St+San+Francisco" },
-        { "text": "Public restrooms at the top of Portsmouth Square", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Portsmouth+Square+San+Francisco" },
+        { "text": "<s>Public restrooms at the top of Portsmouth Square</s> — currently closed for renovation", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Portsmouth+Square+San+Francisco" },
         { "text": "SF Historical Society, 608 Commercial — free entrance, restrooms downstairs (when open)", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Francisco+Historical+Society+608+Commercial+St+San+Francisco" }
       ],
-      "during": "One stop is very close to the Portsmouth Square restrooms — but we do need to keep moving",
+      "during": "One stop is very close to <s>the Portsmouth Square restrooms</s> — currently closed for renovation — but we do need to keep moving",
       "duringMapsUrl": "https://www.google.com/maps/search/?api=1&query=Portsmouth+Square+San+Francisco"
     },
     "parking": {
