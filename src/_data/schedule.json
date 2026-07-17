@@ -3,7 +3,6 @@
     "Sat, Jul 25 · 3:30 PM"
   ],
   "1840s": [
-    "Thu, Jul 16 · 2:00 PM",
     "Thu, Aug 6 · 11:00 AM"
   ],
   "japaneseteagarden": [
@@ -15,24 +14,9 @@
     "Fri, Jul 31 · 2:00 PM"
   ],
   "boomandbust": [
-    "Thu, Jul 16 · 11:00 AM",
     "Thu, Aug 6 · 2:00 PM"
   ],
   "all": [
-    {
-      "display": "Thu, Jul 16 · 11:00 AM",
-      "label": "Boom and Bust",
-      "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
-      "slug": "boomandbust",
-      "startISO": "2026-07-16T18:00:00.000Z"
-    },
-    {
-      "display": "Thu, Jul 16 · 2:00 PM",
-      "label": "1840s San Francisco",
-      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
-      "slug": "1840s",
-      "startISO": "2026-07-16T21:00:00.000Z"
-    },
     {
       "display": "Fri, Jul 24 · 9:30 AM",
       "label": "Japanese Tea Garden",
@@ -83,5 +67,5 @@
       "startISO": "2026-08-06T21:00:00.000Z"
     }
   ],
-  "generated": "2026-07-16T15:03:09.843Z"
+  "generated": "2026-07-17T14:44:22.741Z"
 }
