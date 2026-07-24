@@ -1,6 +1,7 @@
 {
   "maritime": [
-    "Sat, Jul 25 · 3:30 PM"
+    "Sat, Jul 25 · 3:30 PM",
+    "Thu, Aug 27 · 2:00 PM"
   ],
   "1840s": [
     "Thu, Aug 6 · 11:00 AM"
@@ -11,7 +12,8 @@
     "Fri, Jul 31 · 9:30 AM"
   ],
   "japantown": [
-    "Fri, Jul 31 · 2:00 PM"
+    "Fri, Jul 31 · 2:00 PM",
+    "Thu, Aug 13 · 2:00 PM"
   ],
   "boomandbust": [
     "Thu, Aug 6 · 2:00 PM"
@@ -65,7 +67,21 @@
       "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
       "slug": "boomandbust",
       "startISO": "2026-08-06T21:00:00.000Z"
+    },
+    {
+      "display": "Thu, Aug 13 · 2:00 PM",
+      "label": "Japantown",
+      "url": "https://sfcityguides.org/tour/japantown/",
+      "slug": "japantown",
+      "startISO": "2026-08-13T21:00:00.000Z"
+    },
+    {
+      "display": "Thu, Aug 27 · 2:00 PM",
+      "label": "Maritime SF",
+      "url": "https://sfcityguides.org/tour/maritime-sf/",
+      "slug": "maritime",
+      "startISO": "2026-08-27T21:00:00.000Z"
     }
   ],
-  "generated": "2026-07-23T15:09:35.398Z"
+  "generated": "2026-07-24T14:56:16.043Z"
 }
