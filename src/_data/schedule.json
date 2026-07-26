@@ -1,6 +1,5 @@
 {
   "maritime": [
-    "Sat, Jul 25 · 3:30 PM",
     "Thu, Aug 27 · 2:00 PM"
   ],
   "1840s": [
@@ -18,13 +17,6 @@
     "Thu, Aug 6 · 2:00 PM"
   ],
   "all": [
-    {
-      "display": "Sat, Jul 25 · 3:30 PM",
-      "label": "Maritime SF",
-      "url": "https://sfcityguides.org/tour/maritime-sf/",
-      "slug": "maritime",
-      "startISO": "2026-07-25T22:30:00.000Z"
-    },
     {
       "display": "Wed, Jul 29 · 9:30 AM",
       "label": "Japanese Tea Garden",
@@ -75,5 +67,5 @@
       "startISO": "2026-08-27T21:00:00.000Z"
     }
   ],
-  "generated": "2026-07-25T14:37:52.506Z"
+  "generated": "2026-07-26T14:37:34.045Z"
 }
