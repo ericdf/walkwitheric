@@ -251,7 +251,8 @@
         <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: var(--ink); margin: 0 0 1rem; line-height: 1.2;">Optional Reading</h2>
         {% for book in tour.reading %}
         <p style="font-size: 18.75px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin: 0 0 0.5rem;">
-          {% if book.url %}<a href="{{ book.url }}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ book.title }}</a>{% else %}{{ book.title }}{% endif %}
+          {% set bookTitle = book.titleHtml | safe if book.titleHtml else book.title %}
+          {% if book.url %}<a href="{{ book.url }}"{% if not book.url.startsWith("/") %} target="_blank" rel="noopener"{% endif %} style="color: var(--accent); text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ bookTitle }}</a>{% else %}{{ bookTitle }}{% endif %}
           {% if book.author %} — {{ book.author }}{% endif %}
         </p>
         {% endfor %}

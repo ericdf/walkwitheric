@@ -346,6 +346,11 @@
     },
     "reading": [
       {
+        "title": "My book, The Ledger and the Mirror: William Leidesdorff and the Making of San Francisco",
+        "titleHtml": "My book, <i>The Ledger and the Mirror: William Leidesdorff and the Making of San Francisco</i>",
+        "url": "/the-ledger-and-the-mirror/"
+      },
+      {
         "title": "Buried Ships of San Francisco — interactive map",
         "url": "https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~336143~90109781"
       }
