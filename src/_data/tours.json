@@ -346,8 +346,9 @@
     },
     "reading": [
       {
-        "title": "My book, The Ledger and the Mirror: William Leidesdorff and the Making of San Francisco",
-        "titleHtml": "My book, <i>The Ledger and the Mirror: William Leidesdorff and the Making of San Francisco</i>",
+        "prefix": "My book,",
+        "title": "The Ledger and the Mirror: William Leidesdorff and the Making of San Francisco",
+        "titleHtml": "<i>The Ledger and the Mirror: William Leidesdorff and the Making of San Francisco</i>",
         "url": "/the-ledger-and-the-mirror/"
       },
       {
