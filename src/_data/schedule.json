@@ -1,11 +1,15 @@
 {
   "maritime": [
-    "Thu, Aug 27 · 2:00 PM"
+    "Thu, Aug 27 · 2:00 PM",
+    "Fri, Sep 18 · 11:00 AM"
   ],
   "1840s": [
-    "Thu, Aug 6 · 11:00 AM"
+    "Thu, Aug 6 · 11:00 AM",
+    "Thu, Sep 3 · 11:00 AM"
   ],
-  "japaneseteagarden": [],
+  "japaneseteagarden": [
+    "Mon, Sep 7 · 9:30 AM"
+  ],
   "japantown": [
     "Thu, Aug 13 · 2:00 PM"
   ],
@@ -40,7 +44,28 @@
       "url": "https://sfcityguides.org/tour/maritime-sf/",
       "slug": "maritime",
       "startISO": "2026-08-27T21:00:00.000Z"
+    },
+    {
+      "display": "Thu, Sep 3 · 11:00 AM",
+      "label": "1840s San Francisco",
+      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
+      "slug": "1840s",
+      "startISO": "2026-09-03T18:00:00.000Z"
+    },
+    {
+      "display": "Mon, Sep 7 · 9:30 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-09-07T16:30:00.000Z"
+    },
+    {
+      "display": "Fri, Sep 18 · 11:00 AM",
+      "label": "Maritime SF",
+      "url": "https://sfcityguides.org/tour/maritime-sf/",
+      "slug": "maritime",
+      "startISO": "2026-09-18T18:00:00.000Z"
     }
   ],
-  "generated": "2026-08-04T15:24:33.185Z"
+  "generated": "2026-08-05T15:13:45.422Z"
 }
