@@ -4,7 +4,6 @@
     "Fri, Sep 18 · 11:00 AM"
   ],
   "1840s": [
-    "Thu, Aug 6 · 11:00 AM",
     "Thu, Sep 3 · 11:00 AM"
   ],
   "japaneseteagarden": [
@@ -13,24 +12,8 @@
   "japantown": [
     "Thu, Aug 13 · 2:00 PM"
   ],
-  "boomandbust": [
-    "Thu, Aug 6 · 2:00 PM"
-  ],
+  "boomandbust": [],
   "all": [
-    {
-      "display": "Thu, Aug 6 · 11:00 AM",
-      "label": "1840s San Francisco",
-      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
-      "slug": "1840s",
-      "startISO": "2026-08-06T18:00:00.000Z"
-    },
-    {
-      "display": "Thu, Aug 6 · 2:00 PM",
-      "label": "Boom and Bust",
-      "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
-      "slug": "boomandbust",
-      "startISO": "2026-08-06T21:00:00.000Z"
-    },
     {
       "display": "Thu, Aug 13 · 2:00 PM",
       "label": "Japantown",
@@ -67,5 +50,5 @@
       "startISO": "2026-09-18T18:00:00.000Z"
     }
   ],
-  "generated": "2026-08-05T15:13:45.422Z"
+  "generated": "2026-08-07T14:12:58.022Z"
 }
