@@ -1,7 +1,8 @@
 {
   "maritime": [
     "Thu, Aug 27 · 2:00 PM",
-    "Fri, Sep 18 · 11:00 AM"
+    "Fri, Sep 18 · 11:00 AM",
+    "Fri, Oct 9 · 11:00 AM"
   ],
   "1840s": [
     "Thu, Sep 3 · 11:00 AM"
@@ -9,20 +10,11 @@
   "japaneseteagarden": [
     "Mon, Sep 7 · 9:30 AM"
   ],
-  "japantown": [
-    "Thu, Aug 13 · 2:00 PM"
-  ],
+  "japantown": [],
   "boomandbust": [
     "Thu, Sep 17 · 1:00 PM"
   ],
   "all": [
-    {
-      "display": "Thu, Aug 13 · 2:00 PM",
-      "label": "Japantown",
-      "url": "https://sfcityguides.org/tour/japantown/",
-      "slug": "japantown",
-      "startISO": "2026-08-13T21:00:00.000Z"
-    },
     {
       "display": "Thu, Aug 27 · 2:00 PM",
       "label": "Maritime SF",
@@ -57,7 +49,14 @@
       "url": "https://sfcityguides.org/tour/maritime-sf/",
       "slug": "maritime",
       "startISO": "2026-09-18T18:00:00.000Z"
+    },
+    {
+      "display": "Fri, Oct 9 · 11:00 AM",
+      "label": "Maritime SF",
+      "url": "https://sfcityguides.org/tour/maritime-sf/",
+      "slug": "maritime",
+      "startISO": "2026-10-09T18:00:00.000Z"
     }
   ],
-  "generated": "2026-08-13T14:21:54.290Z"
+  "generated": "2026-08-14T14:15:40.866Z"
 }
