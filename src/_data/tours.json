@@ -9,8 +9,9 @@
       "description": "This tour meets at the Crissy Field East Beach at the picnic tables by the changing rooms in the parking lot, not the picnic tables east of the parking lot. I arrive 15 minutes early — please join me!",
       "transit": "MUNI 30 to Broderick St &amp; Jefferson St. Or take the free <a href=\"https://presidio.gov/visit/getting-to-and-around-the-park/presidio-go-shuttle\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">Presidio GO shuttle</a> — exit at the Presidio Community YMCA and walk down the hill, or continue to the Presidio Visitor Center for a bite to eat and a great view before walking to meet us.",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.805606,-122.451591",
-      "locationImage": "/images/tours/maritime-location.jpg",
-      "staticMapImage": "/images/tours/maritime-map.png"
+      "locationImage": "/images/tours/maritime-location.webp",
+      "locationImageAlt": "Jim, a San Francisco City Guides guide in a red jacket, pointing to the picnic tables by the changing rooms at Crissy Field East Beach, with the Golden Gate Bridge behind",
+      "staticMapImage": "/images/tours/maritime-map.webp"
     },
     "endAt": "Picnic tables closer to the marina",
     "parking": {
@@ -57,8 +58,8 @@
       "description": "Meet at Paper Tree, 1743 Buchanan Street. I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
       "transit": "38 or 38-R Geary, exit at Laguna — check transit apps for more options",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.785124350806015,-122.4290911178159",
-      "locationImage": "/images/tours/japantown-location.jpg",
-      "staticMapImage": "/images/tours/japantown-map.png"
+      "locationImage": "/images/tours/japantown-location.webp",
+      "staticMapImage": "/images/tours/japantown-map.webp"
     },
     "endAt": "Hue Hair Salon, 1712 Fillmore — 2 blocks from the start",
     "durationMinutes": 120,
@@ -115,8 +116,8 @@
       "description": "Meet at Empire Park, 648 Commercial Street (now known as Emperor Norton Place). I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
       "transit": "Montgomery Street BART or MUNI — check transit apps for more options",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=648+Commercial+St,San+Francisco,CA",
-      "locationImage": "/images/tours/boomandbust-location.png",
-      "staticMapImage": "/images/tours/boomandbust-map.png"
+      "locationImage": "/images/tours/boomandbust-location.webp",
+      "staticMapImage": "/images/tours/boomandbust-map.webp"
     },
     "endAt": "New Montgomery and Howard",
     "durationMinutes": 105,
@@ -168,8 +169,8 @@
       "description": "Meet inside the gate, immediately past the kiosk, by the azaleas. I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
       "transit": "MUNI N to 9th Avenue, 5/5R to 8th Avenue, or 44 to the park — check transit apps for more options",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.77014,-122.46945",
-      "locationImage": "/images/tours/japaneseteagarden-location.jpg",
-      "staticMapImage": "/images/tours/japaneseteagarden-map.png"
+      "locationImage": "/images/tours/japaneseteagarden-location.webp",
+      "staticMapImage": "/images/tours/japaneseteagarden-map.webp"
     },
     "endAt": "Varies — part of the fun!",
     "parking": {
@@ -320,8 +321,8 @@
       "description": "Meet near 565 Commercial Street, just east of Montgomery, where the location of the original 1850 shoreline is painted in bright colors on the street. Look for me: 6'1\", in a red City Guides jacket. I arrive 15 minutes early — please join me!",
       "transit": "Montgomery Street BART or MUNI — check transit apps for more options",
       "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=565+Commercial+St,San+Francisco,CA",
-      "locationImage": "/images/tours/1840s-location.png",
-      "staticMapImage": "/images/tours/1840s-map.png"
+      "locationImage": "/images/tours/1840s-location.webp",
+      "staticMapImage": "/images/tours/1840s-map.webp"
     },
     "endAt": "Leidesdorff Street — very close to where we started",
     "durationMinutes": 90,

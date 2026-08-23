@@ -138,7 +138,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2" style="gap: 1rem;">
           <img src="{{ tour.meetAt.staticMapImage }}" alt="Map showing meeting location"
             style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);" loading="lazy">
-          <img src="{{ tour.meetAt.locationImage }}" alt="Meeting location"
+          <img src="{{ tour.meetAt.locationImage }}" alt="{{ tour.meetAt.locationImageAlt or 'Meeting location' }}"
             style="width: 100%; height: auto; display: block; border: 1px solid var(--parchment-deep);" loading="lazy">
         </div>
       </div>
