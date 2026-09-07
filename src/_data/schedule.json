@@ -7,7 +7,6 @@
     "Thu, Sep 17 · 10:30 AM"
   ],
   "japaneseteagarden": [
-    "Mon, Sep 7 · 9:30 AM",
     "Wed, Sep 23 · 1:00 PM"
   ],
   "japantown": [
@@ -17,13 +16,6 @@
     "Thu, Sep 17 · 1:00 PM"
   ],
   "all": [
-    {
-      "display": "Mon, Sep 7 · 9:30 AM",
-      "label": "Japanese Tea Garden",
-      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
-      "slug": "japaneseteagarden",
-      "startISO": "2026-09-07T16:30:00.000Z"
-    },
     {
       "display": "Thu, Sep 17 · 10:30 AM",
       "label": "1840s San Francisco",
@@ -67,5 +59,5 @@
       "startISO": "2026-10-09T18:00:00.000Z"
     }
   ],
-  "generated": "2026-09-06T16:00:40.427Z"
+  "generated": "2026-09-07T18:08:15.605Z"
 }
