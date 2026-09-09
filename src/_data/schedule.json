@@ -4,7 +4,8 @@
     "Fri, Oct 9 · 11:00 AM"
   ],
   "1840s": [
-    "Thu, Sep 17 · 10:30 AM"
+    "Thu, Sep 17 · 10:30 AM",
+    "Thu, Oct 22 · 11:00 AM"
   ],
   "japaneseteagarden": [
     "Wed, Sep 23 · 1:00 PM"
@@ -57,7 +58,14 @@
       "url": "https://sfcityguides.org/tour/maritime-sf/",
       "slug": "maritime",
       "startISO": "2026-10-09T18:00:00.000Z"
+    },
+    {
+      "display": "Thu, Oct 22 · 11:00 AM",
+      "label": "1840s San Francisco",
+      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
+      "slug": "1840s",
+      "startISO": "2026-10-22T18:00:00.000Z"
     }
   ],
-  "generated": "2026-09-08T17:05:53.754Z"
+  "generated": "2026-09-09T17:03:14.946Z"
 }
