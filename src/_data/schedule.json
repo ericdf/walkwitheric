@@ -6,7 +6,9 @@
     "Thu, Oct 22 · 11:00 AM",
     "Thu, Nov 5 · 11:00 AM"
   ],
-  "japaneseteagarden": [],
+  "japaneseteagarden": [
+    "Fri, Nov 27 · 9:30 AM"
+  ],
   "japantown": [],
   "boomandbust": [
     "Thu, Oct 22 · 2:00 PM"
@@ -39,7 +41,14 @@
       "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
       "slug": "1840s",
       "startISO": "2026-11-05T19:00:00.000Z"
+    },
+    {
+      "display": "Fri, Nov 27 · 9:30 AM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-11-27T17:30:00.000Z"
     }
   ],
-  "generated": "2026-09-27T17:34:13.150Z"
+  "generated": "2026-09-28T20:00:57.919Z"
 }
