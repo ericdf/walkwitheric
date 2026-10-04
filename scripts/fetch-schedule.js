@@ -11,6 +11,8 @@ const TOUR_MAP = {
   '1840s San Francisco and the Astonishing Legacy of America\'s "First Black Millionaire."': '1840s',
   'Japantown': 'japantown',
   'Boom & Bust': 'boomandbust',
+  // TODO: confirm the exact SUMMARY City Guides uses in the iCal feed
+  'Welcome to San Francisco': 'welcometosf',
 };
 
 const TOUR_LABELS = {
@@ -19,6 +21,7 @@ const TOUR_LABELS = {
   japaneseteagarden: 'Japanese Tea Garden',
   japantown: 'Japantown',
   boomandbust: 'Boom and Bust',
+  welcometosf: 'Welcome to San Francisco',
 };
 
 const TOUR_URLS = {
@@ -27,6 +30,7 @@ const TOUR_URLS = {
   japaneseteagarden: 'https://sfcityguides.org/tour/japanese-tea-garden/',
   japantown: 'https://sfcityguides.org/tour/japantown/',
   boomandbust: 'https://sfcityguides.org/tour/san-francisco-boom-bust/',
+  welcometosf: 'https://sfcityguides.org/tour/welcome-to-san-francisco/',
 };
 
 function fetchUrl(url) {
@@ -77,7 +81,7 @@ async function main() {
   const now = new Date();
   const cutoff = new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000);
 
-  const byTour = { maritime: [], '1840s': [], japaneseteagarden: [], japantown: [], boomandbust: [] };
+  const byTour = { maritime: [], '1840s': [], japaneseteagarden: [], japantown: [], boomandbust: [], welcometosf: [] };
   const allEvents = [];
 
   const blocks = text.split(/BEGIN:VEVENT/);

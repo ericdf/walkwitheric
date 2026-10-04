@@ -350,9 +350,12 @@
           {{ renderItems(resolved) }}
         {% endmacro %}
 
-        {% if tour.foodShopping.before or tour.foodShopping.after %}
+        {% if tour.foodShopping.before or tour.foodShopping.during or tour.foodShopping.after %}
           {% if tour.foodShopping.before %}
           {{ resolveAndRender(tour.foodShopping.before, "0") }}
+          {% endif %}
+          {% if tour.foodShopping.during %}
+          {{ resolveAndRender(tour.foodShopping.during, "2rem") }}
           {% endif %}
           {% if tour.foodShopping.after %}
           {{ resolveAndRender(tour.foodShopping.after, "2rem") }}

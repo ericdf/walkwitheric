@@ -219,7 +219,7 @@
             "address": "Adjacent to the Garden",
             "description": "The observation tower offers 360° views of the city at no cost. The museum is home to an important permanent collection and has regularly special exhibitions worthy of your consideration. Check their schedule for free admission days.",
             "url": "https://www.famsf.org/visit/de-young",
-            "descriptionLink": { "label": "Visit the de Young →", "url": "https://www.famsf.org/" }
+            "descriptionLink": { "label": "Visit the de Young", "url": "https://www.famsf.org/" }
           },
           {
             "type": "attraction",
@@ -360,6 +360,65 @@
     "foodShopping": {
       "before": { "sharedList": "financialDistrict" },
       "after": { "sharedList": "financialDistrictAttractions" }
+    }
+  },
+  "welcometosf": {
+    "title": "Welcome to San Francisco",
+    "slug": "welcometosf",
+    "seoDescription": "A free introductory San Francisco walking tour from the Ferry Building to North Beach, led by Eric Friedman of San Francisco City Guides. The Gold Rush, cable cars, the 1906 earthquake and fires, food culture, and the counterculture — perfect for visitors and newcomers.",
+    "eventLocation": { "name": "Harry Bridges Plaza", "streetAddress": "The Embarcadero at Market St" },
+    "cityGuidesUrl": "https://sfcityguides.org/tour/welcome-to-san-francisco/",
+    "meetAt": {
+      "description": "Meet at Harry Bridges Plaza. It is located along the Embarcadero at the foot of Market Street and is adjacent to the Ferry Building. We will gather directly across the street from the Ferry Building. I arrive 15 minutes early — please join me! Look for me: 6'1\", in a red City Guides jacket.",
+      "transit": "Embarcadero BART or MUNI, the F Market &amp; Wharves streetcar, or the ferry — check transit apps for more options",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=37.7951058,-122.394184",
+      "locationImage": "/images/tours/welcometosf-location.webp",
+      "locationImageAlt": "Harry Bridges Plaza on the Embarcadero, looking across the street to the Ferry Building clock tower",
+      "staticMapImage": "/images/tours/welcometosf-map.webp"
+    },
+    "endAt": "Vallejo Street Garage, 766 Vallejo St, North Beach",
+    "parking": {
+      "note": "Parking near the start is limited. The <a href=\"https://www.google.com/maps/dir/?api=1&destination=37.79856,-122.4100057\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--accent); text-decoration: none;\" onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">Vallejo Street Garage</a> is where the tour ends, but it's a walk to the start — transit is the easier option."
+    },
+    "durationMinutes": 120,
+    "details": {
+      "duration": "2 hours",
+      "climbing": "Gentle slopes",
+      "climate": "Sweater or jacket recommended",
+      "ageRange": "All ages welcome"
+    },
+    "restrooms": {
+      "before": "Inside the Ferry Building — allow 15 minutes",
+      "during": "None on this tour — plan accordingly"
+    },
+    "foodShopping": {
+      "before": {
+        "label": "Near the Start",
+        "items": [
+          { "type": "food", "name": "Ferry Building Marketplace", "address": "1 Ferry Building", "description": "A temple to food. Slurp oysters at Hog Island, or eat your way around the world: Cambodian at Lunette, Baja fish tacos at Cholita Linda, Filipino sisig at Señor Sisig, Argentine empanadas, Jamaican patties, Southern Italian at A16 La Pala, or a burger on the bay at Gott's. Then come the bread, cheese, chocolate and coffee.", "descriptionLink": { "label": "Browse all the merchants", "url": "https://www.ferrybuildingmarketplace.com/merchants" }, "url": "https://www.google.com/maps/search/?api=1&query=Ferry+Building+Marketplace+San+Francisco" },
+          { "type": "food", "name": "Ferry Plaza Farmers Market", "address": "In front of and behind the Ferry Building", "description": "One of the country's great farmers markets — Tuesday, Thursday, and Saturday mornings.", "descriptionLink": { "label": "Check market days and hours", "url": "https://cuesa.org/markets/ferry-plaza-farmers-market" }, "url": "https://www.google.com/maps/search/?api=1&query=Ferry+Plaza+Farmers+Market+San+Francisco" }
+        ]
+      },
+      "during": {
+        "label": "Along the Way",
+        "items": [
+          { "type": "food", "name": "Tadich Grill", "address": "240 California St", "description": "California's oldest continuously operating restaurant, serving since 1849. Old-school Croatian-style seafood grilled over mesquite — the cioppino is the classic order.", "url": "https://www.google.com/maps/search/?api=1&query=Tadich+Grill+240+California+St+San+Francisco" },
+          { "type": "food", "name": "Irish Times", "address": "500 Sacramento St", "description": "Good pub food, with sports on the TVs.", "url": "https://www.google.com/maps/search/?api=1&query=Irish+Times+500+Sacramento+San+Francisco" },
+          { "type": "food", "name": "Maison Nico", "address": "710 Montgomery St", "description": "French pastries.", "url": "https://www.google.com/maps/search/?api=1&query=Maison+Nico+710+Montgomery+San+Francisco" },
+          { "type": "food", "name": "R&G Lounge", "address": "631 Kearny St", "description": "Celebrated Cantonese — a Chinatown gem.", "url": "https://www.google.com/maps/search/?api=1&query=R+G+Lounge+631+Kearny+San+Francisco" }
+        ]
+      },
+      "after": {
+        "label": "Near the End",
+        "items": [
+          { "type": "food", "name": "Tony's Pizza Napoletana", "address": "1570 Stockton St", "description": "Legendary pizza from Tony Gemignani, a perennial champion of the world's pizza competitions. Reserve for about 30 minutes after the published tour end time — or grab slices from Tony's Slice House next door (1556 Stockton) and eat in Washington Square Park.", "url": "https://www.google.com/maps/search/?api=1&query=Tony's+Pizza+Napoletana+1570+Stockton+San+Francisco" },
+          { "type": "food", "name": "Caffe Trieste", "address": "601 Vallejo St", "description": "The West Coast's first espresso house (1956), a haunt of the Beats — and where Francis Ford Coppola wrote much of The Godfather screenplay.", "url": "https://www.google.com/maps/search/?api=1&query=Caffe+Trieste+601+Vallejo+San+Francisco" },
+          { "type": "food", "name": "Butter & Crumble", "address": "271 Francisco St", "description": "Inventive pastries on a rotating menu — the Lemon Vanilla Bean Cruffin is a standout. Limited days and hours, and expect a line.", "url": "https://www.google.com/maps/search/?api=1&query=Butter+and+Crumble+271+Francisco+St+San+Francisco" },
+          { "type": "food", "name": "House of Nanking", "address": "919 Kearny St", "description": "A venerable Chinatown favorite, a short walk from the end.", "url": "https://www.google.com/maps/search/?api=1&query=House+of+Nanking+919+Kearny+San+Francisco" },
+          { "type": "shopping", "name": "City Lights Booksellers", "address": "261 Columbus Ave", "description": "The iconic bookstore and publisher co-founded by Lawrence Ferlinghetti in 1953, at the heart of the Beat movement. While you're there, ask for my book,", "descriptionLink": { "label": "The Ledger and the Mirror", "url": "/the-ledger-and-the-mirror/" }, "url": "https://www.google.com/maps/search/?api=1&query=City+Lights+Booksellers+261+Columbus+Ave+San+Francisco" },
+          { "type": "shopping", "name": "Boutiques", "description": "Many independent boutiques line the route and the streets around the end — too many to name. Leave time to browse." }
+        ]
+      }
     }
   }
 }

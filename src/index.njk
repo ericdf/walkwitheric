@@ -331,6 +331,28 @@ title: Walk With Eric
         </div>
       </article>
 
+      <!-- Tour 6: Welcome to San Francisco — image RIGHT -->
+      <article id="tour-welcome-to-sf" class="tour-card tour-card-reverse">
+        <div class="tour-card-image">
+          <img src="/images/welcometosf.webp" alt="A ferry crossing the bay in front of the Transamerica Pyramid and the San Francisco waterfront" loading="lazy" width="500" height="454">
+          <p style="font-size: 12px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-light); text-align: right; margin: 0.3rem 0.5rem 0;">Photo: <a href="https://commons.wikimedia.org/w/index.php?curid=60638026" target="_blank" rel="noopener" style="color: var(--ink-light);">Frank Schulenburg</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" style="color: var(--ink-light);">CC BY-SA 4.0</a></p>
+        </div>
+        <div class="tour-card-text">
+          <h3 class="tour-name"><a href="https://sfcityguides.org/tour/welcome-to-san-francisco/" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">Welcome to San Francisco</a></h3>
+          <p class="tour-desc">This tour is perfect for anyone eager to gain a comprehensive view of San Francisco. From the historic Ferry Building to North Beach, San Francisco's lively "Little Italy": the Gold Rush, cable cars, the 1906 earthquake and fires, food culture, and the counterculture. Come experience the allure of this incredible city and see for yourself why San Francisco captures hearts!</p>
+          {% if schedule.welcometosf | length %}
+          <div style="margin: 0.5rem 0 0.75rem;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-family: 'Source Serif 4', Georgia, serif; margin: 0 0 0.3rem;">Upcoming</p>
+            {% for d in schedule.welcometosf %}<p style="font-size: 16px; font-family: 'Source Serif 4', Georgia, serif; color: var(--ink-mid); margin: 0 0 0.15rem;">{{ d }}</p>{% endfor %}
+          </div>
+          {% endif %}
+          <div class="tour-buttons">
+            <a href="https://sfcityguides.org/tour/welcome-to-san-francisco/" target="_blank" rel="noopener" class="btn-tour">Book Your Tour</a>
+            <a href="/tours/welcometosf/" class="btn-tour">Plan Your Tour</a>
+          </div>
+        </div>
+      </article>
+
     </section>
 
     <!-- ===================== SECTION 7: SCHEDULE BANNER ===================== -->
