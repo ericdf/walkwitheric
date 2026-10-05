@@ -15,6 +15,7 @@
     "Thu, Oct 22 · 2:00 PM",
     "Thu, Nov 5 · 2:00 PM"
   ],
+  "welcometosf": [],
   "all": [
     {
       "display": "Fri, Oct 9 · 11:00 AM",
@@ -66,5 +67,5 @@
       "startISO": "2026-11-27T22:00:00.000Z"
     }
   ],
-  "generated": "2026-10-04T17:19:54.375Z"
+  "generated": "2026-10-05T21:04:37.069Z"
 }
