@@ -1,7 +1,5 @@
 {
-  "maritime": [
-    "Fri, Oct 9 · 11:00 AM"
-  ],
+  "maritime": [],
   "1840s": [
     "Thu, Oct 22 · 11:00 AM",
     "Thu, Nov 5 · 11:00 AM",
@@ -17,13 +15,6 @@
   ],
   "welcometosf": [],
   "all": [
-    {
-      "display": "Fri, Oct 9 · 11:00 AM",
-      "label": "Maritime SF",
-      "url": "https://sfcityguides.org/tour/maritime-sf/",
-      "slug": "maritime",
-      "startISO": "2026-10-09T18:00:00.000Z"
-    },
     {
       "display": "Thu, Oct 22 · 11:00 AM",
       "label": "1840s San Francisco",
@@ -67,5 +58,5 @@
       "startISO": "2026-11-27T22:00:00.000Z"
     }
   ],
-  "generated": "2026-10-08T19:10:15.085Z"
+  "generated": "2026-10-09T18:40:48.538Z"
 }
