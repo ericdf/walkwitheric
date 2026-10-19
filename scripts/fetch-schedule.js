@@ -11,7 +11,6 @@ const TOUR_MAP = {
   '1840s San Francisco and the Astonishing Legacy of America\'s "First Black Millionaire."': '1840s',
   'Japantown': 'japantown',
   'Boom & Bust': 'boomandbust',
-  // TODO: confirm the exact SUMMARY City Guides uses in the iCal feed
   'Welcome to San Francisco': 'welcometosf',
 };
 
