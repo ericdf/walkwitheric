@@ -389,7 +389,9 @@
     },
     "restrooms": {
       "before": "Inside the Ferry Building — allow 15 minutes",
-      "during": "None on this tour — plan accordingly"
+      "during": "None on this tour — plan accordingly",
+      "after": "Public restroom in Washington Square Park",
+      "afterMapsUrl": "https://www.google.com/maps/search/?api=1&query=Washington+Square+Park+San+Francisco"
     },
     "foodShopping": {
       "before": {
