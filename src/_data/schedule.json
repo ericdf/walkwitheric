@@ -5,6 +5,7 @@
     "Fri, Nov 27 · 2:00 PM"
   ],
   "japaneseteagarden": [
+    "Mon, Oct 26 · 1:00 PM",
     "Fri, Nov 27 · 9:30 AM"
   ],
   "japantown": [
@@ -18,6 +19,13 @@
     "Thu, Nov 26 · 11:00 AM"
   ],
   "all": [
+    {
+      "display": "Mon, Oct 26 · 1:00 PM",
+      "label": "Japanese Tea Garden",
+      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
+      "slug": "japaneseteagarden",
+      "startISO": "2026-10-26T20:00:00.000Z"
+    },
     {
       "display": "Tue, Oct 27 · 10:00 AM",
       "label": "Welcome to San Francisco",
@@ -68,5 +76,5 @@
       "startISO": "2026-11-27T22:00:00.000Z"
     }
   ],
-  "generated": "2026-10-24T16:26:53.821Z"
+  "generated": "2026-10-25T16:58:31.276Z"
 }
