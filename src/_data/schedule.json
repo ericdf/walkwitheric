@@ -5,7 +5,6 @@
     "Fri, Nov 27 · 2:00 PM"
   ],
   "japaneseteagarden": [
-    "Mon, Oct 26 · 1:00 PM",
     "Fri, Nov 27 · 9:30 AM"
   ],
   "japantown": [
@@ -15,24 +14,9 @@
     "Thu, Nov 5 · 2:00 PM"
   ],
   "welcometosf": [
-    "Tue, Oct 27 · 10:00 AM",
     "Thu, Nov 26 · 11:00 AM"
   ],
   "all": [
-    {
-      "display": "Mon, Oct 26 · 1:00 PM",
-      "label": "Japanese Tea Garden",
-      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
-      "slug": "japaneseteagarden",
-      "startISO": "2026-10-26T20:00:00.000Z"
-    },
-    {
-      "display": "Tue, Oct 27 · 10:00 AM",
-      "label": "Welcome to San Francisco",
-      "url": "https://sfcityguides.org/tour/welcome-to-san-francisco/",
-      "slug": "welcometosf",
-      "startISO": "2026-10-27T17:00:00.000Z"
-    },
     {
       "display": "Thu, Nov 5 · 11:00 AM",
       "label": "1840s San Francisco",
@@ -76,5 +60,5 @@
       "startISO": "2026-11-27T22:00:00.000Z"
     }
   ],
-  "generated": "2026-10-26T19:03:38.771Z"
+  "generated": "2026-10-27T18:34:52.224Z"
 }
