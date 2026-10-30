@@ -14,7 +14,8 @@
     "Thu, Nov 5 · 2:00 PM"
   ],
   "welcometosf": [
-    "Thu, Nov 26 · 11:00 AM"
+    "Thu, Nov 26 · 11:00 AM",
+    "Tue, Dec 29 · 10:00 AM"
   ],
   "all": [
     {
@@ -58,7 +59,14 @@
       "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
       "slug": "1840s",
       "startISO": "2026-11-27T22:00:00.000Z"
+    },
+    {
+      "display": "Tue, Dec 29 · 10:00 AM",
+      "label": "Welcome to San Francisco",
+      "url": "https://sfcityguides.org/tour/welcome-to-san-francisco/",
+      "slug": "welcometosf",
+      "startISO": "2026-12-29T18:00:00.000Z"
     }
   ],
-  "generated": "2026-10-29T18:49:03.020Z"
+  "generated": "2026-10-30T18:26:23.379Z"
 }
