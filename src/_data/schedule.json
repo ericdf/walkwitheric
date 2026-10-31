@@ -11,7 +11,8 @@
     "Fri, Nov 20 · 2:00 PM"
   ],
   "boomandbust": [
-    "Thu, Nov 5 · 2:00 PM"
+    "Thu, Nov 5 · 2:00 PM",
+    "Tue, Dec 29 · 2:00 PM"
   ],
   "welcometosf": [
     "Thu, Nov 26 · 11:00 AM",
@@ -66,7 +67,14 @@
       "url": "https://sfcityguides.org/tour/welcome-to-san-francisco/",
       "slug": "welcometosf",
       "startISO": "2026-12-29T18:00:00.000Z"
+    },
+    {
+      "display": "Tue, Dec 29 · 2:00 PM",
+      "label": "Boom and Bust",
+      "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
+      "slug": "boomandbust",
+      "startISO": "2026-12-29T22:00:00.000Z"
     }
   ],
-  "generated": "2026-10-30T18:26:23.379Z"
+  "generated": "2026-10-31T17:31:31.240Z"
 }
