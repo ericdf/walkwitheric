@@ -1,7 +1,6 @@
 {
   "maritime": [],
   "1840s": [
-    "Thu, Nov 5 · 11:00 AM",
     "Fri, Nov 27 · 2:00 PM"
   ],
   "japaneseteagarden": [
@@ -19,13 +18,6 @@
     "Tue, Dec 29 · 10:00 AM"
   ],
   "all": [
-    {
-      "display": "Thu, Nov 5 · 11:00 AM",
-      "label": "1840s San Francisco",
-      "url": "https://sfcityguides.org/tour/1840s-san-francisco-and-the-astonishing-legacy-of-americas-first-black-millionaire/",
-      "slug": "1840s",
-      "startISO": "2026-11-05T19:00:00.000Z"
-    },
     {
       "display": "Thu, Nov 5 · 2:00 PM",
       "label": "Boom and Bust",
@@ -76,5 +68,5 @@
       "startISO": "2026-12-29T22:00:00.000Z"
     }
   ],
-  "generated": "2026-11-04T20:18:15.856Z"
+  "generated": "2026-11-05T20:29:33.836Z"
 }
