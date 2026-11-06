@@ -10,7 +10,6 @@
     "Fri, Nov 20 · 2:00 PM"
   ],
   "boomandbust": [
-    "Thu, Nov 5 · 2:00 PM",
     "Tue, Dec 29 · 2:00 PM"
   ],
   "welcometosf": [
@@ -18,13 +17,6 @@
     "Tue, Dec 29 · 10:00 AM"
   ],
   "all": [
-    {
-      "display": "Thu, Nov 5 · 2:00 PM",
-      "label": "Boom and Bust",
-      "url": "https://sfcityguides.org/tour/san-francisco-boom-bust/",
-      "slug": "boomandbust",
-      "startISO": "2026-11-05T22:00:00.000Z"
-    },
     {
       "display": "Fri, Nov 20 · 2:00 PM",
       "label": "Japantown",
@@ -68,5 +60,5 @@
       "startISO": "2026-12-29T22:00:00.000Z"
     }
   ],
-  "generated": "2026-11-05T20:29:33.836Z"
+  "generated": "2026-11-06T19:52:09.518Z"
 }
