@@ -16,14 +16,12 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Never cancel a run mid-deploy; a newer run waits its turn instead.
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     env:
       TZ: America/Los_Angeles
     steps:
@@ -59,9 +57,35 @@ jobs:
 
       - uses: actions/configure-pages@v6
 
+      # Name the artifact per attempt so a re-run never sees two artifacts
+      # called "github-pages" (deploy-pages refuses to pick one).
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+          name: github-pages-${{ github.run_attempt }}
 
+  # Deploy in a separate job (GitHub's recommended layout). The artifact
+  # listing API lags behind uploads; querying it in the same job a fraction
+  # of a second later intermittently returned "Found 0 artifact(s)".
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment-retry.outputs.page_url }}
+    steps:
       - uses: actions/deploy-pages@v5
         id: deployment
+        continue-on-error: true
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
+
+      - name: Wait before retrying deploy
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - uses: actions/deploy-pages@v5
+        id: deployment-retry
+        if: steps.deployment.outcome == 'failure'
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
