@@ -3,9 +3,7 @@
   "1840s": [
     "Fri, Nov 27 · 2:00 PM"
   ],
-  "japaneseteagarden": [
-    "Fri, Nov 27 · 9:30 AM"
-  ],
+  "japaneseteagarden": [],
   "japantown": [],
   "boomandbust": [
     "Tue, Dec 29 · 2:00 PM"
@@ -14,13 +12,6 @@
     "Tue, Dec 29 · 10:00 AM"
   ],
   "all": [
-    {
-      "display": "Fri, Nov 27 · 9:30 AM",
-      "label": "Japanese Tea Garden",
-      "url": "https://sfcityguides.org/tour/japanese-tea-garden/",
-      "slug": "japaneseteagarden",
-      "startISO": "2026-11-27T17:30:00.000Z"
-    },
     {
       "display": "Fri, Nov 27 · 2:00 PM",
       "label": "1840s San Francisco",
@@ -43,5 +34,5 @@
       "startISO": "2026-12-29T22:00:00.000Z"
     }
   ],
-  "generated": "2026-11-27T00:28:49.293Z"
+  "generated": "2026-11-27T21:49:48.007Z"
 }
